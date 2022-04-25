@@ -44,7 +44,7 @@ class compression:
                                 Deep2=Deep+2
                                 Deep11=Deep   
                                 Deep3=8
-                                Deep4=Deep+31
+                                Deep4=Deep+((2**70)-1)
                                 Deep12=0
                                 print(Deep-70)
 
