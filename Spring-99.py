@@ -46,7 +46,7 @@ class compression:
                                 Deep3=8
                                 Deep4=Deep+31
                                 Deep12=0
-                                print(Deep-6)
+                                print(Deep-7)
 
                         i=1
 
@@ -521,7 +521,7 @@ class compression:
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[48:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
                                                 print("Deep: ")
-                                                print(Deep7-6)
+                                                print(Deep7-7)
                                                 
                                         if   Circle_times2>0:
                                         	Translate_info_Decimal_2=0
