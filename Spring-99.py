@@ -201,7 +201,7 @@ class compression:
                                     lenf3=len(Equal_info_between_of_the_cirlce_of_the_file_2)
                                 lenf2=len(Equal_info_between_of_the_cirlce_of_the_file_2)
                                 #print(lenf2)
-                                if i==1:
+                                
                                     
 
                                 #########################################################################################################################################################
