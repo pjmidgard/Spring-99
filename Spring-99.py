@@ -32,21 +32,21 @@ class compression:
                         
                         if x==True:
                                 Deep=int(Deep)
-                                Deep6=65535-71
+                                Deep6=65535-32
 
                                 if Deep>Deep6:
                                         Deep=Deep6
 
                                 if Deep<1:
-                                        Deep=71
+                                        Deep=33
                                                 
-                                Deep=Deep+70
+                                Deep=Deep+32
                                 Deep2=Deep+2
                                 Deep11=Deep   
                                 Deep3=8
-                                Deep4=Deep+((2**70)-1)
+                                Deep4=Deep+((2**32)-1)
                                 Deep12=0
-                                print(Deep-70)
+                                print(Deep-32)
 
                         i=1
 
@@ -197,8 +197,7 @@ class compression:
                                 lenf2=len(Equal_info_between_of_the_cirlce_of_the_file_2)
                                 #print(lenf2)
                                 if i==1:
-                                    if lenf7>=(2**40)-1:
-                                        raise SystemExit
+                                    
 
                                 #########################################################################################################################################################
                                 
@@ -275,7 +274,7 @@ class compression:
                                                 
                                                 g=g+1
                                           
-                                        if g>(2**(Deep-70))-1:
+                                        if g>(2**(Deep-32))-1:
                                                 
                                                 Deep2=Deep2+1
                                                 Deep=Deep+1
@@ -283,7 +282,7 @@ class compression:
                                                 e=(2**(Deep2))-1
                                                 g=0
                                                 f=0
-                                                if Deep12==(2**70)-1:
+                                                if Deep12==(2**32)-1:
                                                         f=1
                                                         compress_or_not_compress=2
                                                
@@ -299,15 +298,15 @@ class compression:
                                     if compress_or_not_compress==1:
                                     	                          
                                             Equal_info_between_of_the_cirlce_of_the_file_24=bin(Deep12)[2:]
-                                            hr=70
+                                            hr=32
                                             
                                         	
                                             lenf=len(Equal_info_between_of_the_cirlce_of_the_file_24)
-                                            if lenf>70:
+                                            if lenf>32:
                                             	compress_or_not_compress=2
 
                                             if compress_or_not_compress==1:
-                                                    Deep=71
+                                                    Deep=33
                                                     Deep2=Deep+2
                                                     Deep12=0
                                                     add_bits5=""
@@ -521,7 +520,7 @@ class compression:
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[48:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
                                                 print("Deep: ")
-                                                print(Deep7-70)
+                                                print(Deep7-32)
                                                 
                                         if   Circle_times2>0:
                                         	Translate_info_Decimal_2=0
@@ -534,7 +533,7 @@ class compression:
                                                         lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
                                                         
                                                         
-                                                        Number_add_plus_one1=Equal_info_between_of_the_cirlce_of_the_file[lenf6-70:lenf6]
+                                                        Number_add_plus_one1=Equal_info_between_of_the_cirlce_of_the_file[lenf6-32:lenf6]
                                                         lenf63=len(Number_add_plus_one1)
                                                         if lenf63!=0:
                                                         
@@ -543,7 +542,7 @@ class compression:
                                                           
                                                                 Number_of_the_file2=Number_of_the_file1+71
                                                                                            
-                                                                Number_add_plus_one=Equal_info_between_of_the_cirlce_of_the_file[lenf6-1-Number_of_the_file1:lenf6-70]
+                                                                Number_add_plus_one=Equal_info_between_of_the_cirlce_of_the_file[lenf6-1-Number_of_the_file1:lenf6-32]
                                                         lenf62=len(Number_add_plus_one)
                                                         if lenf62!=0:
          
