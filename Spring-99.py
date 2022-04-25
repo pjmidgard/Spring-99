@@ -35,7 +35,7 @@ class compression:
                                 Deep14=32
                                 Deep15=33
 
-                                Deep6=65535-32
+                                Deep6=65535-Deep14
 
                                 if Deep>Deep6:
                                         Deep=Deep6
