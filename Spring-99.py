@@ -605,15 +605,16 @@ class compression:
                                             	Equal_info_between_of_the_cirlce_of_the_file_17=bin(Number_of_the_file)[3:]
                                             	lenf14=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                             	#print(lenf14)
-                                            	#lenf16=lenf14%8
-                                            	#if lenf16!=0 or lenf14>=((2**40)-1)*8 or Corrupted==1:
+                                            	lenf16=lenf14%8
+                                            	if lenf16!=0 or lenf14>=((2**40)-1)*8 or Corrupted==1 or lenf11==0:
 
-                                            		#print("file corrupted")
-                                            		#raise SystemExit
+                                            		print("file corrupted")
+                                            		raise SystemExit
                                             		
                                             	
                                             	lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                             	add_bits=""
+                                            	
                                             	count_bits=lenf11-lenf%lenf11
                                             	z=0
                                             	if count_bits!=0:
