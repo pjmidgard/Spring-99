@@ -535,26 +535,29 @@ class compression:
                                                         
                                                         
                                                         Number_add_plus_one1=Equal_info_between_of_the_cirlce_of_the_file[lenf6-7:lenf6]
+                                                        lenf63=len(Number_add_plus_one1)
+                                                        if lenf63!=0:
                                                         
-                                                        
-                                                        Number_of_the_file1=int(Number_add_plus_one1, 2)
-                                                        
-                                                  
-                                                        Number_of_the_file2=Number_of_the_file1+7
-                                                                                   
-                                                        Number_add_plus_one=Equal_info_between_of_the_cirlce_of_the_file[lenf6-1-Number_of_the_file1:lenf6-7]
-                                                        
+                                                                Number_of_the_file1=int(Number_add_plus_one1, 2)
+                                                                
+                                                          
+                                                                Number_of_the_file2=Number_of_the_file1+7
+                                                                                           
+                                                                Number_add_plus_one=Equal_info_between_of_the_cirlce_of_the_file[lenf6-1-Number_of_the_file1:lenf6-7]
+                                                        lenf62=len(Number_add_plus_one)
+                                                        if lenf62!=0:
          
                                                                                                    
-                                                        Number_of_the_file = int(Number_add_plus_one, 2)
+                                                                Number_of_the_file = int(Number_add_plus_one, 2)
 
-                                                        lenf61=len(Equal_info_between_of_the_cirlce_of_the_file)
-                                                        Number_add_plus_one_2 = int(Number_add_plus_one, 2)
-                
-                                                        Hole_Number_information=(2**(Number_of_the_file2+2))-1
+                                                        lenf61=len(Number_add_plus_one)
+                                                        if lenf61!=0:
+                                                                Number_add_plus_one_2 = int(Number_add_plus_one, 2)
+                        
+                                                                Hole_Number_information=(2**(Number_of_the_file2+2))-1
 
-                                                        add_ones_together=Hole_Number_information+Number_add_plus_one_2
-                                                        Number_of_the_file=Number_of_the_file*add_ones_together
+                                                                add_ones_together=Hole_Number_information+Number_add_plus_one_2
+                                                                Number_of_the_file=Number_of_the_file*add_ones_together
                                                         #print(Number_of_the_file)
                                        
                                     Times_6=Number_add_plus_one
