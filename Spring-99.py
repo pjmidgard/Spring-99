@@ -613,7 +613,7 @@ class compression:
                                             	lenf14=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                             	#print(lenf14)
                                             	lenf16=lenf14%8
-                                            	if lenf16!=0 or lenf14>=((2**32)-1)*8 or Corrupted==1 or lenf11==0 or lenf14!=lenf11 or lenf14==0 or Bit_1!="1":
+                                            	if lenf16!=0 or lenf14>((2**32)-1)*8 or Corrupted==1 or lenf11==0 or lenf14!=lenf11 or lenf14==0 or Bit_1!="1":
 
                                             		print("file corrupted")
                                             		raise SystemExit
