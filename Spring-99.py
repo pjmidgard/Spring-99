@@ -325,11 +325,11 @@ class compression:
                                     if compress_or_not_compress==1:
                                     	                          
                                             Equal_info_between_of_the_cirlce_of_the_file_23=bin(g)[2:]
-                                            hr=Deep
+                                            hr=Deep-Deep14
                                             
                                         	
                                             lenf=len(Equal_info_between_of_the_cirlce_of_the_file_23)
-                                            if lenf>Deep:
+                                            if lenf>hr:
                                             	compress_or_not_compress=2
 
                                             if compress_or_not_compress==1:
