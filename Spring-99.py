@@ -330,7 +330,7 @@ class compression:
                                             		
 
                                     if   lenfS<=Deep3 or compress_or_not_compress==2:
-
+                                                Equal_info_between_of_the_cirlce_of_the_file_17="1"+Equal_info_between_of_the_cirlce_of_the_file_17
                                                 lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                                 add_bits=""
                                                 count_bits=8-lenf%8
