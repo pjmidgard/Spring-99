@@ -249,6 +249,8 @@ class compression:
                                                         
                                              
                                     lenf=len(Equal_info_between_of_the_cirlce_of_the_file_18)
+                                    
+                                    
                                     add_bits7=""
                                     count_bits=(lenf6-1)-lenf
                                     z=0
@@ -259,6 +261,10 @@ class compression:
                                                         z=z+1
                                                                         
                                     Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_18+add_bits7
+                                    lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                   
+                                    if lenfS!=(lenf6-1):
+                                            compress_or_not_compress=2
                                     #print(Number_of_the_file)           
                                     if compress_or_not_compress==1:
                                     		nameas=name+".bin"
