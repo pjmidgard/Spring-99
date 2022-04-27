@@ -245,19 +245,23 @@ class compression:
                                             
                                                    
                                     Equal_info_between_of_the_cirlce_of_the_file_17=bin(Number_of_the_file)[2:]
-                                    Equal_info_between_of_the_cirlce_of_the_file_18=Equal_info_between_of_the_cirlce_of_the_file_17[1:]+Equal_info_between_of_the_cirlce_of_the_file_17[0:1]
+                                    Equal_info_between_of_the_cirlce_of_the_file_18=Equal_info_between_of_the_cirlce_of_the_file_17
                                                         
                                              
                                     lenf=len(Equal_info_between_of_the_cirlce_of_the_file_18)
-                                    
-                                    
+                                    if Equal_info_between_of_the_cirlce_of_the_file_18[lenf-1:lenf]=="1":
+                                            bit="0"
+                                            
+                                    if Equal_info_between_of_the_cirlce_of_the_file_18[lenf-1:lenf]=="0":
+                                            bit="1"
+                                            
                                     add_bits7=""
                                     count_bits=(lenf6-1)-lenf
                                     z=0
                                     if count_bits!=0:
                                         if count_bits!=(lenf6-1):
                                                 while z<count_bits:
-                                                        add_bits7="0"+add_bits7
+                                                        add_bits7=bit+add_bits7
                                                         z=z+1
                                                                         
                                     Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_18+add_bits7
