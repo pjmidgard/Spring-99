@@ -347,7 +347,7 @@ class compression:
                                     if   lenfS<=Deep3 or compress_or_not_compress==2:
                                             lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                             
-                                            Equal_info_between_of_the_cirlce_of_the_file_17=add_bits7+Equal_info_between_of_the_cirlce_of_the_file_29+add_bits17+Size_of_file3+Equal_info_between_of_the_cirlce_of_the_file_17
+                                            Equal_info_between_of_the_cirlce_of_the_file_17=add_bits7+Equal_info_between_of_the_cirlce_of_the_file_29+add_bits17+Size_of_file3+add_bits+Equal_info_between_of_the_cirlce_of_the_file_17
 
                                     if   lenfS<=Deep3 or compress_or_not_compress==2:
                                                 
