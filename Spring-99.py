@@ -266,6 +266,7 @@ class compression:
                                   
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                     #print(lenfS)
+                                    
                                     if (lenf7*8)<(2**8):
                                             hr=8
                                     elif (lenf7*8)<(2**16):
@@ -289,7 +290,7 @@ class compression:
                                                             add_bits8="0"+add_bits8
                                                             z=z+1
                                     Size_of_file1=Size_of_file1+add_bits8+Size_of_file
-                                    lenfS=len(Size_of_file1)
+                                    lenfS1=len(Size_of_file1)
                                     
                                     if compress_or_not_compress==2 and Circle_times2==0:
                                                     Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[1:]
