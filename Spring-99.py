@@ -261,9 +261,10 @@ class compression:
                                             if count_bits!=Block-1:
                                                     while z<count_bits:
                                                             if z==0:
-                                                                add_bits19="0"+add_bits19
+                                                                add_bits19="1"+add_bits19
                                                             if z>=1:
                                                                 add_bits19="1"+add_bits19
+                                                                
                                                                 
                                                             
                                                             z=z+1
@@ -271,6 +272,7 @@ class compression:
                                                             
                                                                    
                                     Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_18+add_bits19
+                                    
                                    
                                     #print(add_bits19)
                                     
@@ -282,8 +284,13 @@ class compression:
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                     if lenfS==(lenf7*8)-90:
                                         Deep3=lenfS
-                                   
-                                   
+                                    
+                                    if H==1 and z>2:
+                                        compress_or_not_compress=2
+                                        
+                                    if H==1 and z==2:
+                                         Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_18[:lenfS-2]+"10"
+                                         lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                     if H==1 and z==0:
                                          Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_18+"00"
                                          lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
