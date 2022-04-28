@@ -24,7 +24,7 @@ class compression:
                 if namez=="c" or namez=="e":        
                     if namez=="c":
 
-                        Deep3=8
+                        Deep3=800
 
                         i=1
 
@@ -255,7 +255,7 @@ class compression:
                                             bit="1"
                                             add_bits19=""
                                             Block=lenf6-1
-                                            add_bits19=bit+add_bits19
+                                            
                                             lenf=len(Equal_info_between_of_the_cirlce_of_the_file_18)
                                             bit="0"
                                             
@@ -266,26 +266,45 @@ class compression:
                                             bit="1"
                                             add_bits19=""
                                             Block=lenf6-1
-                                            add_bits19=bit+add_bits19
+                                            
                                             lenf=len(Equal_info_between_of_the_cirlce_of_the_file_18)
-                                            bit="0"     
+                                            bit="0"
+
+
                                             
                                             
-                                    count_bits=Block-lenf
-                                    z=0
-                                    if count_bits!=0:
-                                        if count_bits!=Block:
-                                                while z<count_bits:
-                                                        add_bits19=bit+add_bits19
-                                                        z=z+1
+                                    if lenf6==lenf+1:
+                                        Equal_info_between_of_the_cirlce_of_the_file_18=Equal_info_between_of_the_cirlce_of_the_file_18+"01"
+                                        lenf=len(Equal_info_between_of_the_cirlce_of_the_file_18)
+                                    elif lenf6==lenf+2:
+                                        Equal_info_between_of_the_cirlce_of_the_file_18=Equal_info_between_of_the_cirlce_of_the_file_18+"11"
+                                        lenf=len(Equal_info_between_of_the_cirlce_of_the_file_18)
+                                    
+                                        
+                                    else:    
+                                        count_bits=Block-lenf
+                                        z=0
+                                        if count_bits!=0:
+                                            if count_bits!=Block:
+                                                    while z<count_bits:
+                                                            if z==0:
+                                                                add_bits19="10"+add_bits19
+                                                            if z>=3:
+                                                                add_bits19="0"+add_bits19
+                                                                
+                                                            
+                                                            z=z+1
                                                                         
                                     Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_18+add_bits19
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                    
+
+                                   
+                                        
                                    
                                     
-                                    #print(lenfS)    
-                                    if lenfS==(lenf6-1):
-                                        compress_or_not_compress=2
+                                       
+                                    
                                         
                                     if compress_or_not_compress==1:
                                     		nameas=name+".bin"
@@ -298,9 +317,8 @@ class compression:
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                     
                                     
-                                    
-                                    
-                                    
+                                    Deep3=800
+                                
                                     if compress_or_not_compress==2 and Circle_times2==0:
                                                     Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[1:]
                                     
