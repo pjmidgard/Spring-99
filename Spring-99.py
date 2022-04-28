@@ -24,7 +24,7 @@ class compression:
                 if namez=="c" or namez=="e":        
                     if namez=="c":
 
-                        Deep3=8
+                        Deep3=160
 
                         i=1
 
@@ -287,13 +287,9 @@ class compression:
                                    
                                     
                                         
-                                    lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)                  
-                                    
-                                        
+                                    lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                     if H==1 and z==1:
-                                          
                                          compress_or_not_compress=2
-                                         
 
                                         
                                         
