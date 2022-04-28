@@ -282,14 +282,14 @@ class compression:
                                     
                                         
                                     else:    
-                                        count_bits=Block-lenf
+                                        count_bits=(Block-1)-lenf
                                         z=0
                                         if count_bits!=0:
                                             if count_bits!=Block:
                                                     while z<count_bits:
                                                             if z==0:
                                                                 add_bits19="10"+add_bits19
-                                                            if z>=3:
+                                                            if z>=2:
                                                                 add_bits19="0"+add_bits19
                                                                 
                                                             
@@ -315,7 +315,6 @@ class compression:
                                     
                                   
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                    
                                     
                                     Deep3=800
                                 
