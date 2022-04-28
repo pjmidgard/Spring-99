@@ -254,29 +254,46 @@ class compression:
                                     lenf=len(Equal_info_between_of_the_cirlce_of_the_file_18)
                                        
                                     if lenf6==lenf+1:
-                                        Equal_info_between_of_the_cirlce_of_the_file_18=Equal_info_between_of_the_cirlce_of_the_file_18+"01"
+                                        Equal_info_between_of_the_cirlce_of_the_file_18=Equal_info_between_of_the_cirlce_of_the_file_18+"11"
+                                        H=0
                                         lenf=len(Equal_info_between_of_the_cirlce_of_the_file_18)
                                     elif lenf6==lenf+2:
-                                        Equal_info_between_of_the_cirlce_of_the_file_18=Equal_info_between_of_the_cirlce_of_the_file_18+"11"
+                                        Equal_info_between_of_the_cirlce_of_the_file_18=Equal_info_between_of_the_cirlce_of_the_file_18+"01"
                                         lenf=len(Equal_info_between_of_the_cirlce_of_the_file_18)
+                                        H=0
                                     
                                         
                                     else:    
-                                        count_bits=(Block)-lenf
+                                        count_bits=(Block-1)-lenf
                                         z=0
                                         if count_bits!=0:
                                             if count_bits!=Block:
                                                     while z<count_bits:
                                                             if z==0:
-                                                                add_bits19="1"+add_bits19
-                                                            if z>=1:
                                                                 add_bits19="0"+add_bits19
+                                                            if z>=1:
+                                                                add_bits19="1"+add_bits19
                                                                 
                                                             
                                                             z=z+1
-                                                                        
+                                                            H=1
+                                                            
+                                                                   
                                     Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_18+add_bits19
+                                    #print(add_bits19)
+                                    
+                                        
+                                        
+                                   
+                                    
+                                        
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                    if H==1 and z==1:
+                                         compress_or_not_compress=2
+
+                                        
+                                        
+                                      
                                     
 
                                    
