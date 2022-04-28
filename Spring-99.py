@@ -249,7 +249,8 @@ class compression:
                                     Equal_info_between_of_the_cirlce_of_the_file_20=Equal_info_between_of_the_cirlce_of_the_file_17[1:]
                                     Equal_info_between_of_the_cirlce_of_the_file_18=Equal_info_between_of_the_cirlce_of_the_file_19+Equal_info_between_of_the_cirlce_of_the_file_20[::-1]
                                                         
-                                             
+                                    add_bits19=""
+                                    Block=lenf6-1
                                     lenf=len(Equal_info_between_of_the_cirlce_of_the_file_18)
                                        
                                     if lenf6==lenf+1:
