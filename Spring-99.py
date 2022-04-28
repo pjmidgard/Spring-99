@@ -267,7 +267,7 @@ class compression:
                                         count_bits=(Block-1)-lenf
                                         z=0
                                         if count_bits!=0:
-                                            if count_bits!=Block:
+                                            if count_bits!=Block-1:
                                                     while z<count_bits:
                                                             if z==0:
                                                                 add_bits19="0"+add_bits19
