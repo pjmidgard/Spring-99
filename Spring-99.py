@@ -264,7 +264,7 @@ class compression:
                                     
                                         
                                     else:    
-                                        count_bits=(Block)-lenf
+                                        count_bits=(Block-1)-lenf
                                         z=0
                                         if count_bits!=0:
                                             if count_bits!=Block-1:
@@ -289,7 +289,7 @@ class compression:
                                         
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                    
-                                    if H==1 and z==1:
+                                    if H==1 and z<=1:
                                          compress_or_not_compress=2
 
                                         
