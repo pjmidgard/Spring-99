@@ -282,6 +282,7 @@ class compression:
                                     
                                         
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                    #print(lenfS)
                                     if lenfS==(lenf7*8)-90:
                                         Deep3=lenfS
                                     
@@ -289,6 +290,7 @@ class compression:
                                         compress_or_not_compress=2
                                         
                                     if H==1 and z==2:
+                                    
                                          Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_18[:lenfS-2]+"10"
                                          lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                     if H==1 and z==0:
@@ -380,6 +382,8 @@ class compression:
                                     		Equal_info_between_of_the_cirlce_of_the_file_2=Times_6
                                     		
                                     		with open(nameas, "wb") as f2:
+                                    			import zstd
+                                    			width_bits3=zstd.compress(width_bits3)
                                     			f2.write(width_bits3)
                                     	
                                     		x2 = time()
