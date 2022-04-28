@@ -251,28 +251,7 @@ class compression:
                                                         
                                              
                                     lenf=len(Equal_info_between_of_the_cirlce_of_the_file_18)
-                                    if Equal_info_between_of_the_cirlce_of_the_file_18[lenf-1:lenf]=="1":
-                                            bit="1"
-                                            add_bits19=""
-                                            Block=lenf6-1
-                                            
-                                            lenf=len(Equal_info_between_of_the_cirlce_of_the_file_18)
-                                            bit="0"
-                                            
-                                                
-                                        
-                                            
-                                    elif Equal_info_between_of_the_cirlce_of_the_file_18[lenf-1:lenf]=="0":
-                                            bit="1"
-                                            add_bits19=""
-                                            Block=lenf6-1
-                                            
-                                            lenf=len(Equal_info_between_of_the_cirlce_of_the_file_18)
-                                            bit="0"
-
-
-                                            
-                                            
+                                       
                                     if lenf6==lenf+1:
                                         Equal_info_between_of_the_cirlce_of_the_file_18=Equal_info_between_of_the_cirlce_of_the_file_18+"01"
                                         lenf=len(Equal_info_between_of_the_cirlce_of_the_file_18)
