@@ -238,7 +238,7 @@ class compression:
 
                                     lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)	
 
-                                    if Circle_times2>=(2**48)-1:
+                                    if Circle_times2>=(2**16)-2:
                                             compress_or_not_compress=2
                                             
                                     Number_of_the_file = int(Equal_info_between_of_the_cirlce_of_the_file, 2)
@@ -342,10 +342,10 @@ class compression:
                                             lenf=len(Equal_info_between_of_the_cirlce_of_the_file_29)
 
                                             add_bits7=""
-                                            count_bits=48-lenf%48
+                                            count_bits=16-lenf%16
                                             z=0
                                             if count_bits!=0:
-                                                if count_bits!=48:
+                                                if count_bits!=16:
                                                         while z<count_bits:
                                                          	add_bits7="0"+add_bits7
                                                          	z=z+1    
@@ -423,9 +423,9 @@ class compression:
                                         if   Circle_times2==0:
 
                                                 
-                                                Times_6=Equal_info_between_of_the_cirlce_of_the_file[0:48]
+                                                Times_6=Equal_info_between_of_the_cirlce_of_the_file[0:16]
                                                 T = int(Times_6, 2)
-                                                Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[48:]
+                                                Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[16:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
                                                  
                                                 if Equal_info_between_of_the_cirlce_of_the_file[0:1]=="1":
