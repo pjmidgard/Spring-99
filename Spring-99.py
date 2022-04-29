@@ -444,18 +444,18 @@ class compression:
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
                                                 if Equal_info_between_of_the_cirlce_of_the_file[lenf6-1:lenf6]=="1":
-                                                         Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[lenf6-1:lenf6]
+                                                         Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[:lenf6-1]
                                                          Number_of_the_file = int(Equal_info_between_of_the_cirlce_of_the_file, 2)
                                                          Number_of_the_file=Number_of_the_file+(2**(lenf6)-1)
                                                          
                                                 elif Equal_info_between_of_the_cirlce_of_the_file[lenf6-2:lenf6]=="10":
-                                                         Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[lenf6-2:lenf6]
+                                                         Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[:lenf6-2]
                                                          Number_of_the_file = int(Equal_info_between_of_the_cirlce_of_the_file, 2)
                                                          Number_of_the_file=Number_of_the_file+(2**(lenf6)-1)
                                                        
                                           
                                                 elif Equal_info_between_of_the_cirlce_of_the_file[lenf6-2:lenf6]=="00":
-                                                         Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[lenf6-2:lenf6]
+                                                         Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[:lenf6-2]
                                                          lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)      
                                                          Number_of_the_file = int(Equal_info_between_of_the_cirlce_of_the_file, 2)
                                                          Number_of_the_file=Number_of_the_file+(2**(lenf6+1)-1)
