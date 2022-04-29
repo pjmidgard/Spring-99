@@ -102,6 +102,7 @@ class compression:
                        # Read the whole file at once
                         data = binary_file.read()
                         if i==2:
+                                   import sztd
                                    data=sztd.decompress(data)
                         
       
