@@ -249,9 +249,7 @@ class compression:
                                             
                                                    
                                     Equal_info_between_of_the_cirlce_of_the_file_17=bin(Number_of_the_file)[2:]
-                                    Equal_info_between_of_the_cirlce_of_the_file_19=Equal_info_between_of_the_cirlce_of_the_file_17[0:1]
-                                    Equal_info_between_of_the_cirlce_of_the_file_20=Equal_info_between_of_the_cirlce_of_the_file_17[1:]
-                                    Equal_info_between_of_the_cirlce_of_the_file_18=Equal_info_between_of_the_cirlce_of_the_file_19+Equal_info_between_of_the_cirlce_of_the_file_20
+                                    Equal_info_between_of_the_cirlce_of_the_file_18=Equal_info_between_of_the_cirlce_of_the_file_17
                                     
                                                         
                                     add_bits19=""
@@ -276,15 +274,9 @@ class compression:
                                                             
                                                                    
                                     Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_18+add_bits19
-                                    
-                                   
+                                 
                                     #print(add_bits19)
                                     
-                                        
-                                        
-                                   
-                                    
-                                        
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                     #print(lenfS)
                                     if lenfS==(lenf7*8)-90:
@@ -301,21 +293,12 @@ class compression:
                                          Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_18+"00"
                                          lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                        
-
-                                        
                                     if compress_or_not_compress==1:
                                     		nameas=name+".bin"
                                     
                                     if Number_of_the_file<0:
                                                         compress_or_not_compress=2
-                                                        
-                                    
-                                  
-
-                                   
-                                    
-                                    
-                                
+                                                    
                                     if compress_or_not_compress==2 and Circle_times2==0:
                                                     Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[1:]
                                     
@@ -456,13 +439,7 @@ class compression:
                                                 if Equal_info_between_of_the_cirlce_of_the_file[0:9]=="000000001":
                                                    Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[9:]  
                                                
-                                                        
-                                                
-                                        if   Circle_times2>0:
-                                        	Translate_info_Decimal_2=0
-                                        
-                                        	
-    
+                                             
                                         if C==1 and T!=0:
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
