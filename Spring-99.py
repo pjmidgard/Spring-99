@@ -285,7 +285,9 @@ class compression:
                                        
                                     if z!=0:
                                         minus_bits=lenf6-lenfS
-                                        if minus_bits!=1:
+                                        minus_bits2=lenf6-1
+                                        minus_bits3=lenf6-lenfS
+                                        if minus_bits!=1 and minus_bits3!=0:
                                            compress_or_not_compress=2
                                            
 
@@ -295,7 +297,10 @@ class compression:
                                         Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_18+"0"
                                         lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                         minus_bits=lenf6-lenfS
-                                        if minus_bits!=0:
+                                        minus_bits2=lenf6-1
+                                        minus_bits3=lenf6-lenfS
+                                        if minus_bits!=0 and minus_bits3!=-1:
+      
                                             compress_or_not_compress=2
                                         
                                          
