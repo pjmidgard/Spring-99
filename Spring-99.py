@@ -277,6 +277,7 @@ class compression:
                                                             
                                                                    
                                     Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_18+add_bits19
+                                    
                                  
                                     #print(add_bits19)
                                     
@@ -286,8 +287,10 @@ class compression:
                                     if lenfS<=(lenf7*8)-4000:
                                         Deep3=lenfS
                                     
-                                    if H==1 and z>2:
-                                        compress_or_not_compress=2
+                                    if H==1 and z==0:
+                                        Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_18+"0"
+                                        
+                                       
                                         
                                   
                                        
