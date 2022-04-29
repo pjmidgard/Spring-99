@@ -244,6 +244,7 @@ class compression:
                                     Number_of_the_file = int(Equal_info_between_of_the_cirlce_of_the_file, 2)
 
                                     Equal_info_between_of_the_cirlce_of_the_file_17=bin(Number_of_the_file)[2:]
+                                    Equal_info_between_of_the_cirlce_of_the_file_18=Equal_info_between_of_the_cirlce_of_the_file_17
                                     lenf6=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                     
                                     Number_of_the_file=Number_of_the_file-(2**(lenf6-1)-1)
@@ -253,7 +254,9 @@ class compression:
                                                    
                                     Equal_info_between_of_the_cirlce_of_the_file_17=bin(Number_of_the_file)[2:]
                                     Equal_info_between_of_the_cirlce_of_the_file_18=Equal_info_between_of_the_cirlce_of_the_file_17
-                                    
+                                    lenf=len(Equal_info_between_of_the_cirlce_of_the_file_18)
+                   
+                                           
                                                         
                                     add_bits19=""
                                     Block=lenf6-1
@@ -277,17 +280,30 @@ class compression:
                                                             
                                                                    
                                     Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_18+add_bits19
-                                    
-                                 
-                                    #print(add_bits19)
-                                    
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
- 
-                                    if lenfS<=(lenf7*8)-4000:
-                                        Deep3=lenfS
+                                   
+                                       
+                                    if z!=0:
+                                        minus_bits=lenf6-lenfS
+                                        if minus_bits!=1:
+                                           compress_or_not_compress=2
+                                           
+
+
                                     
                                     if H==1 and z==0:
                                         Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_18+"0"
+                                        lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                        minus_bits=lenf6-lenfS
+                                        if minus_bits!=0:
+                                            compress_or_not_compress=2
+                                        
+                                         
+                                   
+                                       
+                                    if lenfS<=(lenf7*8)-4000:
+                                        Deep3=lenfS
+                                   
                                     if compress_or_not_compress==1:
                                     		nameas=name+".bin"
                                     
