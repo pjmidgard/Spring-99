@@ -102,8 +102,8 @@ class compression:
                        # Read the whole file at once
                         data = binary_file.read()
                         if i==2:
-                                   import zstd
-                                   data=zstd.decompress(data)
+                                   #import zstd
+                                   #data=zstd.decompress(data)
                         
       
                         s=str(data)
@@ -287,7 +287,7 @@ class compression:
                                         
                                     if H==1 and z==2:
                                     
-                                         Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_18[:lenfS-2]+"10"
+                                         Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_17[:lenfS-2]+"10"
                                          lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                     if H==1 and z==0:
                                          Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_18+"00"
@@ -369,8 +369,8 @@ class compression:
                                     		Equal_info_between_of_the_cirlce_of_the_file_2=Times_6
                                     		
                                     		with open(nameas, "wb") as f2:
-                                    			import zstd
-                                    			width_bits3=zstd.compress(width_bits3)
+                                    			#import zstd
+                                    			#width_bits3=zstd.compress(width_bits3)
                                     			f2.write(width_bits3)
                                     	
                                     		x2 = time()
