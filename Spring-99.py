@@ -103,9 +103,7 @@ class compression:
 
                        # Read the whole file at once
                         data = binary_file.read()
-                        if  i==2:
-                            import brotlicffi
-                            data=brotlicffi.decompress(data)
+                    
                     
       
                         s=str(data)
@@ -298,9 +296,7 @@ class compression:
                                     if Snake_1!=Snake_3:
                                                                                          compress_or_not_compress=2
 
-                                            
-                                    if  Snake_1==Snake_2:
-                                              compress_or_not_compress=2
+                                  
                                    ###Snake 1  more
                                               
 
@@ -408,8 +404,6 @@ class compression:
                                     		Equal_info_between_of_the_cirlce_of_the_file_2=Times_6
                                     		
                                     		with open(nameas, "wb") as f2:
-                                    		          import brotlicffi            
-                                    		          width_bits3=brotlicffi.compress(width_bits3)
                                     		          f2.write(width_bits3)
                                     	
                                     		x2 = time()
