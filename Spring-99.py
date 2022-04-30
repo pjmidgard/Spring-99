@@ -275,7 +275,11 @@ class compression:
                            
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                    
-                                       
+                                    if z==0:                                     compress_or_not_compress=2                           
+                                              
+
+
+                                                                                             
                                     if z!=0:
                                         minus_bits=lenf6-lenfS
                                         minus_bits2=lenf6-1
