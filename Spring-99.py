@@ -107,9 +107,11 @@ class compression:
                         lenf1=len(data)
                         lenf7=len(data)
                         if i!=1 and lenf7!=(2**20)-1:
-                        	 raise SystemExit
+                        	 if i!=2:
+                        	      raise SystemExit
                         if lenf7==0:
                         	 raise SystemExit
+                        	
                         
                         END_working=0
                         Circle_times2=0
