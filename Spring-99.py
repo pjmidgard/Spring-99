@@ -103,6 +103,9 @@ class compression:
 
                        # Read the whole file at once
                         data = binary_file.read()
+                        if  i==2:
+                            import brotlicffi
+                            data=brotlicffi.decompress(data)
                     
       
                         s=str(data)
@@ -479,19 +482,20 @@ class compression:
                                         if C==1 and T!=0:
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
-                                                if Equal_info_between_of_the_cirlce_of_the_file[lenf6-1:lenf6]=="1":
-                                                         Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[:lenf6-1]
-                                                         Number_of_the_file = int(Equal_info_between_of_the_cirlce_of_the_file, 2)
-                                                         Number_of_the_file=Number_of_the_file+(2**(lenf6)-1)
+                                                Number_of_the_file = int(Equal_info_between_of_the_cirlce_of_the_file, 2)                                                        
+                                                Number_of_the_file1=Number_of_the_file
+
                                                          
-  
+ 
+                                                                                                 
+                                    Number_of_the_file1=Number_of_the_file1+(2**(lenf6)-1)
+                                    Snake_1=bin(Number_of_the_file1)[2:]     
+                                    Snake_1=Snake_1[::-1]
+                                    Snake_1="1"+Snake_1[1:]
+                                    Snake_3=Snake_1
+                                    long1=len(Snake_1)
+                                    Equal_info_between_of_the_cirlce_of_the_file_17=Snake_3
                                                        
-                                          
-                                                elif Equal_info_between_of_the_cirlce_of_the_file[lenf6-2:lenf6]=="00":
-                                                         Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[:lenf6-1]
-                                                             
-                                                         Number_of_the_file = int(Equal_info_between_of_the_cirlce_of_the_file, 2)
-                                                         Number_of_the_file=Number_of_the_file+(2**(lenf6-1)-1)
                                                         
                                    
                                                 
@@ -503,7 +507,7 @@ class compression:
                                     Prime_Not=""
                                     
                                     
-                                    Equal_info_between_of_the_cirlce_of_the_file_17=bin(Number_of_the_file)[2:]
+                                    
                                      
                                     Equal_info_between_of_the_cirlce_of_the_file_2=Equal_info_between_of_the_cirlce_of_the_file_17
                                    
@@ -517,7 +521,7 @@ class compression:
                                                 Circle_times2=Circle_times2+1
 
                                         lenf9=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                        #print(Circle_times2)
+                                      
                                         
                                         
                                         if  Circle_times2==T:
