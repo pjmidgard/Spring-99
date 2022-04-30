@@ -239,16 +239,19 @@ class compression:
                                             compress_or_not_compress=2
                                             
                                     Number_of_the_file = int(Equal_info_between_of_the_cirlce_of_the_file, 2)
+                                    Number_of_the_file2=Number_of_the_file
 
                                     Equal_info_between_of_the_cirlce_of_the_file_17=bin(Number_of_the_file)[2:]
                                     Equal_info_between_of_the_cirlce_of_the_file_18=Equal_info_between_of_the_cirlce_of_the_file_17
                                     lenf6=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                    Snake_2=bin(Number_of_the_file)[2:]     
                                     
                                     Number_of_the_file=Number_of_the_file-(2**(lenf6-1)-1)
+                                                                              
                                  
                                     
                                             
-                                                   
+    
                                     Equal_info_between_of_the_cirlce_of_the_file_17=bin(Number_of_the_file)[2:]
                                     Equal_info_between_of_the_cirlce_of_the_file_18=Equal_info_between_of_the_cirlce_of_the_file_17[::-1]
                                     if Equal_info_between_of_the_cirlce_of_the_file_18[0:1]!="0":
@@ -279,7 +282,36 @@ class compression:
                                     Equal_info_between_of_the_cirlce_of_the_file_17="1"+add_bits19+Equal_info_between_of_the_cirlce_of_the_file_18
                            
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                    ###Snake
+                                    Number_of_the_file1 = int(Equal_info_between_of_the_cirlce_of_the_file_18, 2)        
+                                    Number_of_the_file1=Number_of_the_file1+(2**(lenf6-1)-1)
+                                    Snake_1=bin(Number_of_the_file1)[2:]     
+                                    Snake_1=Snake_1[::-1]
+                                    Snake_1="1"+Snake_1[1:]
+                                    Snake_3=Snake_1
+                                    long1=len(Snake_1)
+                                    long2=len(Snake_2)
+                                    ###Snake
+                                    if Snake_1!=Snake_3:
+                                                                                         compress_or_not_compress=2
+
+                                            
+                                    if  Snake_1==Snake_2:
+                                              compress_or_not_compress=2
+                                   ###Snake 1  more
+                                              
+
+                                        
+                                
+                                                                            
+                                                                             
+                                 
+                 
                                     
+                                                                        
+
+                                                                        
+                     
                                    
                                     if z==0:                                     compress_or_not_compress=2                           
                                               
@@ -373,8 +405,9 @@ class compression:
                                     		Equal_info_between_of_the_cirlce_of_the_file_2=Times_6
                                     		
                                     		with open(nameas, "wb") as f2:
-                                
-                                    			f2.write(width_bits3)
+                                    		          import brotlicffi            
+                                    		          width_bits3=brotlicffi.compress(width_bits3)
+                                    		          f2.write(width_bits3)
                                     	
                                     		x2 = time()
                                     		x3=x2-x
