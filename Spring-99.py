@@ -251,6 +251,11 @@ class compression:
                                                    
                                     Equal_info_between_of_the_cirlce_of_the_file_17=bin(Number_of_the_file)[2:]
                                     Equal_info_between_of_the_cirlce_of_the_file_18=Equal_info_between_of_the_cirlce_of_the_file_17[::-1]
+                                    if Equal_info_between_of_the_cirlce_of_the_file_18[0:1]!="0":
+                                        compress_or_not_compress=2                           
+
+                                        
+                                    
                                     lenf=len(Equal_info_between_of_the_cirlce_of_the_file_18)
                    
                                            
@@ -274,6 +279,7 @@ class compression:
                                     Equal_info_between_of_the_cirlce_of_the_file_17="1"+add_bits19+Equal_info_between_of_the_cirlce_of_the_file_18
                            
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                    
                                    
                                     if z==0:                                     compress_or_not_compress=2                           
                                               
