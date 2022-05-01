@@ -236,7 +236,6 @@ class compression:
 
                                     ei=0
                                     Find_Save=0
-                                    Find_Save_3=0
                                     Find_Save4=0
 
                                     while ei<lenf6:
