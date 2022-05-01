@@ -234,14 +234,14 @@ class compression:
                                     Number_of_the_file = int(Equal_info_between_of_the_cirlce_of_the_file, 2)
                                     Find_center_info=Equal_info_between_of_the_cirlce_of_the_file
 
-                                    ei=0
+                                    block=0
                                     Find_Save=0
                                     Find_Save4=0
 
-                                    while ei<lenf6:
+                                    while block<lenf6:
 
-                                           Find_center_info1=Find_center_info[ei:ei+6]
-                                           Find_center_info2=Find_center_info[ei:ei+5]
+                                           Find_center_info1=Find_center_info[block:block+6]
+                                           Find_center_info2=Find_center_info[block:block+5]
                                            
                                                    
                                            if Find_center_info1=="000000" and Find_Save4==0 and ei<=7000:
@@ -259,7 +259,7 @@ class compression:
 
                                                     
                                                     Find_center_info3=add_bits8+Find_Save_binary
-                                                    Find_center_info=Find_center_info[:ei]+Find_center_info3+Find_center_info[ei+6:]
+                                                    Find_center_info=Find_center_info[:block]+Find_center_info3+Find_center_info[block+6:]
                                                     check_numner_equal=add_bits8+Find_Save_binary
                                                     Find_Save4=1
                                                     if check_numner_equal==Find_center_info2:
@@ -274,7 +274,7 @@ class compression:
                                                    Find_Save=0
                                                    Find_Save4=0
                                                    
-                                           ei=ei+6
+                                           block=block+6
                                      
                                            
                                     Equal_info_between_of_the_cirlce_of_the_file_17=Find_center_info
