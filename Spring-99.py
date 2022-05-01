@@ -250,7 +250,7 @@ class compression:
                                                
 
                                                    
-                                           if Find_center_info1=="000000" and Find_Save4==0 and block<=5000:
+                                           if Find_center_info1=="000000" and Find_Save4==0 and block<=4000:
                                                     Find_Save_binary=bin(Find_Save)[2:]
                                                     lenf=len(Find_Save_binary)
 
