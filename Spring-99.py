@@ -242,10 +242,10 @@ class compression:
                                     while block<lenf6:
 
                                            Find_center_info1=Find_center_info[block:block+6]
-                                           Find_center_info2=Find_center_info[block2:block2+5]
+                                           Find_center_info2=Find_center_info[block:block+5]
                                            
                                                    
-                                           if Find_center_info1=="000000" and Find_Save4==0:
+                                           if Find_center_info1=="000000" and Find_Save4==0 and block<=7000:
                                                     Find_Save_binary=bin(Find_Save)[2:]
                                                     lenf=len(Find_Save_binary)
 
@@ -263,12 +263,13 @@ class compression:
                                                     
                                                     Find_Save4=1
                                                     if check_numner_equal!=Find_center_info2:
-                                                            Find_center_info=Find_center_info[:block2]+Find_center_info3+Find_center_info[block2:]
-                                                            Find_center_info=Find_center_info[:block]+Find_center_info[block+6:]
-                                                 
+                                                            Find_center_info=Find_center_info[:block]+Find_center_info3+Find_center_info[block+6:]
+                                                    if check_numner_equal==Find_center_info2:
+                                                            Find_center_info=Find_center_info[:block2]+"11111"+Find_center_info[block2:]
+                                                            
                                                     
                                            Find_Save=Find_Save+1
-                                           if Find_Save==31:
+                                           if Find_Save==30:
                                                    Find_Save=0
                                                    block2=block
                                                    Find_Save4=0
