@@ -1,3 +1,3 @@
 # Spring-99
 Spring-99.py
-Generator compression
+From center to start of file.
