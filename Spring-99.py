@@ -245,7 +245,7 @@ class compression:
                                            Find_center_info2=Find_center_info[ei:ei+5]
                                            
                                                    
-                                           if Find_center_info1=="000000" and Find_Save4==0:
+                                           if Find_center_info1=="000000" and Find_Save4==0 and ei<=7000:
                                                     Find_Save_binary=bin(Find_Save)[2:]
                                                     lenf=len(Find_Save_binary)
 
@@ -266,6 +266,7 @@ class compression:
                                                     if check_numner_equal==Find_center_info2:
                                                             compress_or_not_compress=2
                                                             
+                                                            
                                                     
                                                     
                                                     
@@ -284,6 +285,8 @@ class compression:
                                                     Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[1:]
                                                     
                                     Circle_times2=Circle_times2+1
+                                    
+                                    
                           
                                     Equal_info_between_of_the_cirlce_of_the_file_2=Equal_info_between_of_the_cirlce_of_the_file_17
 
