@@ -264,24 +264,27 @@ class compression:
                                                     if check_numner_equal==Find_center_info2:
                                                             compress_or_not_compress=2
                                                             
-                                           Find_Save_binary=bin(Find_Save)[2:]
-                                           lenf=len(Find_Save_binary)
+                                           if Find_center_info1=="000000" and block<=7000:
+                                                    Find_Save_binary=bin(Find_Save)[2:]
+                                                    lenf=len(Find_Save_binary)
 
-                                           add_bits8=""
-                                           count_bits=5-lenf%5
-                                           z=0
-                                           if count_bits!=0:
-                                                   if count_bits!=5:
-                                                        while z<count_bits:
-                                                                add_bits8="0"+add_bits8
-                                                                z=z+1
+                                                    add_bits8=""
+                                                    count_bits=5-lenf%5
+                                                    z=0
+                                                    if count_bits!=0:
+                                                        if count_bits!=5:
+                                                                while z<count_bits:
+                                                                        add_bits8="0"+add_bits8
+                                                                        z=z+1
 
                                                     
-                                           Find_center_info3=add_bits8+Find_Save_binary
-                                           check_numner_equal=add_bits8+Find_Save_binary
-                                           Find_Save4=1                   
-                                           if check_numner_equal==Find_center_info2:
-                                                            compress_or_not_compress=2          
+                                                    Find_center_info3=add_bits8+Find_Save_binary
+                                                   
+                                                    check_numner_equal=add_bits8+Find_Save_binary
+                                                    Find_Save4=1
+                                                    if check_numner_equal==Find_center_info2:
+                                                            compress_or_not_compress=2
+                                                                 
                                                     
                                                     
                                            Find_Save=Find_Save+1
