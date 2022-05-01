@@ -226,7 +226,7 @@ class compression:
                                     	Equal_info_between_of_the_cirlce_of_the_file="1"+Equal_info_between_of_the_cirlce_of_the_file
                                     	SpinS=1
 
-                                    if Circle_times2>=(2**8)-2:
+                                    if Circle_times2>=(2**16)-2:
                                             compress_or_not_compress=2
 
                                     lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
@@ -306,8 +306,8 @@ class compression:
                                                 times_1=bin(Circle_times3)[2:]
                                                 lenf=len(times_1)
                                                 add_bits11=""
-                                                count_bits=8-lenf%8
-                                                if count_bits==8:
+                                                count_bits=16-lenf%16
+                                                if count_bits==16:
                                                 	count_bits=0
                                                 count_bits2=count_bits
                                                 z=0
