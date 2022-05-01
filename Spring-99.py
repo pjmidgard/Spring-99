@@ -230,8 +230,7 @@ class compression:
                                             compress_or_not_compress=2
 
                                     lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
-                                            
-                                    Number_of_the_file = int(Equal_info_between_of_the_cirlce_of_the_file, 2)
+                                  
                                     Find_center_info=Equal_info_between_of_the_cirlce_of_the_file
 
                                     block=0
