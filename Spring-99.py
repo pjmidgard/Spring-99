@@ -299,7 +299,7 @@ class compression:
                                     Circle_times2=Circle_times2+1
                                     
 
-                                    if   Circle_times2==2:
+                                    if   Circle_times2==255:
                                                 Equal_info_between_of_the_cirlce_of_the_file_17="1"+Equal_info_between_of_the_cirlce_of_the_file_17
                                                 lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                                 add_bits=""
@@ -316,11 +316,11 @@ class compression:
 
                                    
 
-                                    if   Circle_times2==2:
+                                    if   Circle_times2==255:
                                             lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)                                           
                                             Equal_info_between_of_the_cirlce_of_the_file_17=add_bits+Equal_info_between_of_the_cirlce_of_the_file_17
 
-                                    if   Circle_times2==2:
+                                    if   Circle_times2==255:
                                                 
                                     		L=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                     		n = int(Equal_info_between_of_the_cirlce_of_the_file_17, 2)
