@@ -272,7 +272,7 @@ class compression:
                                                     
                                                     Find_Save4=1
                                                     if check_numner_equal!=Find_center_info2:
-                                                            print(block)
+                                                            
                                                             #print(check_numner_equal)
                                                             Find_center_info=Find_center_info[:block]+Find_center_info3+Find_center_info[block+6:]
                                                     elif check_numner_equal==Find_center_info2:
