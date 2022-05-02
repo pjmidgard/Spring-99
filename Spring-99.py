@@ -226,7 +226,7 @@ class compression:
                                     	Equal_info_between_of_the_cirlce_of_the_file="1"+Equal_info_between_of_the_cirlce_of_the_file
                                     	SpinS=1
 
-                                    if Circle_times2>=(2**16)-2:
+                                    if Circle_times2>=(2**8)-2:
                                             compress_or_not_compress=2
 
                                     lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
@@ -235,8 +235,9 @@ class compression:
                                     Find_center_info=Equal_info_between_of_the_cirlce_of_the_file
 
                                     block=0
-                                    Find_Save=0
+                                    Find_Save=1
                                     Find_Save4=0
+                                    Find_Save5=0
                                     block2=0
 
                                     while block<lenf6:
@@ -245,13 +246,12 @@ class compression:
                                            Find_center_info2=Find_center_info[block:block+5]
                                            Find_center_info3=Find_center_info[block2:block2+6]
 
-                                           if Find_center_info3=="111111" and block<=5000:
-                                                                                           compress_or_not_compress=2
-                                                                                           print(block)
+                                           if Find_center_info3=="111111" and Find_Save5==0 and block<=5000:
+                                                Find_center_info=Find_center_info[:block2]+"000000"+Find_center_info[block2+6:]
                                                
 
                                                    
-                                           if Find_center_info1=="000000" and Find_Save4==0 and block<=5000:
+                                           elif Find_center_info1=="000000" and Find_Save4==0 and Find_Save5==0 and block<=5000:
                                                     Find_Save_binary=bin(Find_Save)[2:]
                                                     lenf=len(Find_Save_binary)
 
@@ -272,11 +272,12 @@ class compression:
                                                             Find_center_info=Find_center_info[:block]+Find_center_info3+Find_center_info[block+6:]
                                                     if check_numner_equal==Find_center_info2:
                                                             Find_center_info=Find_center_info[:block2]+"111111"+Find_center_info[block2:]
+                                                            Find_Save5=1
                                                             
                                                     
                                            Find_Save=Find_Save+1
                                            if Find_Save==30:
-                                                   Find_Save=0
+                                                   Find_Save=1
                                                    block2=block
                                                    Find_Save4=0
                                                    
@@ -287,45 +288,16 @@ class compression:
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                     #print(lenfS)
 
-                                    if compress_or_not_compress==2 and Circle_times2==0:
-                                                    Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[1:]
-                                                    
+                                    #if lenf6==lenfS:
+                                            #Deep3=lenfS
+
+                                    
+                                   
                                     Circle_times2=Circle_times2+1
                                     
-                                    
-                          
-                                    Equal_info_between_of_the_cirlce_of_the_file_2=Equal_info_between_of_the_cirlce_of_the_file_17
 
-                                    if compress_or_not_compress==2:
-                                            
-                                            Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file
-                                   
-                                    
-                                    if   lenfS<=Deep3 or compress_or_not_compress==2:
-                                        Circle_times3=Circle_times2
-                                        
-                                        if compress_or_not_compress==2:
-                                        	Circle_times3=Circle_times2-1
-
-
-                                    if   lenfS<=Deep3 or compress_or_not_compress==2:
-                                                times_1=bin(Circle_times3)[2:]
-                                                lenf=len(times_1)
-                                                add_bits11=""
-                                                count_bits=16-lenf%16
-                                                if count_bits==16:
-                                                	count_bits=0
-                                                count_bits2=count_bits
-                                                z=0
-                                                if count_bits!=0:
-                                                        if count_bits!=8:
-                                                                while z<count_bits:
-                                                                        add_bits11="0"+add_bits11
-                                                                        z=z+1
-                                            		
-
-                                    if   lenfS<=Deep3 or compress_or_not_compress==2:
-
+                                    if   Circle_times2==1:
+                                                Equal_info_between_of_the_cirlce_of_the_file_17="1"+Equal_info_between_of_the_cirlce_of_the_file_17
                                                 lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                                 add_bits=""
                                                 count_bits=8-lenf%8
@@ -341,11 +313,11 @@ class compression:
 
                                    
 
-                                    if   lenfS<=Deep3 or compress_or_not_compress==2:
+                                    if   Circle_times2==1:
                                             lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)                                           
-                                            Equal_info_between_of_the_cirlce_of_the_file_17=add_bits11+times_1+add_bits+Equal_info_between_of_the_cirlce_of_the_file_17
+                                            Equal_info_between_of_the_cirlce_of_the_file_17=add_bits+Equal_info_between_of_the_cirlce_of_the_file_17
 
-                                    if   lenfS<=Deep3 or compress_or_not_compress==2:
+                                    if   Circle_times2==1:
                                                 
                                     		L=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                     		n = int(Equal_info_between_of_the_cirlce_of_the_file_17, 2)
