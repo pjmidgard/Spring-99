@@ -272,6 +272,8 @@ class compression:
                                                     
                                                     Find_Save4=1
                                                     if check_numner_equal!=Find_center_info2:
+                                                            print(block)
+                                                            #print(check_numner_equal)
                                                             Find_center_info=Find_center_info[:block]+Find_center_info3+Find_center_info[block+6:]
                                                     elif check_numner_equal==Find_center_info2:
                                                             Find_center_info=Find_center_info[:block2]+"111111"+Find_center_info[block2:]
@@ -289,7 +291,7 @@ class compression:
                                            
                                     Equal_info_between_of_the_cirlce_of_the_file_17=Find_center_info
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                    print(lenfS)
+                                    #print(lenfS)
 
                                     #if lenf6==lenfS:
                                             #Deep3=lenfS
