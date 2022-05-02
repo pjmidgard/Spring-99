@@ -415,10 +415,10 @@ class compression:
 
                                                            if Find_center_info3=="000000" and Find_Save5==0:
                                                                 Find_center_info=Find_center_info[:block2]+"111111"+Find_center_info[block2+6:]
-                                                                block=block+6
+                                                                
                                                                
-                                                           else:
-                                                                     block=block+5
+                                                          
+                                                                  
                                                                    
                                                            if Find_Save4==0 and Find_Save5==0:
                                                                     Find_Save_binary=bin(Find_Save)[2:]
@@ -439,11 +439,11 @@ class compression:
                                                                     Find_Save4=1
                                                                     if check_numner_equal==Find_center_info2:
                                                                             Find_center_info=Find_center_info[:block]+"000000"+Find_center_info[block+5:]
-                                                                            block=block+5
+                                                                          
                                                                     elif check_numner_equal=="111111":
                                                                             Find_center_info=Find_center_info[:block2]+Find_center_info[block2+6:]
                                                                             Find_Save5=1
-                                                                            block=block+6
+                                                                            
 
                                                                          
                                                            
@@ -455,7 +455,8 @@ class compression:
                                                            if Find_Save==30:
                                                                    Find_Save=1
                                                                    block2=block
-                                                                   Find_Save4=0
+                                                                   Find_Save4=0  
+                                                           block=block+6
                                                                    
                                                            
                                                                   
