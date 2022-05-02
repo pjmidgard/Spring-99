@@ -289,7 +289,7 @@ class compression:
                                            
                                     Equal_info_between_of_the_cirlce_of_the_file_17=Find_center_info
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                    #print(lenfS)
+                                    print(lenfS)
 
                                     #if lenf6==lenfS:
                                             #Deep3=lenfS
@@ -299,7 +299,7 @@ class compression:
                                     Circle_times2=Circle_times2+1
                                     
 
-                                    if   Circle_times2==255:
+                                    if   Circle_times2==2:
                                                 Equal_info_between_of_the_cirlce_of_the_file_17="1"+Equal_info_between_of_the_cirlce_of_the_file_17
                                                 lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                                 add_bits=""
@@ -316,11 +316,11 @@ class compression:
 
                                    
 
-                                    if   Circle_times2==255:
+                                    if   Circle_times2==2:
                                             lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)                                           
                                             Equal_info_between_of_the_cirlce_of_the_file_17=add_bits+Equal_info_between_of_the_cirlce_of_the_file_17
 
-                                    if   Circle_times2==255:
+                                    if   Circle_times2==2:
                                                 
                                     		L=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                     		n = int(Equal_info_between_of_the_cirlce_of_the_file_17, 2)
