@@ -1,22 +1,3 @@
-Skip to content
-pjmidgard
-/
-Spring-99
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-Spring-99/Spring-99.py
-@pjmidgard
-pjmidgard Add files via upload
- 1 contributor
-538 lines (357 sloc)  28.9 KB
 from time import time
 import os
 import binascii
@@ -436,7 +417,8 @@ class compression:
                                                                 Find_center_info=Find_center_info[:block2]+"111111"+Find_center_info[block2+6:]
                                                                 block=block+6
                                                                
-
+                                                           else:
+                                                                     block=block+5
                                                                    
                                                            if Find_Save4==0 and Find_Save5==0:
                                                                     Find_Save_binary=bin(Find_Save)[2:]
@@ -462,8 +444,7 @@ class compression:
                                                                             Find_center_info=Find_center_info[:block2]+Find_center_info[block2+6:]
                                                                             Find_Save5=1
                                                                             block=block+6
-                                                                    else:
-                                                                         block=block+6
+
                                                                          
                                                            
                                                                             
@@ -476,8 +457,8 @@ class compression:
                                                                    block2=block
                                                                    Find_Save4=0
                                                                    
-                                                           if lenf6>=block:
-                                                                   block=block+6
+                                                           
+                                                                  
                                                            
                                                      
                                                            
