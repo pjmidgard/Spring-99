@@ -462,7 +462,7 @@ class compression:
                                                                             Find_center_info=Find_center_info[:block2]+Find_center_info[block2+6:]
                                                                             Find_Save5=1
                                                                             block=block+6
-                                                                     else:
+                                                                    else:
                                                                          block=block+6
                                                                          
                                                            
