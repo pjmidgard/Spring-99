@@ -273,7 +273,7 @@ class compression:
                                                     Find_Save4=1
                                                     if check_numner_equal!=Find_center_info2:
                                                             Find_center_info=Find_center_info[:block]+Find_center_info3+Find_center_info[block+6:]
-                                                    if check_numner_equal==Find_center_info2:
+                                                    elif check_numner_equal==Find_center_info2:
                                                             Find_center_info=Find_center_info[:block2]+"111111"+Find_center_info[block2:]
                                                             Find_Save5=1
                                                             
