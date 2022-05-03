@@ -254,7 +254,7 @@ class compression:
                                                
 
                                                    
-                                           elif Find_center_info1=="000000" and Find_Save4==0 and Find_Save5==0:
+                                           elif Find_center_info1=="000000" and Find_Save4==0 and Find_Save5==0 and Find_Save==5:
                                                     Find_Save_binary=bin(Find_Save)[2:]
                                                     lenf=len(Find_Save_binary)
 
@@ -277,7 +277,7 @@ class compression:
                                                             Find_center_info=Find_center_info[:block]+Find_center_info3+Find_center_info[block+6:]
                                                     elif check_numner_equal==Find_center_info2:
                                                             Find_center_info=Find_center_info[:block2]+"111111"+Find_center_info[block2:]
-                                                            Find_Save5=1
+                                                            #Find_Save5=1
                                                             
                                                     
                                            Find_Save=Find_Save+1
