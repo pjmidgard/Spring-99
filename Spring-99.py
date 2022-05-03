@@ -254,7 +254,10 @@ class compression:
                                                 Find_center_info=Find_center_info[:block]+Find_center_info[block+6:]
                                                 Find_center_top=Find_center_top+"000000"
                                                 
-                                               
+                                           
+                                           elif Find_Save==1:
+                                                Find_center_info=Find_center_info[:block]+Find_center_info[block+6:]
+                                                Find_center_top=Find_center_top+Find_center_info2
 
                                                    
                                            elif Find_center_info1=="000000" and Find_Save4==0 and Find_Save==5:
