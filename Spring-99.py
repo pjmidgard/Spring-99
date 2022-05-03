@@ -297,6 +297,9 @@ class compression:
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                     #print(lenfS)
                                     
+                                    if lenf6==lenfS:
+                                        Deep3=lenfS
+                                    
                                     if compress_or_not_compress==2 and Circle_times2==0:
                                                     Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[1:]
                                     
@@ -318,8 +321,7 @@ class compression:
                                         if compress_or_not_compress==2:
                                         	Circle_times3=Circle_times2-1
 
-                                    if lenf6==lenfS:
-                                        Deep3=lenfS
+                                    
 
                                     
                                    
@@ -585,3 +587,4 @@ d=compression()
 
 xw1=d.cryptograpy_compression4()
 print(xw1)
+result = job.result()
