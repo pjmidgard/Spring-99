@@ -240,7 +240,7 @@ class compression:
                                     block=0
                                     Find_Save=1
                                     Find_Save4=0
-                                    Find_Save5=0
+                                    
                                     block2=0
                                     Find_center_top=""
 
@@ -250,14 +250,14 @@ class compression:
                                            Find_center_info2=Find_center_info[block:block+5]
                                            
 
-                                           if Find_center_info1=="111111" and Find_Save5==0 and Find_Save==1:
+                                           if Find_center_info1=="111111" and Find_Save==1:
                                                 Find_center_info=Find_center_info[:block]+Find_center_info[block+6:]
                                                 Find_center_top=Find_center_top+"000000"
                                                 
                                                
 
                                                    
-                                           elif Find_center_info1=="000000" and Find_Save4==0 and Find_Save5==0 and Find_Save==5:
+                                           elif Find_center_info1=="000000" and Find_Save4==0 and Find_Save==5:
                                                     Find_Save_binary=bin(Find_Save)[2:]
                                                     lenf=len(Find_Save_binary)
 
