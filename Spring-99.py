@@ -109,8 +109,6 @@ class compression:
                         
                         END_working=0
                         Circle_times2=0
-                        block2=0
-                       
                                    
                         Equal_info_between_of_the_cirlce_of_the_file_23=""
  
@@ -240,29 +238,59 @@ class compression:
                                     Find_center_info=Equal_info_between_of_the_cirlce_of_the_file
 
                                     block=0
-                                    
-                                    block3=0
-                                    
-                                    
+                                    Find_Save=1
+                                    Find_Save4=0
+                                    Find_Save5=0
+                                    block2=0
 
                                     while block<lenf6:
 
-                                           Find_center_info1=Find_center_info[block:block+1]
-                                           if Find_center_info1=="1" and block3==0:
-                                               block2=block2+2**block
-                                               #print(block2)
-                                               block3=1
+                                           Find_center_info1=Find_center_info[block:block+6]
+                                           Find_center_info2=Find_center_info[block:block+5]
+                                           Find_center_info3=Find_center_info[block2:block2+6]
+
+                                           if Find_center_info3=="111111" and Find_Save5==0:
+                                                Find_center_info=Find_center_info[:block2]+"000000"+Find_center_info[block2+6:]
                                                
-                                           elif Find_center_info1=="1" and block3==1:
-                                               block2=block2-2**block
-                                               block3=0
-                                               #print(block2)
+
                                                    
-                                           block=block+1
-                                           
+                                           elif Find_center_info1=="000000" and Find_Save4==0 and Find_Save5==0:
+                                                    Find_Save_binary=bin(Find_Save)[2:]
+                                                    lenf=len(Find_Save_binary)
+
+                                                    add_bits8=""
+                                                    count_bits=5-lenf%5
+                                                    z=0
+                                                    if count_bits!=0:
+                                                        if count_bits!=5:
+                                                                while z<count_bits:
+                                                                        add_bits8="0"+add_bits8
+                                                                        z=z+1
+
+                                                    Find_center_info3=add_bits8+Find_Save_binary
+                                                    check_numner_equal=add_bits8+Find_Save_binary
+                                                    
+                                                    Find_Save4=1
+                                                    if check_numner_equal!=Find_center_info2:
+                                                            
+                                                            #print(check_numner_equal)
+                                                            Find_center_info=Find_center_info[:block]+Find_center_info3+Find_center_info[block+6:]
+                                                    elif check_numner_equal==Find_center_info2:
+                                                            Find_center_info=Find_center_info[:block2]+"111111"+Find_center_info[block2:]
+                                                            Find_Save5=1
+                                                            
+                                                    
+                                           Find_Save=Find_Save+1
+                                           if Find_Save==30:
+                                                   Find_Save=1
+                                                   block2=block
+                                                   Find_Save4=0
+                                                   
+                                           block=block+6
                                      
                                            
-                                    
+                                    Equal_info_between_of_the_cirlce_of_the_file_17=Find_center_info
+                                    lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                     #print(lenfS)
 
                                     #if lenf6==lenfS:
@@ -271,11 +299,9 @@ class compression:
                                     
                                    
                                     Circle_times2=Circle_times2+1
-                                    #print(Circle_times2)
                                     
 
-                                    if   Circle_times2==255:
-                                                Equal_info_between_of_the_cirlce_of_the_file_17=bin(block2)[3:]
+                                    if   Circle_times2==2:
                                                 Equal_info_between_of_the_cirlce_of_the_file_17="1"+Equal_info_between_of_the_cirlce_of_the_file_17
                                                 lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                                 add_bits=""
@@ -292,11 +318,11 @@ class compression:
 
                                    
 
-                                    if   Circle_times2==255:
+                                    if   Circle_times2==2:
                                             lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)                                           
                                             Equal_info_between_of_the_cirlce_of_the_file_17=add_bits+Equal_info_between_of_the_cirlce_of_the_file_17
 
-                                    if   Circle_times2==255:
+                                    if   Circle_times2==2:
                                                 
                                     		L=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                     		n = int(Equal_info_between_of_the_cirlce_of_the_file_17, 2)
