@@ -426,8 +426,10 @@ class compression:
                                     Number_of_the_file=0
                                     Prime_Not=0
                                  
-                                    if C==1:
-                                        T=2
+                                    if C==1 and Circle_times2==0:
+                                        Times_6=Equal_info_between_of_the_cirlce_of_the_file[0:8]
+                                        T = int(Times_6, 2)
+                                        Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[8:]
 
                                         if Equal_info_between_of_the_cirlce_of_the_file[0:1]=="1":
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[1:]
@@ -452,79 +454,41 @@ class compression:
     
                                         elif Equal_info_between_of_the_cirlce_of_the_file[0:8]=="00000001":
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[8:]
-        
+                                        
+                                        elif Equal_info_between_of_the_cirlce_of_the_file[0:9]=="000000001":
+                                                Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[9:]
     
-                                        if C==1 and T!=0:
+                                        if C==1 and T!=0 and Circle_times2>0:
+                                            
+                                                    Top_center=Equal_info_between_of_the_cirlce_of_the_file[0:32]
+                                                    Top = int(Times_6, 2)
+                                                    Top_center=Top_center[32:]
+                                                    Top_center2=Top_center[:Top]
+                                                    Equal_info_between_of_the_cirlce_of_the_file=Top_center2
+                                                    
+                                                    Equal_info_between_of_the_cirlce_of_the_file1=Top_center[Top:]
+                                                    
                                                     Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file
                                                     lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
 
                                                     Find_center_info=Equal_info_between_of_the_cirlce_of_the_file
                                                     
-
                                                     block=0
-                                                    Find_Save=1
-                                                    Find_Save4=0
-                                                    Find_Save5=0
-                                                    block2=0
-
                                                     while block<lenf6:
-
-                                                           Find_center_info1=Find_center_info[block:block+6]
-                                                           Find_center_info2=Find_center_info[block:block+5]
-                                                           Find_center_info3=Find_center_info[block2:block2+6]
-
-                                                           if Find_center_info3=="000000" and Find_Save5==0:
-                                                                Find_center_info=Find_center_info[:block2]+"111111"+Find_center_info[block2+6:]
-                                                                
-                                                               
-                                                          
-                                                                  
-                                                                   
-                                                           if Find_Save4==0 and Find_Save5==0:
-                                                                    Find_Save_binary=bin(Find_Save)[2:]
-                                                                    lenf=len(Find_Save_binary)
-
-                                                                    add_bits8=""
-                                                                    count_bits=5-lenf%5
-                                                                    z=0
-                                                                    if count_bits!=0:
-                                                                        if count_bits!=5:
-                                                                                while z<count_bits:
-                                                                                        add_bits8="0"+add_bits8
-                                                                                        z=z+1
-
-                                                                    Find_center_info3=add_bits8+Find_Save_binary
-                                                                    check_numner_equal=add_bits8+Find_Save_binary
-                                                                    
-                                                                    Find_Save4=1
-                                                                    if check_numner_equal==Find_center_info2:
-                                                                            Find_center_info=Find_center_info[:block]+"000000"+Find_center_info[block+6:]
-                                                                          
-                                                                    elif check_numner_equal=="111111":
-                                                                            Find_center_info=Find_center_info[:block2]+Find_center_info[block2+6:]
-                                                                            Find_center_info=Find_center_info[:block2]+Find_center_info[block2+6:]
-                                                                            Find_Save5=1
-                                                                            
-
-                                                                         
-                                                           
-                                                                            
-                                                                            
-                                                                            
-                                                                    
-                                                           Find_Save=Find_Save+1
-                                                           if Find_Save==30:
-                                                                   Find_Save=1
-                                                                   block2=block
-                                                                   Find_Save4=0  
-                                                           block=block+6
-                                                                   
-                                                           
-                                                                  
-                                                           
-                                                     
-                                                           
-                                                    Equal_info_between_of_the_cirlce_of_the_file_17=Find_center_info
+                                                        Find_center_info1=Find_center_info[block:block+6]
+                                                        if Find_center_info1=="111111":
+                                                            Equal_info_between_of_the_cirlce_of_the_file1=Equal_info_between_of_the_cirlce_of_the_file1
+                                                            
+                                                        if Find_center_info1=="000000":    
+                                                            Equal_info_between_of_the_cirlce_of_the_file1=Equal_info_between_of_the_cirlce_of_the_file1
+                                                            
+                                                        Find_center_info2=Find_center_info[block:block+5]
+                                                        
+                                                        if Find_center_info2=="00101": 
+                                                            Equal_info_between_of_the_cirlce_of_the_file1=Equal_info_between_of_the_cirlce_of_the_file1
+                                            
+                                                 
+                                                    Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file1
                                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                                                 
                                                 
