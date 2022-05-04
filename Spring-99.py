@@ -104,6 +104,7 @@ class compression:
 
                         lenf1=len(data)
                         lenf7=len(data)
+                        if lenf7>(2**32)-1
                         if lenf7==0:
                         	 raise SystemExit
                         
@@ -229,7 +230,7 @@ class compression:
                  
                                     
 
-                                    if Circle_times2>=(2**16)-2:
+                                    if Circle_times2>=(2**8)-2:
                                             compress_or_not_compress=2
 
                                     lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
@@ -256,7 +257,7 @@ class compression:
                                                 
                                            
                                            elif Find_Save==1:
-                                                Find_center_info=Find_center_info[:block]+Find_center_info[block+6:]
+                                                Find_center_info=Find_center_info[:block]+Find_center_info[block+5:]
                                                 Find_center_top=Find_center_top+Find_center_info2
 
                                                    
@@ -298,8 +299,21 @@ class compression:
                                                    
                                            block=block+6
                                      
-                                           
-                                    Equal_info_between_of_the_cirlce_of_the_file_17=Find_center_top+Find_center_info
+                                    center_top=len(Find_center_top)
+                                          
+                                    long_top_comperession=bin(center_top)[2:]
+                                    lenf=len(long_top_comperession)
+
+                                     add_bits7=""
+                                     count_bits=32-lenf%32
+                                     z=0
+                                     if count_bits!=0:
+                                          if count_bits!=32:
+                                                 while z<count_bits:
+                                                        add_bits7="0"+add_bits7
+                                                        z=z+1   
+                                          
+                                    Equal_info_between_of_the_cirlce_of_the_file_17=add_bits7+long_top_comperession+Find_center_top+Find_center_info
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                     #print(lenfS)
                                     
@@ -339,10 +353,10 @@ class compression:
                                             lenf=len(Times_comperession)
 
                                             add_bits7=""
-                                            count_bits=16-lenf%16
+                                            count_bits=8-lenf%8
                                             z=0
                                             if count_bits!=0:
-                                                if count_bits!=16:
+                                                if count_bits!=8:
                                                         while z<count_bits:
                                                          	add_bits7="0"+add_bits7
                                                          	z=z+1    
