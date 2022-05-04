@@ -492,14 +492,18 @@ class compression:
                                                             
                                                             Equal_info_between_of_the_cirlce_of_the_file1[Put_center_2_one:Put_center_2_one+5]="00101"
                                                             Put_center_1_five=Put_center_1_five+(6*30)
+                                                            Put_center_1_one=Put_center_1_five
+                                                            Put_center_1_five=Put_center
+                                                            block=Put_center_1
                                                             
                                                         elif Find_center_info1=="000000":
                                                             
                                                             Put_center_2=Put_center_1+6
                                                             Equal_info_between_of_the_cirlce_of_the_file1[Put_center_1:Put_center_2]="111111"
                                                             Put_center_1=Put_center_1+((6*30)-1)
-                                                            
-                                                        
+                                                            Put_center_1_one=Put_center_1_five
+                                                            Put_center_1_five=Put_center_1
+                                                            block=Put_center_1
                                                         
                                                         elif Find_center_info2=="00101":
 
@@ -509,13 +513,20 @@ class compression:
                                                             Equal_info_between_of_the_cirlce_of_the_file1=Equal_info_between_of_the_cirlce_of_the_file1[:Put_center_2_five+5]+"0"+Equal_info_between_of_the_cirlce_of_the_file1[Put_center_2_five+6:]
                                                             
                                                             Put_center_1_five=Put_center_1_five+(((6*30)-1)-1)
+                                                            Put_center_1=Put_center_1_five
+                                                            Put_center_1_one=Put_center_1_five
+                                                            block=Put_center_1_five
                                                             
                                                         else:
                                                             Put_center_2=Put_center_1+6
                                                             Equal_info_between_of_the_cirlce_of_the_file1[Put_center_1:Put_center_2]=Equal_info_between_of_the_cirlce_of_the_file1[Put_center_1:Put_center_2]
                                                             Put_center_1=Put_center_1+((6*30)-1)
+                                                            Put_center_1_one=Put_center_1
+                                                            Put_center_1_five=Put_center_1
+                                                            block=Put_center_1
                                                              
-                                            
+                                                    
+                                                        
                                                  
                                                     Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file1
                                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
