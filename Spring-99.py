@@ -491,7 +491,7 @@ class compression:
                                                             Put_center_2_one=Put_center_1_one+28
                                                             
                                                             Equal_info_between_of_the_cirlce_of_the_file1[Put_center_2_one:Put_center_2_one+5]="00101"
-                                                            Put_center_1_five=(((6*30)-1)-1)
+                                                            Put_center_1_five=(6*30)
                                                             
                                                         elif Find_center_info1=="000000":
                                                             
@@ -508,7 +508,7 @@ class compression:
                                                             Equal_info_between_of_the_cirlce_of_the_file1[Put_center_2_five:Put_center_2_five+5]="00000"
                                                             Equal_info_between_of_the_cirlce_of_the_file1=Equal_info_between_of_the_cirlce_of_the_file1[:Put_center_2_five+5]+"0"+Equal_info_between_of_the_cirlce_of_the_file1[Put_center_2_five+6:]
                                                             
-                                                            Put_center_1_five=((6*30)-1)
+                                                            Put_center_1_five=(((6*30)-1)-1)
                                                             
                                                         else:
                                                             Put_center_2=Put_center_1+6
