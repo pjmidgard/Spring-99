@@ -514,7 +514,7 @@ class compression:
                                                             
                                                         else:
                                                             Put_center_info_2=Put_center_info+6
-                                                            Equal_info_between_of_the_cirlce_of_the_file1[Put_center_info:Put_center_2]=Equal_info_between_of_the_cirlce_of_the_file1[Put_center_info:Put_center_2]
+                                                            Equal_info_between_of_the_cirlce_of_the_file1=Equal_info_between_of_the_cirlce_of_the_file1[:Put_center_info_2]+Find_center_info1+Equal_info_between_of_the_cirlce_of_the_file1[Put_center_2:]
                                                             Put_center_info=Put_center_info+((6*30)-1)
                                                             
                                                             block=block+6
