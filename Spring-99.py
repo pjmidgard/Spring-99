@@ -288,8 +288,6 @@ class compression:
                                            Find_Save=Find_Save+1
                                            if Find_Save==30:
                                                    Find_Save=1
-                            
-                                                   Find_Save4=0
                                                    
                                            block=block+6
                                      
