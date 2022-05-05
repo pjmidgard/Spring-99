@@ -479,7 +479,7 @@ class compression:
                                                     
                                                     
                                                     block=0
-                                                    while block<Top:
+                                                    while block!=Top:
                                                         Find_center_info1=Find_center_info[block:block+6]
                                                         
                                                         Find_center_info2=Find_center_info[block:block+5]
@@ -494,7 +494,7 @@ class compression:
                                                             Put_center_1_five=Put_center_1_five+(6*30)
                                                             Put_center_1=Put_center_1_five
                                                             Put_center_1_one=Put_center_1_five
-                                                            block=Put_center_1
+                                                            block=block+6
                                                             
                                                         elif Find_center_info1=="000000":
                                                             
@@ -503,7 +503,7 @@ class compression:
                                                             Put_center_1=Put_center_1+((6*30)-1)
                                                             Put_center_1_one=Put_center_1
                                                             Put_center_1_five=Put_center_1
-                                                            block=Put_center_1
+                                                            block=block+6
                                                         
                                                         elif Find_center_info2=="00101":
 
@@ -515,7 +515,7 @@ class compression:
                                                             Put_center_1_five=Put_center_1_five+(((6*30)-1)-1)
                                                             Put_center_1=Put_center_1_five
                                                             Put_center_1_one=Put_center_1_five
-                                                            block=Put_center_1_five
+                                                            block=block+5
                                                             
                                                         else:
                                                             Put_center_2=Put_center_1+6
@@ -523,7 +523,7 @@ class compression:
                                                             Put_center_1=Put_center_1+((6*30)-1)
                                                             Put_center_1_one=Put_center_1
                                                             Put_center_1_five=Put_center_1
-                                                            block=Put_center_1
+                                                            block=block+6
                                                              
                                                     
                                                         
@@ -531,7 +531,7 @@ class compression:
                                                     Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file1
                                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                                     
-                                                    block+lock+6       
+                                                     
                                                 
                                        
                                     Times_6=Number_add_plus_one
