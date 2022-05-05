@@ -504,7 +504,7 @@ class compression:
 
                                                             Put_center_info_2=Put_center_info+24
                                                           
-                                                            Equal_info_between_of_the_cirlce_of_the_file1=Equal_info_between_of_the_cirlce_of_the_file1[:Put_center_info_2]+"000000"+Equal_info_between_of_the_cirlce_of_the_file1[Put_center_info_3+6:]
+                                                            Equal_info_between_of_the_cirlce_of_the_file1=Equal_info_between_of_the_cirlce_of_the_file1[:Put_center_info_2]+"000000"+Equal_info_between_of_the_cirlce_of_the_file1[Put_center_info_2:]
                                                             
                                                             Put_center_info=Put_center_info+((6*30)-6)
                                                             
