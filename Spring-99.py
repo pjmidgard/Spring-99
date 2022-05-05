@@ -496,7 +496,7 @@ class compression:
                                                             
                                                             Put_center_info_2=Put_center_info
                                                             Equal_info_between_of_the_cirlce_of_the_file1=Equal_info_between_of_the_cirlce_of_the_file1[:Put_center_info_2]+111111+Equal_info_between_of_the_cirlce_of_the_file1[Put_center_info_2:]
-                                                            Put_center_info=Put_center_info+(((6*30)-1)-6))
+                                                            Put_center_info=Put_center_info+(((6*30)-1)-6)
                    
                                                             block=block+6
                                                         
@@ -506,7 +506,7 @@ class compression:
                                                           
                                                             Equal_info_between_of_the_cirlce_of_the_file1=Equal_info_between_of_the_cirlce_of_the_file1[:Put_center_info_2]+"000000"+Equal_info_between_of_the_cirlce_of_the_file1[Put_center_info_3+6:]
                                                             
-                                                            Put_center_info=Put_center_info+(((6*30)-1)-6))
+                                                            Put_center_info=Put_center_info+(((6*30)-1)-6)
                                                             
                                                         
                                                             block=block+5
@@ -514,7 +514,7 @@ class compression:
                                                         else:
                                                             Put_center_info_2=Put_center_info
                                                             Equal_info_between_of_the_cirlce_of_the_file1=Equal_info_between_of_the_cirlce_of_the_file1[:Put_center_info_2]+Find_center_info1+Equal_info_between_of_the_cirlce_of_the_file1[Put_center_2:]
-                                                            Put_center_info=Put_center_info+(((6*30)-1)-6))
+                                                            Put_center_info=Put_center_info+(((6*30)-1)-6)
                                                             
                                                             block=block+6
                                                              
