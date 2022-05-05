@@ -339,7 +339,7 @@ class compression:
                                    
                                     Circle_times2=Circle_times2+1
                                     
-                                    if   lenfS<=Deep3 and compress_or_not_compress==2:
+                                    if   lenfS<=Deep3 or compress_or_not_compress==2:
                                     	   
                                             Times_comperession=bin(Circle_times3)[2:]
                                             lenf=len(Times_comperession)
@@ -354,7 +354,7 @@ class compression:
                                                          	z=z+1    
                                     
 
-                                    if   lenfS<=Deep3 and compress_or_not_compress==2:
+                                    if   lenfS<=Deep3 or compress_or_not_compress==2:
                                                 Equal_info_between_of_the_cirlce_of_the_file_17="1"+Equal_info_between_of_the_cirlce_of_the_file_17
                                                 lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                                 add_bits=""
@@ -371,11 +371,11 @@ class compression:
 
                                    
 
-                                    if   lenfS<=Deep3 and compress_or_not_compress==2:
+                                    if   lenfS<=Deep3 or compress_or_not_compress==2:
                                             lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)                                           
                                             Equal_info_between_of_the_cirlce_of_the_file_17=add_bits7+Times_comperession+add_bits+Equal_info_between_of_the_cirlce_of_the_file_17
 
-                                    if   lenfS<=Deep3 and compress_or_not_compress==2:
+                                    if   lenfS<=Deep3 or compress_or_not_compress==2:
                                                 
                                     		L=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                     		n = int(Equal_info_between_of_the_cirlce_of_the_file_17, 2)
