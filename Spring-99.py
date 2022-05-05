@@ -502,7 +502,7 @@ class compression:
                                                         
                                                         elif Find_center_info2=="00101":
 
-                                                            Put_center_info_2=Put_center_info+28
+                                                            Put_center_info_2=Put_center_info+29
                                                             
                                                             Equal_info_between_of_the_cirlce_of_the_file1[Put_center_info_2:Put_center_info_2+5]="00000"
                                                             Equal_info_between_of_the_cirlce_of_the_file1=Equal_info_between_of_the_cirlce_of_the_file1[:Put_center_info_2+5]+"0"+Equal_info_between_of_the_cirlce_of_the_file1[Put_center_info_2+6:]
