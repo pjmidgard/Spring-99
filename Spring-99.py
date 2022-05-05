@@ -458,7 +458,7 @@ class compression:
                                         elif Equal_info_between_of_the_cirlce_of_the_file[0:9]=="000000001":
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[9:]
     
-                                        if C==1 and T!=0 and Circle_times2>0:
+                                        if C==1 and T!=0:
                                             
                                                     Top_center=Equal_info_between_of_the_cirlce_of_the_file[0:32]
                                                     Top = int(Times_6, 2)
