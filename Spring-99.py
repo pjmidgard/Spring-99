@@ -267,7 +267,7 @@ class compression:
                                                             
                                                             
                                                             Find_center_info=Find_center_info[:Put_center_info_2]+Find_center_info[Put_center_info_2+5:]
-                                                            Find_center_top=Find_center_top+"11111"
+                                                            Find_center_top=Find_center_top+"011111"
                                                             Center_top_two_blocks=1
                                                             
                                                             
@@ -276,7 +276,7 @@ class compression:
                                                             
                                                             
                                                             Find_center_info=Find_center_info[:Put_center_info_3]+Find_center_info[Put_center_info_3+5:]
-                                                            Find_center_top=Find_center_top+"00000"
+                                                            Find_center_top=Find_center_top+"000000"
                                                             Center_top_two_blocks=1
                    
                                                             
@@ -296,9 +296,15 @@ class compression:
 
                                                                 Find_center_info=Find_center_info[:Put_center_info_2]+Find_center_info[Put_center_info_2+5:]
                                                                 Find_center_info=Find_center_info[:Put_center_info_3]+Find_center_info[Put_center_info_3+5:]
-                                                                Find_center_top=Find_center_top+"100101"
+                                                                Find_center_top=Find_center_top+"1000101"
                                                                 
-                                                            
+                                                        elif Find_center_info4=="00101" and Find_center_info1=="00000":
+                                                                compress_or_not_compress=2
+
+                                                                Find_center_info=Find_center_info[:Put_center_info_2]+Find_center_info[Put_center_info_2+5:]
+                                                                Find_center_info=Find_center_info[:Put_center_info_3]+Find_center_info[Put_center_info_2+5:]
+                                                                Find_center_top=Find_center_top+"1100101"
+                                                                   
                                                         else:
                                                             
                                                             
