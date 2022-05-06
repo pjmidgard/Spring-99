@@ -259,6 +259,7 @@ class compression:
                                                         Find_center_info1=Find_center_info[Put_center_info_2:Put_center_info_2+6]
                                                         Find_center_info4=Find_center_info[Put_center_info_2:Put_center_info_2+5]
                                                         Find_center_info3=Find_center_info[Put_center_info_3:Put_center_info_3+5]
+                                                        Find_center_info5=Find_center_info[Put_center_info_5:Put_center_info_5+6]
 
                                                         #0-6,6-12,12-18,18-24,24-30;30*6=180;5*6=30
                                                         
@@ -310,8 +311,8 @@ class compression:
                                                             
                                                                 
                                                             
-                                                            Find_center_info=Find_center_info[:Put_center_info_3]+Find_center_info[Put_center_info_3+5:]
-                                                            Find_center_top=Find_center_top+Find_center_info1
+                                                            Find_center_info=Find_center_info[:Put_center_info_5]+Find_center_info[Put_center_info_5+6:]
+                                                            Find_center_top=Find_center_top+Find_center_info5
                                                             
                                                             
                                                              
@@ -514,24 +515,24 @@ class compression:
 
                                                         #0-6,6-12,12-18,18-24,24-30;30*6=180;5*6=30
                                                         
-                                                        if Find_center_info1=="11111":
+                                                        if Find_center_info1=="011111":
                                                             
                                                             Put_center_info_2=Put_center_info+24
                                                             
                                                             Equal_info_between_of_the_cirlce_of_the_file1=Equal_info_between_of_the_cirlce_of_the_file1[:Put_center_info_2]+"00101"+Equal_info_between_of_the_cirlce_of_the_file1[Put_center_info_2:]
-                                                            Put_center_info=Put_center_info+((6*30)-5)
+                                                            Put_center_info=Put_center_info+((6*30)-6)
                                                             
-                                                            block=block+5
+                                                            block=block+6
                                                             
-                                                        elif Find_center_info1=="00000":
+                                                        elif Find_center_info1=="000000":
                                                             
                                                             Put_center_info_2=Put_center_info
                                                             Equal_info_between_of_the_cirlce_of_the_file1=Equal_info_between_of_the_cirlce_of_the_file1[:Put_center_info_2]+"11111"+Equal_info_between_of_the_cirlce_of_the_file1[Put_center_info_2:]
-                                                            Put_center_info=Put_center_info+((6*30)-5)
+                                                            Put_center_info=Put_center_info+((6*30)-6)
                    
-                                                            block=block+5
+                                                            block=block+6
                                                 
-                                                        elif Find_center_info2=="00101":
+                                                        elif Find_center_info2=="000101":
 
                                                             Put_center_info_2=Put_center_info+24
                                                           
@@ -540,26 +541,34 @@ class compression:
                                                             Put_center_info=Put_center_info+((6*30)-6)
                                                             
                                                         
-                                                            block=block+5
+                                                            block=block+6
 
-                                                        elif Find_center_info4=="01111100000":
+                                                        elif Find_center_info4=="1000101":
 
                                                                 Put_center_info_2=Put_center_info+24-5
                                                             
                                                                 Equal_info_between_of_the_cirlce_of_the_file1=Equal_info_between_of_the_cirlce_of_the_file1[:Put_center_info_2]+"00101"+Equal_info_between_of_the_cirlce_of_the_file1[Put_center_info_2:]
                                                                 Put_center_info_2=Put_center_info
                                                                 Equal_info_between_of_the_cirlce_of_the_file1=Equal_info_between_of_the_cirlce_of_the_file1[:Put_center_info_2]+"11111"+Equal_info_between_of_the_cirlce_of_the_file1[Put_center_info_2:]
-                                                                Put_center_info=Put_center_info+((6*30)-11)
+                                                                Put_center_info=Put_center_info+((6*30)-7)
+                                                                block=block+7
+                                                        elif Find_center_info4=="1100101":
+
+                                                                Put_center_info_2=Put_center_info+24-6
                                                             
-                                                                block=block+11
-                                                                
+                                                                Equal_info_between_of_the_cirlce_of_the_file1=Equal_info_between_of_the_cirlce_of_the_file1[:Put_center_info_2]+"00101"+Equal_info_between_of_the_cirlce_of_the_file1[Put_center_info_2:]
+                                                                Put_center_info_2=Put_center_info
+                                                                Equal_info_between_of_the_cirlce_of_the_file1=Equal_info_between_of_the_cirlce_of_the_file1[:Put_center_info_2]+"000000"+Equal_info_between_of_the_cirlce_of_the_file1[Put_center_info_2:]
+                                                                Put_center_info=Put_center_info+((6*30)-7)
+                                                            
+                                                                block=block+7                                                                                                                           
                                                             
                                                         else:
                                                             Put_center_info_2=Put_center_info
                                                             Equal_info_between_of_the_cirlce_of_the_file1=Equal_info_between_of_the_cirlce_of_the_file1[:Put_center_info_2]+Find_center_info1+Equal_info_between_of_the_cirlce_of_the_file1[Put_center_info_2:]
-                                                            Put_center_info=Put_center_info+((6*30)-5)
+                                                            Put_center_info=Put_center_info+((6*30)-6)
                                                             
-                                                            block=block+5
+                                                            block=block+6
                                                              
                                                     
                                                         
