@@ -267,7 +267,7 @@ class compression:
                                                             
                                                             
                                                             Find_center_info=Find_center_info[:Put_center_info_2]+Find_center_info[Put_center_info_2+5:]
-                                                            Find_center_top=Find_center_top+"111111"
+                                                            Find_center_top=Find_center_top+"11111"
                                                             Center_top_two_blocks=1
                                                             
                                                             
@@ -286,7 +286,7 @@ class compression:
                                                             
                                                           
                                                             Find_center_info=Find_center_info[:Put_center_info_2]+Find_center_info[Put_center_info_2+6:]
-                                                            Find_center_top=Find_center_top+"00101"
+                                                            Find_center_top=Find_center_top+"000101"
                                                             Center_top_two_blocks=1
                                                             
                                                             
@@ -296,7 +296,7 @@ class compression:
 
                                                                 Find_center_info=Find_center_info[:Put_center_info_2]+Find_center_info[Put_center_info_2+5:]
                                                                 Find_center_info=Find_center_info[:Put_center_info_3]+Find_center_info[Put_center_info_3+5:]
-                                                                Find_center_top=Find_center_top+"111110"
+                                                                Find_center_top=Find_center_top+"100101"
                                                                 
                                                             
                                                         else:
