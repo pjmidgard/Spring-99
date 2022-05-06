@@ -507,11 +507,11 @@ class compression:
                                                  
                                                     block=0
                                                     while block!=Top:
-                                                        Find_center_info1=Find_center_info[block:block+5]
-                                                        Find_center_info3=Find_center_info[block:block+5]
+                                                        Find_center_info1=Find_center_info[block:block+6]
+                                                        Find_center_info3=Find_center_info[block:block+6]
                                                         
-                                                        Find_center_info2=Find_center_info[block:block+5]
-                                                        Find_center_info4=Find_center_info[block:block+11]
+                                                        Find_center_info2=Find_center_info[block:block+6]
+                                                        Find_center_info4=Find_center_info[block:block+7]
 
                                                         #0-6,6-12,12-18,18-24,24-30;30*6=180;5*6=30
                                                         
