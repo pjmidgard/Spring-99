@@ -539,7 +539,7 @@ class compression:
 
                                                         elif Find_center_info4=="01111100000":
 
-                                                                Put_center_info_2=Put_center_info+24
+                                                                Put_center_info_2=Put_center_info+24-5
                                                             
                                                                 Equal_info_between_of_the_cirlce_of_the_file1=Equal_info_between_of_the_cirlce_of_the_file1[:Put_center_info_2]+"00101"+Equal_info_between_of_the_cirlce_of_the_file1[Put_center_info_2:]
                                                                 Put_center_info_2=Put_center_info
