@@ -262,7 +262,7 @@ class compression:
 
                                                         #0-6,6-12,12-18,18-24,24-30;30*6=180;5*6=30
                                                         
-                                                        if Find_center_info4=="00101" and Find_center_info3!="111111" and Find_center_info1!="000000" and Center_top_two_blocks1==0:
+                                                        if Find_center_info4=="00101" and Find_center_info3!="111111" and Find_center_info1!="000000":
                                                             
                                                             
                                                             
@@ -271,7 +271,7 @@ class compression:
                                                             Center_top_two_blocks=1
                                                             
                                                             
-                                                        elif Find_center_info4!="00101" and Find_center_info3=="11111" and Find_center_info1!="000000"  and Center_top_two_blocks1==0:     
+                                                        elif Find_center_info4!="00101" and Find_center_info3=="11111" and Find_center_info1!="000000":     
                                                         
                                                             
                                                             
@@ -280,7 +280,7 @@ class compression:
                                                             Center_top_two_blocks=1
                    
                                                             
-                                                        elif Find_center_info4!="00101" and Find_center_info3!="11111" and Find_center_info1=="000000" and Center_top_two_blocks1==0:
+                                                        elif Find_center_info4!="00101" and Find_center_info3!="11111" and Find_center_info1=="000000":
                                                         
 
                                                             
@@ -291,24 +291,25 @@ class compression:
                                                             
                                                             
                                                         
-                                                        elif Find_center_info4=="00101" and Find_center_info3=="11111" and Center_top_two_blocks1==0:
+                                                        elif Find_center_info4=="00101" and Find_center_info3=="11111":
                                                                 compress_or_not_compress=2
 
                                                                 Find_center_info=Find_center_info[:Put_center_info_2]+Find_center_info[Put_center_info_2+5:]
-                                                                Find_center_top=Find_center_top+"011111"
+                                                                Find_center_top=Find_center_top1+"111111"
                                                                 Find_center_info=Find_center_info[:Put_center_info_3]+Find_center_info[Put_center_info_3+5:]
-                                                                Find_center_top=Find_center_top+"00000"
-                                                                Center_top_two_blocks=1
-                                                                Center_top_two_blocks1=1
-                                                                
+                                                                Find_center_top=Find_center_top1+"00000"
+                                                                Center_top_two_blocks1=0
+                                                                if Center_top_two_blocks1==0:
+                                                                        block2=block
+                                                                        Center_top_two_blocks1=1
                                                                 
                                                                 
                                                             
                                                         else:
                                                             
                                                             
-                                                                    
-                                                            Center_top_two_blocks=0
+                                                                
+                                                            
                                                             Find_center_info=Find_center_info[:Put_center_info_3]+Find_center_info[Put_center_info_3+5:]
                                                             Find_center_top=Find_center_top+Find_center_info1
                                                             
@@ -332,9 +333,38 @@ class compression:
                                         if count_bits!=32:
                                                 while z<count_bits:
                                                     add_bits7="0"+add_bits7
-                                                    z=z+1   
+                                                    z=z+1
+
+                                    center_top1=len(Find_center_top1)
                                           
-                                    Equal_info_between_of_the_cirlce_of_the_file_17=add_bits7+long_top_comperession+Find_center_top+Find_center_info
+                                    block22=bin(block2)[2:]
+                                    lenf=len(block22)
+
+                                    add_bits8=""
+                                    count_bits=32-lenf%32
+                                    z=0
+                                    if count_bits!=0:
+                                        if count_bits!=32:
+                                                while z<count_bits:
+                                                    add_bits8="0"+add_bits8
+                                                    z=z+1
+
+
+                                    center_top1=len(Find_center_top1)
+                                          
+                                    long_top_comperession1=bin(center_top1)[2:]
+                                    lenf=len(long_top_comperession)
+
+                                    add_bits17=""
+                                    count_bits=32-lenf%32
+                                    z=0
+                                    if count_bits!=0:
+                                        if count_bits!=32:
+                                                while z<count_bits:
+                                                    add_bits17="0"+add_bits17
+                                                    z=z+1                     
+                                          
+                                    Equal_info_between_of_the_cirlce_of_the_file_17=add_bits8+block22+add_bits17+Find_center_top1+add_bits7+long_top_comperession+Find_center_top+Find_center_info
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                     #print(lenfS)
                                     
