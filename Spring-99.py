@@ -241,6 +241,7 @@ class compression:
                                     
                                     block2=0
                                     Find_center_top=""
+                                    Find_center_top1=""
 
                                     Find_center_info=Equal_info_between_of_the_cirlce_of_the_file
                                     
@@ -295,9 +296,9 @@ class compression:
                                                                 compress_or_not_compress=2
 
                                                                 Find_center_info=Find_center_info[:Put_center_info_2]+Find_center_info[Put_center_info_2+5:]
-                                                                Find_center_top=Find_center_top1+"111111"
+                                                                Find_center_top1=Find_center_top1+"111111"
                                                                 Find_center_info=Find_center_info[:Put_center_info_3]+Find_center_info[Put_center_info_3+5:]
-                                                                Find_center_top=Find_center_top1+"00000"
+                                                                Find_center_top1=Find_center_top1+"00000"
                                                                 Center_top_two_blocks1=0
                                                                 if Center_top_two_blocks1==0:
                                                                         block2=block
