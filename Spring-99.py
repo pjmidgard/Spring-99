@@ -241,7 +241,7 @@ class compression:
                                     
                                     block2=0
                                     Find_center_top=""
-                                    Find_center_top1=""
+                                    Find_center_top1=0
 
                                     Find_center_info=Equal_info_between_of_the_cirlce_of_the_file
                                     
@@ -297,7 +297,7 @@ class compression:
 
                                                                 Find_center_info=Find_center_info[:Put_center_info_2]+Find_center_info[Put_center_info_2+5:]
                                                                 Find_center_info=Find_center_info[:Put_center_info_3]+Find_center_info[Put_center_info_3+5:]
-                                                                Find_center_top1=Find_center_top1+"0"
+                                                                Find_center_top1=Find_center_top1+1
                                                                 Center_top_two_blocks1=0
                                                                 if Center_top_two_blocks1==0:
                                                                         block2=block
@@ -350,9 +350,12 @@ class compression:
                                                     z=z+1
 
 
-                                    center_top1=len(Find_center_top1)
+                                    
                                           
-                                    long_top_comperession1=bin(center_top1)[2:]
+                                    long_top_comperession1=bin(Find_center_top1)[2:]
+                                    if long_top_comperession1>32:
+                                            compress_or_not_compress=2
+                                    
                                     lenf=len(long_top_comperession)
 
                                     add_bits17=""
@@ -364,7 +367,7 @@ class compression:
                                                     add_bits17="0"+add_bits17
                                                     z=z+1                     
                                           
-                                    Equal_info_between_of_the_cirlce_of_the_file_17=add_bits8+block22+add_bits17+Find_center_top1+add_bits7+long_top_comperession+Find_center_top+Find_center_info
+                                    Equal_info_between_of_the_cirlce_of_the_file_17=add_bits8+block22+add_bits17+long_top_comperession1+add_bits7+long_top_comperession+Find_center_top+Find_center_info
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                     #print(lenfS)
                                     
