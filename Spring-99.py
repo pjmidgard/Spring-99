@@ -290,7 +290,7 @@ class compression:
                                                             
                                                             
                                                         
-                                                        elif Find_center_info4=="00101" and Find_center_info3=="11111" and block<=49000:
+                                                        elif Find_center_info4=="00101" and Find_center_info3=="11111":
                                                                 compress_or_not_compress=2
 
                                                                 Find_center_info=Find_center_info[:Put_center_info_2]+Find_center_info[Put_center_info_2+5:]
