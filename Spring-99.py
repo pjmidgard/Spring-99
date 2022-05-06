@@ -256,7 +256,7 @@ class compression:
 
                                                         Find_center_info1=Find_center_info[Put_center_info_2:Put_center_info_2+6]
                                                         Find_center_info4=Find_center_info[Put_center_info_2:Put_center_info_2+5]
-                                                        Find_center_info3=Find_center_info[Put_center_info_3:Put_center_info_3+6]
+                                                        Find_center_info3=Find_center_info[Put_center_info_3:Put_center_info_3+5]
 
                                                         #0-6,6-12,12-18,18-24,24-30;30*6=180;5*6=30
                                                         
@@ -265,18 +265,18 @@ class compression:
                                                             
                                                             
                                                             Find_center_info=Find_center_info[:Put_center_info_2]+Find_center_info[Put_center_info_2+5:]
-                                                            Find_center_top=Find_center_top+"111111"
+                                                            Find_center_top=Find_center_top+"11111"
                                                             
                                                             
-                                                        elif Find_center_info4!="00101" and Find_center_info3=="111111" and Find_center_info1!="000000":     
+                                                        elif Find_center_info4!="00101" and Find_center_info3=="11111" and Find_center_info1!="000000":     
                                                         
                                                             
                                                             Put_center_info_2=Put_center_info
-                                                            Find_center_info=Find_center_info[:Put_center_info_3]+Find_center_info[Put_center_info_3+6:]
-                                                            Find_center_top=Find_center_top+"000000"
+                                                            Find_center_info=Find_center_info[:Put_center_info_3]+Find_center_info[Put_center_info_3+5:]
+                                                            Find_center_top=Find_center_top+"00000"
                    
                                                             
-                                                        elif Find_center_info4!="00101" and Find_center_info3!="111111" and Find_center_info1=="000000":
+                                                        elif Find_center_info4!="00101" and Find_center_info3!="11111" and Find_center_info1=="000000":
                                                         
 
                                                             
@@ -286,13 +286,13 @@ class compression:
                                                             
                                                             
                                                         
-                                                        elif Find_center_info4=="00101" and Find_center_info3=="111111":
+                                                        elif Find_center_info4=="00101" and Find_center_info3=="11111":
                                                                 compress_or_not_compress=2
                                                                 
                                                             
                                                         else:
                                                             
-                                                            Find_center_info=Find_center_info[:Put_center_info_3]+Find_center_info[Put_center_info_3+6:]
+                                                            Find_center_info=Find_center_info[:Put_center_info_3]+Find_center_info[Put_center_info_3+5:]
                                                             Find_center_top=Find_center_top+Find_center_info1
                                                             
                                                             
@@ -484,13 +484,14 @@ class compression:
                                                  
                                                     block=0
                                                     while block!=Top:
-                                                        Find_center_info1=Find_center_info[block:block+6]
+                                                        Find_center_info1=Find_center_info[block:block+5]
+                                                        Find_center_info3=Find_center_info[block:block+5]
                                                         
                                                         Find_center_info2=Find_center_info[block:block+5]
 
                                                         #0-6,6-12,12-18,18-24,24-30;30*6=180;5*6=30
                                                         
-                                                        if Find_center_info1=="111111":
+                                                        if Find_center_info1=="11111":
                                                             
                                                             Put_center_info_2=Put_center_info+24
                                                             
@@ -499,11 +500,11 @@ class compression:
                                                             
                                                             block=block+6
                                                             
-                                                        elif Find_center_info1=="000000":
+                                                        elif Find_center_info1=="00000":
                                                             
                                                             Put_center_info_2=Put_center_info
-                                                            Equal_info_between_of_the_cirlce_of_the_file1=Equal_info_between_of_the_cirlce_of_the_file1[:Put_center_info_2]+"111111"+Equal_info_between_of_the_cirlce_of_the_file1[Put_center_info_2:]
-                                                            Put_center_info=Put_center_info+((6*30)-6)
+                                                            Equal_info_between_of_the_cirlce_of_the_file1=Equal_info_between_of_the_cirlce_of_the_file1[:Put_center_info_2]+"11111"+Equal_info_between_of_the_cirlce_of_the_file1[Put_center_info_2:]
+                                                            Put_center_info=Put_center_info+((6*30)-5)
                    
                                                             block=block+6
                                                         
@@ -521,7 +522,7 @@ class compression:
                                                         else:
                                                             Put_center_info_2=Put_center_info
                                                             Equal_info_between_of_the_cirlce_of_the_file1=Equal_info_between_of_the_cirlce_of_the_file1[:Put_center_info_2]+Find_center_info1+Equal_info_between_of_the_cirlce_of_the_file1[Put_center_2:]
-                                                            Put_center_info=Put_center_info+((6*30)-6)
+                                                            Put_center_info=Put_center_info+((6*30)-5)
                                                             
                                                             block=block+6
                                                              
