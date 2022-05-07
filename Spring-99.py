@@ -247,61 +247,25 @@ class compression:
                                             T1=Number_of_the_file%2
                                             if Number_of_the_file==3 and Number_divide_stop==0:
                                                     Number_divide_stop=1
-                                                    Divide_two2=Divide_two2+"100"
+                                                    Divide_two2=Divide_two2+"000"
                                             elif Number_of_the_file==0 and Number_divide_stop==0:
                                                    
-                                                    Divide_two2=Divide_two2+"01"
+                                                    Divide_two2=Divide_two2+"00"
 
                                             
                                                     
                                             elif T1==0 and Number_divide_stop==0:
                                                             Number_of_the_file1=Number_of_the_file-1
-                                                   
-                                                   
-                                                       
-                                                     
-
-                                         
-                                                            odd=bin(Number_of_the_file1)[2:]
-                                                            #print(odd)
-                                                            lenf=len(odd)
-
-                                                            add_bits8=""
-                                                            count_bits=1-lenf%1
-                                                            z=0
-                                                            if count_bits!=0:
-                                                                if count_bits!=1:
-                                                                        while z<count_bits:
-                                                                                add_bits8="0"+add_bits8
-                                                                                z=z+1
-
-                                                            lest1=add_bits8+odd
+                                               
                                                             
-                                                            Divide_two2=Divide_two2+lest1
+                                                            Divide_two2=Divide_two2+"1"
                                                            
 
                                             elif T1!=0 and Number_divide_stop==0:
-                                                            Number_of_the_file1=Number_of_the_file+1
-
-                                                            even=bin(Number_of_the_file3)[2:]
-                                                            lenf=len(even)
-
-                                                            add_bits8=""
-                                                            count_bits=1-lenf%1
-                                                            z=0
-                                                            if count_bits!=0:
-                                                                if count_bits!=1:
-                                                                        while z<count_bits:
-                                                                                add_bits8="0"+add_bits8
-                                                                                z=z+1
-
-
-                                                            big=add_bits8+even+Divide_two5
-                                                            if len(big)==3:
-                                                                compress_or_not_compress=2
+                                                           
                                                                 
 
-                                                            Divide_two2=Divide_two2+big
+                                                            Divide_two2=Divide_two2+"01"
                                                     
                                             
                                             elif Number_divide_stop==1:
@@ -311,9 +275,7 @@ class compression:
                                                              Number_divide_stop=0
                                                              Block_big_compress_again=0
                                                   
-                                            else:
-                                                 
-                                                  Divide_two2=Divide_two2+Divide_two1
+                                         
 
                                             #print(Divide_two2)
                                             
