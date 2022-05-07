@@ -245,21 +245,23 @@ class compression:
                                             Number_of_the_file = int(Divide_two1, 2)
                                             Number_of_the_file3 = int(Divide_two3, 2)
                                             T1=Number_of_the_file%2
-
-                                            if Number_of_the_file==0 and Number_divide_stop==0:
+                                            if Number_of_the_file==3 and Number_divide_stop==0:
                                                     Number_divide_stop=1
-                                                    Divide_two2=Divide_two2+Divide_two1
+                                                    Divide_two2=Divide_two2+"100"
+                                            elif Number_of_the_file==0 and Number_divide_stop==0:
+                                                    Number_divide_stop=1
+                                                    Divide_two2=Divide_two2+"01"
 
                                             
                                                     
                                             elif T1==0 and Number_divide_stop==0:
-                                                   Number_of_the_file1=Number_of_the_file//2
-                                                   T1=Number_of_the_file1%2
-                                                   if T1==0:
-                                                           Number_divide_stop=1
-                                                           Divide_two2=Divide_two2+Divide_two1[::-1]
+                                                            Number_of_the_file1=Number_of_the_file-1
+                                                   
+                                                   
+                                                       
+                                                     
 
-                                                   else:
+                                         
                                                             odd=bin(Number_of_the_file1)[2:]
                                                             #print(odd)
                                                             lenf=len(odd)
@@ -279,7 +281,7 @@ class compression:
                                                            
 
                                             elif T1!=0 and Number_divide_stop==0:
-                                                            Number_of_the_file1=Number_of_the_file-1
+                                                            Number_of_the_file1=Number_of_the_file+1
 
                                                             even=bin(Number_of_the_file3)[2:]
                                                             lenf=len(even)
