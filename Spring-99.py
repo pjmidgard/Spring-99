@@ -249,7 +249,7 @@ class compression:
                                                     Number_divide_stop=1
                                                     Divide_two2=Divide_two2+"100"
                                             elif Number_of_the_file==0 and Number_divide_stop==0:
-                                                    Number_divide_stop=1
+                                                   
                                                     Divide_two2=Divide_two2+"01"
 
                                             
