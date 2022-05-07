@@ -312,6 +312,7 @@ class compression:
                                                              Block_big_compress_again=0
                                                   
                                             else:
+                                                 
                                                   Divide_two2=Divide_two2+Divide_two1
 
                                             #print(Divide_two2)
