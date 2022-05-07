@@ -254,14 +254,17 @@ class compression:
 
                                             
                                                     
-                                            elif T1==0 and Number_divide_stop==0:
+                                            elif T1==0 and Number_divide_stop==0:#2
+                                                         
+                                                         
                                                            
                                                
                                                             
                                                             Divide_two2=Divide_two2+"1"
+                                                            
                                                            
 
-                                            elif T1!=0 and Number_divide_stop==0:
+                                            elif T1!=0 and Number_divide_stop==0:#1
                                                            
                                                                 
 
