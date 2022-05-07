@@ -255,7 +255,7 @@ class compression:
                                             
                                                     
                                             elif T1==0 and Number_divide_stop==0:
-                                                            Number_of_the_file1=Number_of_the_file-1
+                                                           
                                                
                                                             
                                                             Divide_two2=Divide_two2+"1"
