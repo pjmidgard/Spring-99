@@ -239,9 +239,9 @@ class compression:
                                     Number_divide_stop=0
 
                                     while block<lenf6:
-                                            Divide_two1=Divide_two[block:block+4]
-                                            Divide_two5=Divide_two[block+3:block+4]
-                                            Divide_two3=Divide_two[block:block+3]
+                                            Divide_two1=Divide_two[block:block+2]
+                                            Divide_two5=Divide_two[block+1:block+2]
+                                            Divide_two3=Divide_two[block:block+1]
                                             Number_of_the_file = int(Divide_two1, 2)
                                             Number_of_the_file3 = int(Divide_two3, 2)
                                             T1=Number_of_the_file%2
@@ -265,10 +265,10 @@ class compression:
                                                             lenf=len(odd)
 
                                                             add_bits8=""
-                                                            count_bits=3-lenf%3
+                                                            count_bits=1-lenf%1
                                                             z=0
                                                             if count_bits!=0:
-                                                                if count_bits!=3:
+                                                                if count_bits!=1:
                                                                         while z<count_bits:
                                                                                 add_bits8="0"+add_bits8
                                                                                 z=z+1
@@ -285,10 +285,10 @@ class compression:
                                                             lenf=len(even)
 
                                                             add_bits8=""
-                                                            count_bits=3-lenf%3
+                                                            count_bits=1-lenf%1
                                                             z=0
                                                             if count_bits!=0:
-                                                                if count_bits!=3:
+                                                                if count_bits!=1:
                                                                         while z<count_bits:
                                                                                 add_bits8="0"+add_bits8
                                                                                 z=z+1
@@ -308,7 +308,7 @@ class compression:
 
                                             #print(Divide_two2)
                                             
-                                            block=block+4
+                                            block=block+2
                                     
                                     
                                     
