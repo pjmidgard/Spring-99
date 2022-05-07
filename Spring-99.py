@@ -295,7 +295,13 @@ class compression:
                                                                                 add_bits8="0"+add_bits8
                                                                                 z=z+1
 
-                                                            Divide_two2=Divide_two2+add_bits8+even+Divide_two5
+
+                                                            big=add_bits8+even+Divide_two5
+                                                            if len(big)==3:
+                                                                compress_or_not_compress=2
+                                                                
+
+                                                            Divide_two2=Divide_two2+big
                                                     
                                             
                                             elif Number_divide_stop==1:
