@@ -265,10 +265,12 @@ class compression:
                                                            
 
                                             elif T1!=0 and Number_divide_stop==0:#1
+                                            
                                                            
                                                                 
 
                                                             Divide_two2=Divide_two2+"01"
+                                                            
                                                     
                                             
                                             elif Number_divide_stop==1:
@@ -290,7 +292,7 @@ class compression:
      
                                     if compress_or_not_compress==1:
                                            
-                                            Equal_info_between_of_the_cirlce_of_the_file_17=Divide_two2
+                                            Equal_info_between_of_the_cirlce_of_the_file_17=Divide_two2[::-1]
                                             #print(len(Equal_info_between_of_the_cirlce_of_the_file_17))
                               
                                     
