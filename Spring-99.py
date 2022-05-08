@@ -312,6 +312,7 @@ class compression:
                                     if compress_or_not_compress==1:
 
                                             Long_top=len(Divide_two3)
+                                          
 
                                             Long_top_binary=bin(Long_top)[2:]
                                             lenf=len(Long_top_binary)
@@ -326,7 +327,7 @@ class compression:
                                                          	z=z+1
                                             		
                                            
-                                            Equal_info_between_of_the_cirlce_of_the_file_17=add_bits7+Long_top_binary+Divide_two3+Divide_two2#Reverso
+                                            Equal_info_between_of_the_cirlce_of_the_file_17=add_bits7+Long_top_binary+Divide_two3+Divide_two2
                                             #print(len(Equal_info_between_of_the_cirlce_of_the_file_17))
                               
                                     
