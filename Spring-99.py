@@ -251,20 +251,20 @@ class compression:
                                             if Number_of_the_file==3 and Number_divide_stop==0:
                                                     
                                                     Number_divide_stop=1
-                                                    Divide_two2=Divide_two2+"000"#00000, 000
+                                                    Divide_two2=Divide_two2+"0001"#000100, 000101, 000111, 000110; 0001
                                                     
                                             elif Number_of_the_file==0 and Number_divide_stop==0:
                                                     
                                                     Number_divide_stop=1
-                                                    Divide_two2=Divide_two2+"00"#0000, 00
+                                                    Divide_two2=Divide_two2+"00"#0000, 0001, 0010, 0011; 00
 
                                             elif T1==0 and Number_divide_stop==0:#2
                                                     Number_divide_stop=1   
-                                                    Divide_two2=Divide_two2+"1"
+                                                    Divide_two2=Divide_two2+"1"#100, 101, 110, 111
                                                     
                                             elif T1!=0 and Number_divide_stop==0:#1
                                                     Number_divide_stop=1
-                                                    Divide_two2=Divide_two2+"01"
+                                                    Divide_two2=Divide_two2+"01"# 0100, 0101, 0110, 0111
                                                     
                                             elif Number_divide_stop==1:
                                                      Divide_two2=Divide_two2+Divide_two1
