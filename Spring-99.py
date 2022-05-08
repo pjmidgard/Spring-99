@@ -15,12 +15,19 @@ namez = input("c,  compress or e, extract? ")
 class compression:
        
         def cryptograpy_compression4(self):
+
+                x=0
+                x1=0
+                x2=0
+                n=0
+                x = time()
                 
                 self.name = "Written: Jurijus pacalovas"
 
                 if namez!="c" and namez!="e":
                         print("The wrong letter")
-                        x3=0.0
+                        x2 = time()
+                        x3=x2-x
                         xs=float(x3)
                         return print(x3)
                 if namez=="c" or namez=="e":        
@@ -44,7 +51,8 @@ class compression:
                             print('Path is exists!')
                     else:
                             print('Path is not exists!')
-                            x3=0.0
+                            x2 = time()
+                            x3=x2-x
                             xs=float(x3)
                             return print(x3)
                             
@@ -69,7 +77,8 @@ class compression:
                         elif nameas[nac-4:nac]!=".bin":
                                 print("Sorry, this is not binary file!")
                                
-                                x3=0.0
+                                x2 = time()
+                                x3=x2-x
                                 xs=float(x3)
                                 return print(x3)
                    
@@ -93,11 +102,7 @@ class compression:
 
                     D=0
 
-                    x=0
-                    x1=0
-                    x2=0
-                    n=0
-                    x = time()
+                    
 
                     with open(nameas, "w") as f4:
                             f4.write(s)
