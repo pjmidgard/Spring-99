@@ -7,6 +7,6 @@ Spring-99.py
 
 00 slow down 0 count
 
-0001 slow down 0 count
+slow down 1 count
 
-1 count gas
+1 count top gas
