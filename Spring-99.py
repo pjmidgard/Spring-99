@@ -120,7 +120,7 @@ class compression:
 
                         lenf1=len(data)
                         lenf7=len(data)
-                        if lenf7==0 or lenf7>(2**32)-1:
+                        if lenf7==0:
                             x2 = time()
                             x3=x2-x
                             xs=float(x3)
@@ -311,6 +311,12 @@ class compression:
                                             Long_top=len(Divide_two3)
                                             Long_top_binary=bin(Long_top)[2:]
                                             lenf=len(Long_top_binary)
+                                            if lenf>32:
+                                                     x2 = time()
+                                                     x3=x2-x
+                                                     xs=float(x3)
+                                                     return print(x3)
+                                                    
 
                                             add_bits7=""
                                             count_bits=32-lenf%32
