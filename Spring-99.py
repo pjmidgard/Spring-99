@@ -462,6 +462,12 @@ class compression:
                                         if C==1 and T!=0:
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[Translate_info_Decimal_2:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
+
+                                                long_top=Equal_info_between_of_the_cirlce_of_the_file[0:32]
+                                                long_Top_Number = int(long_top, 2)
+                                                Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[32:]
+                                                lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
+                                                
                                                 
                                                 Number_add_plus_one=Equal_info_between_of_the_cirlce_of_the_file[lenf6-Deep4:lenf6-1]
                                                 Prime_Not=Equal_info_between_of_the_cirlce_of_the_file[lenf6-1:lenf6]
