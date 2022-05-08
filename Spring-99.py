@@ -256,7 +256,9 @@ class compression:
 
                                     while block<lenf6:
                                             Divide_two4=Divide_two[block:block+3]
+                                            
                                             Divide_two1=Divide_two[block:block+2]
+                                            bits_long=len(Divide_two1)
                                             Divide_two5=Divide_two[block+1:block+2]
                                             Divide_two3=Divide_two[block:block+1]
                                             
@@ -264,28 +266,28 @@ class compression:
                                             Number_of_the_file3 = int(Divide_two3, 2)
                                             
                                             T1=Number_of_the_file%2
-                                            if Number_of_the_file==3 and Number_divide_stop==0:
+                                            if Number_of_the_file==3 and Number_divide_stop==0 and bits_long==2:
                                                     
                                                     Number_divide_stop=1
                                                     Number_divide_top=1
                                                     
-                                            elif Number_of_the_file==0 and Number_divide_stop==0:
+                                            elif Number_of_the_file==0 and Number_divide_stop==0 and bits_long==2:
                                                     
                                                     Number_divide_stop=1
                                                     Divide_two2=Divide_two2+"00"#0000, 0001, 0010, 0011; 00
                                                     Number_divide_top=0
 
-                                            elif T1==0 and Number_divide_stop==0:#2
+                                            elif T1==0 and Number_divide_stop==0 and bits_long==2:#2
                                                     Number_divide_stop=1   
                                                     Divide_two2=Divide_two2+"1"#100, 101, 110, 111
                                                     Number_divide_top=0
                                                     
-                                            elif T1!=0 and Number_divide_stop==0:#1
+                                            elif T1!=0 and Number_divide_stop==0  and bits_long==2: #1
                                                     Number_divide_stop=1
                                                     Divide_two2=Divide_two2+"01"# 0100, 0101, 0110, 0111
                                                     Number_divide_top=0
                                                     
-                                            elif Number_divide_stop==1:
+                                            elif Number_divide_stop==1 and bits_long==2:
 
                                                      if Number_divide_top==1:
 
@@ -302,13 +304,13 @@ class compression:
                                             last=""
                                                   
                                             if Divide_two1=="1":
-                                                last_bit="0"
+                                                last_bits="0"
                                                 
                                             elif Divide_two1=="0":
-                                                last_bit="10"
+                                                last_bits="10"
                                              
                                             else:
-                                                    last_bit="11"
+                                                    last_bits="11"
 
                                             #print(Divide_two2)
                                             
@@ -337,7 +339,7 @@ class compression:
                                                          	z=z+1
                                             		
                                            
-                                            Equal_info_between_of_the_cirlce_of_the_file_17=last_bit+add_bits7+Long_top_binary+Divide_two3+Divide_two2
+                                            Equal_info_between_of_the_cirlce_of_the_file_17=last_bits+add_bits7+Long_top_binary+Divide_two3+Divide_two2
                                            
                                             
                                             #print(len(Equal_info_between_of_the_cirlce_of_the_file_17))
