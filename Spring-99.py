@@ -239,11 +239,14 @@ class compression:
                                     Number_divide_stop=0
 
                                     while block<lenf6:
+
                                             Divide_two1=Divide_two[block:block+2]
                                             Divide_two5=Divide_two[block+1:block+2]
                                             Divide_two3=Divide_two[block:block+1]
+                                            
                                             Number_of_the_file = int(Divide_two1, 2)
                                             Number_of_the_file3 = int(Divide_two3, 2)
+                                            
                                             T1=Number_of_the_file%2
                                             if Number_of_the_file==3 and Number_divide_stop==0:
                                                     
