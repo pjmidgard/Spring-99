@@ -321,11 +321,6 @@ class compression:
                                     if lenf6<=lenfS:
                                             Deep3=lenfS
                                             
-
-                                    if compress_or_not_compress==2 and Circle_times2==0:
-                                                    Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[1:]
-                                    
-                                   
                                     Circle_times2=Circle_times2+1
                           
                                     Equal_info_between_of_the_cirlce_of_the_file_2=Equal_info_between_of_the_cirlce_of_the_file_17
@@ -452,20 +447,12 @@ class compression:
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[8:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
 
-                                                sda10=Equal_info_between_of_the_cirlce_of_the_file[0:16]
-                                                Deep5 = int(sda10, 2)
-                                                Deep5=Deep5+2
-                                                Deep4=Deep5-1
-                                                Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[16:]
-                                                lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
-                                                Deep7=Deep5-2
                                                 
                                                 Times_6=Equal_info_between_of_the_cirlce_of_the_file[0:48]
                                                 T = int(Times_6, 2)
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[48:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
-                                                print("Deep: ")
-                                                print(Deep7-25)
+                                                
                                                 
                                         if   Circle_times2>0:
                                         	Translate_info_Decimal_2=0
@@ -475,6 +462,7 @@ class compression:
                                         if C==1 and T!=0:
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[Translate_info_Decimal_2:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
+                                                
                                                 Number_add_plus_one=Equal_info_between_of_the_cirlce_of_the_file[lenf6-Deep4:lenf6-1]
                                                 Prime_Not=Equal_info_between_of_the_cirlce_of_the_file[lenf6-1:lenf6]
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[0:lenf6-Deep4]
@@ -530,7 +518,7 @@ class compression:
                                         
                                             if C==1 and T!=0:
  
-                                            	Equal_info_between_of_the_cirlce_of_the_file_17=bin(Number_of_the_file)[3:]
+                                            	Equal_info_between_of_the_cirlce_of_the_file_17=bin(Number_of_the_file)[2:]
                                             	lenf14=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                             	#print(lenf14)
                                             	lenf16=lenf14%8
