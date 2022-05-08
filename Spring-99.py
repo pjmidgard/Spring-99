@@ -298,8 +298,17 @@ class compression:
                                                      if Block_big_compress_again==1:
                                                              Number_divide_stop=0
                                                              Block_big_compress_again=0
+                                                             
+                                            last=""
                                                   
-                                         
+                                            if Divide_two1=="1":
+                                                last_bit="0"
+                                                
+                                            elif Divide_two1=="0":
+                                                last_bit="10"
+                                             
+                                            else:
+                                                    last_bit="11"
 
                                             #print(Divide_two2)
                                             
@@ -328,7 +337,9 @@ class compression:
                                                          	z=z+1
                                             		
                                            
-                                            Equal_info_between_of_the_cirlce_of_the_file_17=add_bits7+Long_top_binary+Divide_two3+Divide_two2
+                                            Equal_info_between_of_the_cirlce_of_the_file_17=last_bit+add_bits7+Long_top_binary+Divide_two3+Divide_two2
+                                           
+                                            
                                             #print(len(Equal_info_between_of_the_cirlce_of_the_file_17))
                               
                                     
