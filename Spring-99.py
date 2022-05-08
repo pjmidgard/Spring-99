@@ -41,11 +41,7 @@ class compression:
                     Times_6=""
                     Corrupted=0
                     
-                    x=0
-                    x1=0
-                    x2=0
-                    n=0
-                    x = time()
+
                       
                     name = input("What is name of file? ")
 
@@ -53,11 +49,16 @@ class compression:
                             print('Path is exists!')
                     else:
                             print('Path is not exists!')
-                            x2 = time()
-                            x3=x2-x
+                            
+                            x3=0.0
                             xs=float(x3)
                             return print(x3)
                             
+                    x=0
+                    x1=0
+                    x2=0
+                    n=0
+                    x = time()
                     
                     namem=""
                     namema="?"
