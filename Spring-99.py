@@ -20,7 +20,9 @@ class compression:
 
                 if namez!="c" and namez!="e":
                         print("The wrong letter")
-                        raise SystemExit
+                        x3=0.0
+                        xs=float(x3)
+                        return print(x3)
                 if namez=="c" or namez=="e":        
                     if namez=="c":
 
@@ -42,7 +44,9 @@ class compression:
                             print('Path is exists!')
                     else:
                             print('Path is not exists!')
-                            raise SystemExit
+                            x3=0.0
+                            xs=float(x3)
+                            return print(x3)
                             
                     
                     namem=""
@@ -64,7 +68,10 @@ class compression:
 
                         elif nameas[nac-4:nac]!=".bin":
                                 print("Sorry, this is not binary file!")
-                                raise SystemExit
+                               
+                                x3=0.0
+                                xs=float(x3)
+                                return print(x3)
                    
                     if i==1:
                         
@@ -106,10 +113,10 @@ class compression:
                         lenf1=len(data)
                         lenf7=len(data)
                         if lenf7==0 or lenf7>(2**32)-1:
-                                x2 = time()
-                                x3=x2-x
-                                xs=float(x3)
-                                return print(x3)
+                            x2 = time()
+                            x3=x2-x
+                            xs=float(x3)
+                            return print(x3)
                                         
                         	 
                         
@@ -531,7 +538,11 @@ class compression:
                                             	if lenf16!=0 or lenf14>((2**32)-1)*8 or Corrupted==1:
 
                                             		print("file corrupted")
-                                            		raise SystemExit
+                                            		x2 = time()
+                                            		x3=x2-x
+                                            		xs=float(x3)
+                                            		return print(x3)
+                                            		
                                             		
                                             	
                                             	lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)
