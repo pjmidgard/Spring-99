@@ -16,18 +16,14 @@ class compression:
        
         def cryptograpy_compression4(self):
 
-                x=0
-                x1=0
-                x2=0
-                n=0
-                x = time()
+
                 
                 self.name = "Written: Jurijus pacalovas"
 
                 if namez!="c" and namez!="e":
                         print("The wrong letter")
-                        x2 = time()
-                        x3=x2-x
+                       
+                        x3=0.0
                         xs=float(x3)
                         return print(x3)
                 if namez=="c" or namez=="e":        
@@ -44,6 +40,12 @@ class compression:
                     Prime_Not=""
                     Times_6=""
                     Corrupted=0
+                    
+                    x=0
+                    x1=0
+                    x2=0
+                    n=0
+                    x = time()
                       
                     name = input("What is name of file? ")
 
