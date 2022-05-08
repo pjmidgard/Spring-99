@@ -14,4 +14,4 @@ slow down 1 count move
 top 1 move or 0.
 
 Speed: 
-138-184 KB/s
+156-184 KB/s
