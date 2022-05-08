@@ -309,7 +309,7 @@ class compression:
                                     if compress_or_not_compress==1:
 
                                             Long_top=len(Divide_two3)
-                                                                                      Long_top_binary=bin(Long_top)[2:]
+                                            Long_top_binary=bin(Long_top)[2:]
                                             lenf=len(Long_top_binary)
 
                                             add_bits7=""
