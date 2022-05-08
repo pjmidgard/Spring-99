@@ -277,6 +277,7 @@ class compression:
                                                              Divide_two3=Divide_two3+"1"+Divide_two1
                                                      if Number_divide_top==0:
                                                              Divide_two3=Divide_two3+"0"+Divide_two1
+                                                     Number_divide_top=0
                                                              
                                                      Block_big_compress_again=Block_big_compress_again+1
                                                      if Block_big_compress_again==1:
