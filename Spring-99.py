@@ -105,8 +105,13 @@ class compression:
 
                         lenf1=len(data)
                         lenf7=len(data)
-                        if lenf7==0:
-                        	 raise SystemExit
+                        if lenf7==0 or lenf7>(2**32)-1:
+                                x2 = time()
+                                x3=x2-x
+                                xs=float(x3)
+                                return print(x3)
+                                        
+                        	 
                         
                         END_working=0
                         Circle_times2=0
@@ -172,10 +177,7 @@ class compression:
                                     lenf3=len(Equal_info_between_of_the_cirlce_of_the_file_2)
                                 lenf2=len(Equal_info_between_of_the_cirlce_of_the_file_2)
                                 #print(lenf2)
-                                if i==1:
-                                    if lenf7>=(2**40)-1:
-                                        raise SystemExit
-
+                                
                                 #########################################################################################################################################################
                                 
                                 
@@ -233,13 +235,15 @@ class compression:
                                     lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
                                     Divide_two=Equal_info_between_of_the_cirlce_of_the_file
                                     Divide_two2=""
+                                    Divide_two3=""
 
                                     block=0
                                     Block_big_compress_again=0
                                     Number_divide_stop=0
+                                    Number_divide_top=0
 
                                     while block<lenf6:
-
+                                            Divide_two4=Divide_two[block:block+3]
                                             Divide_two1=Divide_two[block:block+2]
                                             Divide_two5=Divide_two[block+1:block+2]
                                             Divide_two3=Divide_two[block:block+1]
@@ -251,23 +255,32 @@ class compression:
                                             if Number_of_the_file==3 and Number_divide_stop==0:
                                                     
                                                     Number_divide_stop=1
-                                                    Divide_two2=Divide_two2+"0001"#000100, 000101, 000111, 000110; 0001
+                                                    Number_divide_top=1
                                                     
                                             elif Number_of_the_file==0 and Number_divide_stop==0:
                                                     
                                                     Number_divide_stop=1
                                                     Divide_two2=Divide_two2+"00"#0000, 0001, 0010, 0011; 00
+                                                    Number_divide_top=0
 
                                             elif T1==0 and Number_divide_stop==0:#2
                                                     Number_divide_stop=1   
                                                     Divide_two2=Divide_two2+"1"#100, 101, 110, 111
+                                                    Number_divide_top=0
                                                     
                                             elif T1!=0 and Number_divide_stop==0:#1
                                                     Number_divide_stop=1
                                                     Divide_two2=Divide_two2+"01"# 0100, 0101, 0110, 0111
+                                                    Number_divide_top=0
                                                     
                                             elif Number_divide_stop==1:
-                                                     Divide_two2=Divide_two2+Divide_two1
+
+                                                     if Number_divide_top==1:
+
+                                                             Divide_two3=Divide_two3+"1"+Divide_two1
+                                                     if Number_divide_top==0:
+                                                             Divide_two3=Divide_two3+"0"+Divide_two1
+                                                             
                                                      Block_big_compress_again=Block_big_compress_again+1
                                                      if Block_big_compress_again==1:
                                                              Number_divide_stop=0
@@ -284,8 +297,23 @@ class compression:
                                     
      
                                     if compress_or_not_compress==1:
+
+                                            Long_top=len(Divide_two3)
+
+                                            Long_top_binary=bin(Long_top)[2:]
+                                            lenf=len(Long_top_binary)
+
+                                            add_bits7=""
+                                            count_bits=32-lenf%32
+                                            z=0
+                                            if count_bits!=0:
+                                                if count_bits!=32:
+                                                        while z<count_bits:
+                                                         	add_bits7="0"+add_bits7
+                                                         	z=z+1
+                                            		
                                            
-                                            Equal_info_between_of_the_cirlce_of_the_file_17=Divide_two2[::-1]
+                                            Equal_info_between_of_the_cirlce_of_the_file_17=add_bits7+Long_top_binary+Divide_two3+Divide_two2[::-1]
                                             #print(len(Equal_info_between_of_the_cirlce_of_the_file_17))
                               
                                     
@@ -369,7 +397,7 @@ class compression:
                                     if   lenfS<=Deep3 or compress_or_not_compress==2:
                                             lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)                                           
                                             Equal_info_between_of_the_cirlce_of_the_file_17=add_bits9+Equal_info_between_of_the_cirlce_of_the_file1+add_bits7+Equal_info_between_of_the_cirlce_of_the_file_29+add_bits+Equal_info_between_of_the_cirlce_of_the_file_17
-
+                                            #bit space, time, info
                                     if   lenfS<=Deep3 or compress_or_not_compress==2:
                                                 
                                     		L=len(Equal_info_between_of_the_cirlce_of_the_file_17)
