@@ -1,18 +1,8 @@
 # Spring-99
 Spring-99.py
 
-Algorithm Spring 99
-
-Gas, slow down, gas...
-
-1
-
-01
-
-00 or 00 00
-
-000 slow down 0-2
-
-3 gas
-
-Reverso
+1 slow down 0 count
+01 slow down 0 count
+00 slow down 0 count
+0001 slow down 0 count
+1 count gas
