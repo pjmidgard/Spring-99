@@ -366,9 +366,11 @@ class compression:
                                                  Divide_two2=Divide_two2+"0111"
                                                  block=block+5
                                             else:
-                                               #print(Divide_two3)
-                                               Divide_two2=Divide_two2+Divide_two3
-                                               block=block+5
+  
+                                               Divide_two2=Divide_two2+Divide_two1
+                                              
+                                               block=block+3
+                                               
                                                
                                                
                                                  
@@ -377,7 +379,7 @@ class compression:
                                             
                                     
                                            
-                                            Equal_info_between_of_the_cirlce_of_the_file_17=Divide_two4+Divide_two2
+                                            Equal_info_between_of_the_cirlce_of_the_file_17=Divide_two2
                                            
                                             
                                             #print(len(Equal_info_between_of_the_cirlce_of_the_file_17))
