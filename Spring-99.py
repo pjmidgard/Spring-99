@@ -261,7 +261,7 @@ class compression:
                                             bits_long=len(Divide_two1)
                                            
                                             
-                                            T1=Number_of_the_file%2
+                                            
                                             #100 101 110 111 
                                             #00000 00001 00010 00011
                                             #00100 1001 1010 1011
