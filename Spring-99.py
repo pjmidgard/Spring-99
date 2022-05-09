@@ -511,9 +511,13 @@ class compression:
                                                 long_Top_Number = int(long_top, 2)
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[32:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
+                                                
+                                                
+                                                top_center=""
+                                                center_Three_info=""
                                                  
                                                 top_center=Equal_info_between_of_the_cirlce_of_the_file[:long_Top_Number]
-                                                center_Three_info=[long_Top_Number:]
+                                                center_Three_info=Equal_info_between_of_the_cirlce_of_the_file[long_Top_Number:]
                                                 lenf_center=len(center_Three_info) 
                                                 lenf_top=len(top_center) 
                                                 
@@ -528,7 +532,7 @@ class compression:
                                                         center_Three_Block_4=top_center[block_top+1:block_top+3]
                                                         center_Three_Block_5=len(center_Three_Block_4)
                                                         
-                                                        if center_Three_Block_3="0":
+                                                        if center_Three_Block_3=="0":
                                                              block_top=block_top+1   
                                                                
                                                         if center_Three_Block_3=="1":
