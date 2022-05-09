@@ -1,17 +1,7 @@
 # Spring-99
 Spring-99.py
 
-1 slow down 0 count
-
-01 slow down 0 count
-
-00 slow down 0 count
-
-slow down 1 count move
-
-1 count top gas
-
-top 1 move or 0.
-
-Speed: 
-156-184 KB/s
+#100 101 110 111 - 11
+#00000 00001 00010 00011 - 00
+#00100 1001 1010 1011    - 10
+#01000 01001 01010 01011 - 01
