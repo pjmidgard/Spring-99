@@ -268,23 +268,23 @@ class compression:
                                             #00100 1001 1010 1011
                                             #01000 01001 01010 01011                               
                                             if bits_long==5:     
-                                                 Divide_two3="100"
+                                                 Divide_two4="100"
                                                  
                                             if bits_long==4:     
-                                                 Divide_two3="011"
+                                                 Divide_two4="011"
                                                  
                                             if bits_long==3:  
                                                 
-                                                 Divide_two3="010"
+                                                 Divide_two4="010"
                                                  
                                                  
                                             if bits_long==2:
                                                  
-                                                 Divide_two3="001"
+                                                 Divide_two4="001"
                                                  
                                             if bits_long==1:
                                                  
-                                                 Divide_two3="000"
+                                                 Divide_two4="000"
                                                  
                                             if Divide_two1=="100":
                                                     
@@ -377,7 +377,7 @@ class compression:
                                             
                                     
                                            
-                                            Equal_info_between_of_the_cirlce_of_the_file_17=Divide_two3+Divide_two2
+                                            Equal_info_between_of_the_cirlce_of_the_file_17=Divide_two4+Divide_two2
                                            
                                             
                                             #print(len(Equal_info_between_of_the_cirlce_of_the_file_17))
@@ -386,7 +386,7 @@ class compression:
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                     print(lenfS)
 
-                                    if  lenfS>=lenf6:
+                                    if Circle_times2==0:
                                             Deep3=lenfS
                                             
                                     Circle_times2=Circle_times2+1
@@ -425,10 +425,14 @@ class compression:
                                             		
 
                                     if   lenfS<=Deep3 or compress_or_not_compress==2:
+                                        
 
+                                                
+                                                Equal_info_between_of_the_cirlce_of_the_file_17="1"+Equal_info_between_of_the_cirlce_of_the_file_17
                                                 lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                                add_bits=""
+                                                add_bits11=""
                                                 count_bits=8-lenf%8
+                                                print(count_bits)
                                                 if count_bits==8:
                                                 	count_bits=0
                                                 count_bits2=count_bits
@@ -436,7 +440,7 @@ class compression:
                                                 if count_bits!=0:
                                                         if count_bits!=8:
                                                                 while z<count_bits:
-                                                                        add_bits="0"+add_bits
+                                                                        add_bits11="0"+add_bits11
                                                                         z=z+1
 
                                     if   lenfS<=Deep3 or compress_or_not_compress==2:
@@ -456,8 +460,7 @@ class compression:
                                                          	z=z+1       
 
                                     if   lenfS<=Deep3 or compress_or_not_compress==2:
-                                            lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)                                           
-                                            Equal_info_between_of_the_cirlce_of_the_file_17=add_bits9+Equal_info_between_of_the_cirlce_of_the_file1+add_bits7+Equal_info_between_of_the_cirlce_of_the_file_29+add_bits+Equal_info_between_of_the_cirlce_of_the_file_17
+                                            Equal_info_between_of_the_cirlce_of_the_file_17=add_bits11+Equal_info_between_of_the_cirlce_of_the_file_17
                                             #bit space, time, info
                                     if   lenfS<=Deep3 or compress_or_not_compress==2:
                                                 
