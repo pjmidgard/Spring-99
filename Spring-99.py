@@ -265,7 +265,24 @@ class compression:
                                             #100 101 110 111 
                                             #00000 00001 00010 00011
                                             #00100 1001 1010 1011
-                                            #01000 01001 01010 01011     
+                                            #01000 01001 01010 01011 
+                                                 
+                                            if bits_long==4:     
+                                                 Divide_two3="11"
+                                                 
+                                            if bits_long==3:  
+                                                 Divide_two2=Divide_two2+Divide_two1
+                                                 Divide_two3="10"
+                                                 
+                                                 
+                                            if bits_long==2:
+                                                 Divide_two2=Divide_two2+Divide_two1
+                                                 Divide_two3="01"
+                                                 
+                                            if bits_long==1:
+                                                 Divide_two2=Divide_two2+Divide_two1 
+                                                 Divide_two3="00"
+                                                 
                                             if Divide_two1=="1100" and bits_long==4:
                                                     
                                                     Divide_two2=Divide_two2+"100"
@@ -305,15 +322,15 @@ class compression:
                                                  
                                             if Divide_two1=="1001" and bits_long==4:
                                                 
-                                                    Divide_two2=Divide_two2+"1001"  
+                                                    Divide_two2=Divide_two2+"00101"  
                                             
                                             if Divide_two1=="1010" and bits_long==4:
                                                 
-                                                    Divide_two2=Divide_two2+"1010" 
+                                                    Divide_two2=Divide_two2+"00110" 
                                                  
                                             if Divide_two1=="1011" and bits_long==4:
                                                  
-                                                 Divide_two2=Divide_two2+"1011" 
+                                                 Divide_two2=Divide_two2+"00111" 
                                                  
                                             if Divide_two1=="0100" and bits_long==4:
                                                  
@@ -337,7 +354,7 @@ class compression:
                                             block=block+4
                                     
                                            
-                                            Equal_info_between_of_the_cirlce_of_the_file_17=Divide_two2
+                                            Equal_info_between_of_the_cirlce_of_the_file_17=Divide_two3+Divide_two2
                                            
                                             
                                             #print(len(Equal_info_between_of_the_cirlce_of_the_file_17))
@@ -346,7 +363,7 @@ class compression:
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                     #print(lenfS)
 
-                                    if  Circle_times2==0:
+                                    if  lenfS>=lenf6:
                                             Deep3=lenfS
                                             
                                     Circle_times2=Circle_times2+1
