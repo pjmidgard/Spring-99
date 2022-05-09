@@ -531,14 +531,14 @@ class compression:
                                                 info=""
                                                 count=0
 
-                                                while block_center<lenf_center:
+                                                while block_center!=lenf_center:
                                                             center_Three_Block_1=center_Three_info[block_center:block_center+1]
                                                             center_Three_Block_2=center_Three_info[block_center:block_center+2]
                                                             center_Three_Block_3=top_center[block_top:block_top+1]
                                                             center_Three_Block_4=top_center[block_top:block_top+2]
                                                             center_Three_Block_5=len(center_Three_Block_4)
 
-                                                            if center_Three_Block_3=="0":
+                                                            if center_Three_Block_3=="0" and count==0 or center_Three_Block_5==1:
                                                                  block_top=block_top+1   
 
                                                             if center_Three_Block_3=="1" and count==0:
@@ -561,8 +561,9 @@ class compression:
                                                                    block_center=block_center+2
                                                                    count=1
                                                                    
-
-                                                            elif count==1 and center_Three_Block_5==2 or count==1 and center_Three_Block_5==0:
+                                                            if count==1 and center_Three_Block_5==0:
+                                                                   count=0
+                                                            elif count==1 and center_Three_Block_5==2:
                                                                    info=info+center_Three_Block_4
                                                                    block_top=block_top+2
                                                                    count=0
