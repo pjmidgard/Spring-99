@@ -349,7 +349,7 @@ class compression:
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                     #print(lenfS)
 
-                                    if lenf6<=lenfS:
+                                    if  Circle_times2==1:
                                             Deep3=lenfS
                                             
                                     Circle_times2=Circle_times2+1
@@ -508,54 +508,56 @@ class compression:
                                                     Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[2:] 
 
                                                 long_top=Equal_info_between_of_the_cirlce_of_the_file[0:32]
-                                                long_Top_Number = int(long_top, 2)
-                                                Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[32:]
-                                                lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
-                                                
-                                                
-                                                top_center=""
-                                                center_Three_info=""
-                                                 
-                                                top_center=Equal_info_between_of_the_cirlce_of_the_file[:long_Top_Number]
-                                                center_Three_info=Equal_info_between_of_the_cirlce_of_the_file[long_Top_Number:]
-                                                lenf_center=len(center_Three_info) 
-                                                lenf_top=len(top_center) 
-                                                
-                                                block_top=0
-                                                block_center=0
-                                                info=""
-                                              
-                                                while block_top!=lenf_top and block_center!=lenf_center:
-                                                        center_Three_Block_1=center_Three_info[block_center:block_center+1]
-                                                        center_Three_Block_2=center_Three_info[block_center:block_center+2]
-                                                        center_Three_Block_3=top_center[block_top:block_top+1]
-                                                        center_Three_Block_4=top_center[block_top+1:block_top+3]
-                                                        center_Three_Block_5=len(center_Three_Block_4)
-                                                        
-                                                        if center_Three_Block_3=="0":
-                                                             block_top=block_top+1   
-                                                               
-                                                        if center_Three_Block_3=="1":
-                                                               info=info+"11"
-                                                               block_top=block_top+1 
-                                                               
-                                                        elif center_Three_Block_1=="1":
-                                                               info=info+"10"
-                                                               block_center=block_center+1
-                                                        
-                                                        elif center_Three_Block_2=="00":  
-                                                               info=info+"00"
-                                                               block_center=block_center+2
-                                                               
-                                                        elif center_Three_Block_2=="01":  
-                                                               info=info+"01"
-                                                               block_center=block_center+2
-                                                               
-                                                        if center_Three_Block_5==2:
-                                                               info=info+center_Three_Block_4
-                                                               block_top=block_top+2
-                                                               
-                                                Equal_info_between_of_the_cirlce_of_the_file_17=info+last_bit
+                                                lenf_top_N=len(long_top)
+                                                if lenf_top_N==32:
+                                                    long_Top_Number = int(long_top, 2)
+                                                    Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[32:]
+                                                    lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
+
+
+                                                    top_center=""
+                                                    center_Three_info=""
+
+                                                    top_center=Equal_info_between_of_the_cirlce_of_the_file[:long_Top_Number]
+                                                    center_Three_info=Equal_info_between_of_the_cirlce_of_the_file[long_Top_Number:]
+                                                    lenf_center=len(center_Three_info) 
+                                                    lenf_top=len(top_center) 
+
+                                                    block_top=0
+                                                    block_center=0
+                                                    info=""
+
+                                                    while block_top!=lenf_top and block_center!=lenf_center:
+                                                            center_Three_Block_1=center_Three_info[block_center:block_center+1]
+                                                            center_Three_Block_2=center_Three_info[block_center:block_center+2]
+                                                            center_Three_Block_3=top_center[block_top:block_top+1]
+                                                            center_Three_Block_4=top_center[block_top+1:block_top+3]
+                                                            center_Three_Block_5=len(center_Three_Block_4)
+
+                                                            if center_Three_Block_3=="0":
+                                                                 block_top=block_top+1   
+
+                                                            if center_Three_Block_3=="1":
+                                                                   info=info+"11"
+                                                                   block_top=block_top+1 
+
+                                                            elif center_Three_Block_1=="1":
+                                                                   info=info+"10"
+                                                                   block_center=block_center+1
+
+                                                            elif center_Three_Block_2=="00":  
+                                                                   info=info+"00"
+                                                                   block_center=block_center+2
+
+                                                            elif center_Three_Block_2=="01":  
+                                                                   info=info+"01"
+                                                                   block_center=block_center+2
+
+                                                            if center_Three_Block_5==2:
+                                                                   info=info+center_Three_Block_4
+                                                                   block_top=block_top+2
+
+                                                    Equal_info_between_of_the_cirlce_of_the_file_17=info+last_bit
                                                  
                                                 
                                        
@@ -565,7 +567,7 @@ class compression:
                                     #####################################################################################################################################################
                                    
                                     Prime_Not=""
-                                 
+                                    print(len(Equal_info_between_of_the_cirlce_of_the_file_17))
                                      
                                     Equal_info_between_of_the_cirlce_of_the_file_2=Equal_info_between_of_the_cirlce_of_the_file_17
                                    
@@ -601,7 +603,7 @@ class compression:
  
                                             	Equal_info_between_of_the_cirlce_of_the_file_17=bin(Number_of_the_file)[2:]
                                             	lenf14=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                            	#print(lenf14)
+                                            	print(lenf14)
                                             	lenf16=lenf14%8
                                             	if lenf16!=0 or lenf14>((2**32)-1)*8 or Corrupted==1:
 
