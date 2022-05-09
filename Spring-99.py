@@ -251,96 +251,93 @@ class compression:
 
                                     block=0
                                     Block_big_compress_again=0
-                                    Number_divide_stop=0
+                                    
                                     
 
                                     while block<lenf6:
-                                            Divide_two4=Divide_two[block:block+3]
+                                           
                                             
-                                            Divide_two1=Divide_two[block:block+2]
+                                            Divide_two1=Divide_two[block:block+4]
                                             bits_long=len(Divide_two1)
-                                            Divide_two5=Divide_two[block+1:block+2]
-                                            Divide_two3=Divide_two[block:block+1]
-                                            
-                                            Number_of_the_file = int(Divide_two1, 2)
-                                            Number_of_the_file3 = int(Divide_two3, 2)
+                                           
                                             
                                             T1=Number_of_the_file%2
-                                            if Divide_two1=="11" and Number_divide_stop==0 and bits_long==2:
+                                            #100 101 110 111 
+                                            #00000 00001 00010 00011
+                                            #00100 1001 1010 1011
+                                            #01000 01001 01010 01011     
+                                            if Divide_two1=="1100" and bits_long==4:
                                                     
-                                                    Number_divide_stop=1
-                                                    
-                                                    Divide_two3=Divide_two3+"1"    
-                                                    
-                                            elif Divide_two1=="00" and Number_divide_stop==0 and bits_long==2:
-                                                    
-                                                    Number_divide_stop=1
-                                                    Divide_two2=Divide_two2+"00"#0000, 0001, 0010, 0011; 00
-                                                    
-                                                    Divide_two3=Divide_two3+"0"
-
-                                            elif Divide_two1=="10" and bits_long==2:#2
-                                                    Number_divide_stop=1   
-                                                    Divide_two2=Divide_two2+"1"#100, 101, 110, 111
-                                                    
-                                                    Divide_two3=Divide_two3+"0"    
-                                                    
-                                            elif Divide_two1=="01"  and bits_long==2: #1
-                                                    Number_divide_stop=1
-                                                    Divide_two2=Divide_two2+"01"# 0100, 0101, 0110, 0111
-                                                    
-                                                    Divide_two3=Divide_two3+"0"    
-                                                    
-                                            elif Number_divide_stop==1 and bits_long==2:
-
-                                                     Divide_two3=Divide_two3+Divide_two1
-                                                     
-                                                     Number_divide_top=0
-                                                             
-                                                     Block_big_compress_again=Block_big_compress_again+1
-                                                     if Block_big_compress_again==1:
-                                                             Number_divide_stop=0
-                                                             Block_big_compress_again=0
-                                                             
-                                            last=""
-                                                  
-                                            if Divide_two1=="1":
-                                                last_bits="0"
+                                                    Divide_two2=Divide_two2+"100"
+                                                        
+                                            if Divide_two1=="1101" and bits_long==4:
                                                 
-                                            elif Divide_two1=="0":
-                                                last_bits="10"
-                                             
-                                            else:
-                                                    last_bits="11"
-
+                                                    Divide_two2=Divide_two2+"101"    
+                                                 
+                                            if Divide_two1=="1110" and bits_long==4:
+                                                
+                                                    Divide_two2=Divide_two2+"110"   
+                                                 
+                                            if Divide_two1=="1111" and bits_long==4:
+                                                
+                                                    Divide_two2=Divide_two2+"111"  
+                                                 
+                                            if Divide_two1=="0000" and bits_long==4:
+                                                
+                                                    Divide_two2=Divide_two2+"00000" 
+                                                 
+                                            if Divide_two1=="0001" and bits_long==4:
+                                                
+                                                    Divide_two2=Divide_two2+"00001" 
+                                                 
+                                            if Divide_two1=="0010" and bits_long==4:
+                                                
+                                                    Divide_two2=Divide_two2+"00010" 
+                                                 
+                                            if Divide_two1=="0011" and bits_long==4:
+                                                
+                                                    Divide_two2=Divide_two2+"00011"        
+                                            
+                                            if Divide_two1=="1000" and bits_long==4:
+                                                
+                                                    Divide_two2=Divide_two2+"00100"
+                                                 
+                                                 
+                                            if Divide_two1=="1001" and bits_long==4:
+                                                
+                                                    Divide_two2=Divide_two2+"1001"  
+                                            
+                                            if Divide_two1=="1010" and bits_long==4:
+                                                
+                                                    Divide_two2=Divide_two2+"1010" 
+                                                 
+                                            if Divide_two1=="1011" and bits_long==4:
+                                                 
+                                                 Divide_two2=Divide_two2+"1011" 
+                                                 
+                                            if Divide_two1=="0100" and bits_long==4:
+                                                 
+                                                 Divide_two2=Divide_two2+"01000"
+                                                 
+                                            if Divide_two1=="0101" and bits_long==4:
+                                                 
+                                                 Divide_two2=Divide_two2+"01001"
+                                                 
+                                            if Divide_two1=="0110" and bits_long==4:
+                                                 
+                                                 Divide_two2=Divide_two2+"01010"   
+                                                 
+                                            if Divide_two1=="0111" and bits_long==4:
+                                                 
+                                                 Divide_two2=Divide_two2+"01011" 
+                                               
+                                                 
                                             #print(Divide_two2)
                                             
-                                            block=block+2
+                                            block=block+4
                                     
-     
-                                    if compress_or_not_compress==1:
-
-                                            Long_top=len(Divide_two3)
-                                            Long_top_binary=bin(Long_top)[2:]
-                                            lenf=len(Long_top_binary)
-                                            if lenf>32:
-                                                     x2 = time()
-                                                     x3=x2-x
-                                                     xs=float(x3)
-                                                     return print(x3)
-                                                    
-
-                                            add_bits7=""
-                                            count_bits=32-lenf%32
-                                            z=0
-                                            if count_bits!=0:
-                                                if count_bits!=32:
-                                                        while z<count_bits:
-                                                         	add_bits7="0"+add_bits7
-                                                         	z=z+1
-                                            		
                                            
-                                            Equal_info_between_of_the_cirlce_of_the_file_17=last_bits+add_bits7+Long_top_binary+Divide_two3+Divide_two2
+                                            Equal_info_between_of_the_cirlce_of_the_file_17=Divide_two2
                                            
                                             
                                             #print(len(Equal_info_between_of_the_cirlce_of_the_file_17))
