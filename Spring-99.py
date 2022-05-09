@@ -257,101 +257,124 @@ class compression:
                                     while block<lenf6:
                                            
                                             
-                                            Divide_two1=Divide_two[block:block+4]
-                                            bits_long=len(Divide_two1)
+                                            Divide_two1=Divide_two[block:block+3]
+                                            Divide_two3=Divide_two[block:block+5]   
+                                            bits_long=len(Divide_two3)            
                                            
                                             
                                             
                                             #100 101 110 111 
                                             #00000 00001 00010 00011
                                             #00100 1001 1010 1011
-                                            #01000 01001 01010 01011 
+                                            #01000 01001 01010 01011                               
+                                            if bits_long==5:     
+                                                 Divide_two3="100"
                                                  
                                             if bits_long==4:     
-                                                 Divide_two3="11"
+                                                 Divide_two3="011"
                                                  
                                             if bits_long==3:  
-                                                 Divide_two2=Divide_two2+Divide_two1
-                                                 Divide_two3="10"
+                                                
+                                                 Divide_two3="010"
                                                  
                                                  
                                             if bits_long==2:
-                                                 Divide_two2=Divide_two2+Divide_two1
-                                                 Divide_two3="01"
+                                                 
+                                                 Divide_two3="001"
                                                  
                                             if bits_long==1:
-                                                 Divide_two2=Divide_two2+Divide_two1 
-                                                 Divide_two3="00"
                                                  
-                                            if Divide_two1=="1100" and bits_long==4:
+                                                 Divide_two3="000"
+                                                 
+                                            if Divide_two1=="100":
                                                     
-                                                    Divide_two2=Divide_two2+"100"
+                                                    Divide_two2=Divide_two2+"1100"
+                                                    block=block+3
                                                         
-                                            if Divide_two1=="1101" and bits_long==4:
+                                            elif Divide_two1=="101":
                                                 
-                                                    Divide_two2=Divide_two2+"101"    
+                                                    Divide_two2=Divide_two2+"1101"
+                                                    block=block+3  
                                                  
-                                            if Divide_two1=="1110" and bits_long==4:
+                                            elif Divide_two1=="110":
                                                 
-                                                    Divide_two2=Divide_two2+"110"   
+                                                    Divide_two2=Divide_two2+"1110"   
+                                                    block=block+3
                                                  
-                                            if Divide_two1=="1111" and bits_long==4:
+                                            elif Divide_two1=="111":
                                                 
-                                                    Divide_two2=Divide_two2+"111"  
+                                                    Divide_two2=Divide_two2+"1111"  
+                                                    block=block+3
                                                  
-                                            if Divide_two1=="0000" and bits_long==4:
+                                            elif Divide_two3=="00000":
                                                 
-                                                    Divide_two2=Divide_two2+"00000" 
+                                                    Divide_two2=Divide_two2+"0000" 
+                                                    block=block+5
                                                  
-                                            if Divide_two1=="0001" and bits_long==4:
+                                            elif Divide_two3=="00001":
                                                 
-                                                    Divide_two2=Divide_two2+"00001" 
+                                                    Divide_two2=Divide_two2+"0001" 
+                                                    block=block+5
                                                  
-                                            if Divide_two1=="0010" and bits_long==4:
+                                            elif Divide_two3=="00010":
                                                 
-                                                    Divide_two2=Divide_two2+"00010" 
-                                                 
-                                            if Divide_two1=="0011" and bits_long==4:
+                                                    Divide_two2=Divide_two2+"0010" 
+                                                    block=block+5
+                                            elif Divide_two3=="00011":
                                                 
-                                                    Divide_two2=Divide_two2+"00011"        
+                                                    Divide_two2=Divide_two2+"0011"
+                                                    block=block+5       
                                             
-                                            if Divide_two1=="1000" and bits_long==4:
+                                            elif Divide_two3=="00100" :
                                                 
-                                                    Divide_two2=Divide_two2+"00100"
+                                                    Divide_two2=Divide_two2+"1000"
+                                                    block=block+5
                                                  
                                                  
-                                            if Divide_two1=="1001" and bits_long==4:
+                                            elif Divide_two3=="00101":
                                                 
-                                                    Divide_two2=Divide_two2+"00101"  
+                                                    Divide_two2=Divide_two2+"1001" 
+                                                    block=block+5 
                                             
-                                            if Divide_two1=="1010" and bits_long==4:
+                                            elif Divide_two3=="00110":
                                                 
-                                                    Divide_two2=Divide_two2+"00110" 
+                                                    Divide_two2=Divide_two2+"1010" 
+                                                    block=block+5
                                                  
-                                            if Divide_two1=="1011" and bits_long==4:
+                                            elif Divide_two3=="00111":
                                                  
-                                                 Divide_two2=Divide_two2+"00111" 
+                                                 Divide_two2=Divide_two2+"1011" 
+                                                 block=block+5
                                                  
-                                            if Divide_two1=="0100" and bits_long==4:
+                                            elif Divide_two3=="01000" :
                                                  
-                                                 Divide_two2=Divide_two2+"01000"
+                                                 Divide_two2=Divide_two2+"0100"
+                                                 block=block+5
                                                  
-                                            if Divide_two1=="0101" and bits_long==4:
+                                            elif Divide_two3=="01001":
                                                  
-                                                 Divide_two2=Divide_two2+"01001"
+                                                 Divide_two2=Divide_two2+"0101"
+                                                 block=block+5
                                                  
-                                            if Divide_two1=="0110" and bits_long==4:
+                                            elif Divide_two3=="01010":
                                                  
-                                                 Divide_two2=Divide_two2+"01010"   
+                                                 Divide_two2=Divide_two2+"0110"
+                                                 block=block+5
                                                  
-                                            if Divide_two1=="0111" and bits_long==4:
+                                            elif Divide_two3=="01011":
                                                  
-                                                 Divide_two2=Divide_two2+"01011" 
+                                                 Divide_two2=Divide_two2+"0111"
+                                                 block=block+5
+                                            else:
+                                               #print(Divide_two3)
+                                               Divide_two2=Divide_two2+Divide_two3
+                                               block=block+5
+                                               
                                                
                                                  
                                             #print(Divide_two2)
                                             
-                                            block=block+4
+                                            
                                     
                                            
                                             Equal_info_between_of_the_cirlce_of_the_file_17=Divide_two3+Divide_two2
@@ -361,7 +384,7 @@ class compression:
                               
                                     
                                     lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                    #print(lenfS)
+                                    print(lenfS)
 
                                     if  lenfS>=lenf6:
                                             Deep3=lenfS
