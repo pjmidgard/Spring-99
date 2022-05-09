@@ -266,26 +266,26 @@ class compression:
                                             Number_of_the_file3 = int(Divide_two3, 2)
                                             
                                             T1=Number_of_the_file%2
-                                            if Number_of_the_file==3 and Number_divide_stop==0 and bits_long==2:
+                                            if Divide_two1=="11" and Number_divide_stop==0 and bits_long==2:
                                                     
                                                     Number_divide_stop=1
                                                     
                                                     Divide_two3=Divide_two3+"1"    
                                                     
-                                            elif Number_of_the_file==0 and Number_divide_stop==0 and bits_long==2:
+                                            elif Divide_two1=="00" and Number_divide_stop==0 and bits_long==2:
                                                     
                                                     Number_divide_stop=1
                                                     Divide_two2=Divide_two2+"00"#0000, 0001, 0010, 0011; 00
                                                     
                                                     Divide_two3=Divide_two3+"0"
 
-                                            elif T1==0 and Number_of_the_file==2 and bits_long==2:#2
+                                            elif Divide_two1=="10" and bits_long==2:#2
                                                     Number_divide_stop=1   
                                                     Divide_two2=Divide_two2+"1"#100, 101, 110, 111
                                                     
                                                     Divide_two3=Divide_two3+"0"    
                                                     
-                                            elif T1!=0 and Number_of_the_file==1  and bits_long==2: #1
+                                            elif Divide_two1=="01"  and bits_long==2: #1
                                                     Number_divide_stop=1
                                                     Divide_two2=Divide_two2+"01"# 0100, 0101, 0110, 0111
                                                     
