@@ -493,25 +493,67 @@ class compression:
                                         if C==1 and T!=0:
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[Translate_info_Decimal_2:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
+                                                
+                                                if Equal_info_between_of_the_cirlce_of_the_file[0:1]=="0":
+                                                    last_bit="1"
+                                                    Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[1:]    
+                                                        
+                                                        
+                                                elif Equal_info_between_of_the_cirlce_of_the_file[0:2]=="10":
+                                                    last_bit="0"
+                                                    Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[2:] 
+                                                 
+                                                elif Equal_info_between_of_the_cirlce_of_the_file[0:2]=="11":
+                                                    last_bit=""
+                                                    Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[2:] 
 
                                                 long_top=Equal_info_between_of_the_cirlce_of_the_file[0:32]
                                                 long_Top_Number = int(long_top, 2)
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[32:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
+                                                 
+                                                top_center=Equal_info_between_of_the_cirlce_of_the_file[:long_Top_Number]
+                                                center_Three_info=[long_Top_Number:]
+                                                lenf_center=len(center_Three_info) 
+                                                lenf_top=len(top_center) 
                                                 
+                                                block_top=0
+                                                block_center=0
+                                                info=""
+                                              
+                                                while block_top!=lenf_top and block_center!=lenf_center:
+                                                        center_Three_Block_1=center_Three_info[block_center:block_center+1]
+                                                        center_Three_Block_2=center_Three_info[block_center:block_center+2]
+                                                        center_Three_Block_3=top_center[block_top:block_top+1]
+                                                        center_Three_Block_4=top_center[block_top+1:block_top+3]
+                                                        center_Three_Block_5=len(center_Three_Block_4)
+                                                        
+                                                        if center_Three_Block_3="0":
+                                                             block_top=block_top+1   
+                                                               
+                                                        if center_Three_Block_3=="1":
+                                                               info=info+"11"
+                                                               block_top=block_top+1 
+                                                               
+                                                        elif center_Three_Block_1=="1":
+                                                               info=info+"10"
+                                                               block_center=block_center+1
+                                                        
+                                                        elif center_Three_Block_2=="00":  
+                                                               info=info+"00"
+                                                               block_center=block_center+2
+                                                               
+                                                        elif center_Three_Block_2=="01":  
+                                                               info=info+"01"
+                                                               block_center=block_center+2
+                                                               
+                                                        if center_Three_Block_5==2:
+                                                               info=info+center_Three_Block_4
+                                                               block_top=block_top+2
+                                                               
+                                                Equal_info_between_of_the_cirlce_of_the_file_17=info+last_bit
+                                                 
                                                 
-                                                Number_add_plus_one=Equal_info_between_of_the_cirlce_of_the_file[lenf6-Deep4:lenf6-1]
-                                                Prime_Not=Equal_info_between_of_the_cirlce_of_the_file[lenf6-1:lenf6]
-                                                Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[0:lenf6-Deep4]
-                                        
-                                                
-                                                Number_of_the_file = int(Equal_info_between_of_the_cirlce_of_the_file, 2)
-                                                Number_add_plus_one_2 = int(Number_add_plus_one, 2)
-                                                Prime_Not = int(Prime_Not, 2)
-                                                Hole_Number_information=(2**Deep5)-1
-                                                add_ones_together=Hole_Number_information+Number_add_plus_one_2
-                                                Number_of_the_file=Number_of_the_file*add_ones_together
-                                                Number_of_the_file=Number_of_the_file+Prime_Not
                                        
                                     Times_6=Number_add_plus_one
                                     Number_add_plus_one=""
