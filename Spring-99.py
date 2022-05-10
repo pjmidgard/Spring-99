@@ -1,4 +1,4 @@
-from time import time
+rom time import time
 import os
 import binascii
 import math
@@ -34,6 +34,11 @@ class compression:
                         i=1
 
                     if namez=="e":
+                        Deep=1        
+                        Deep7=float("1.3331001")
+                                
+                        Deep3=8
+                        print(Deep7)    
                         i=2
                  
                     Number_add_plus_one=""
@@ -400,6 +405,7 @@ class compression:
                                  
                                     if C==1:
                                         if   Circle_times2==0:
+                                                count_bits2==0
 
                                                 Translate_info_Decimal=Equal_info_between_of_the_cirlce_of_the_file[0:8]
                                                 Translate_info_Decimal_2 = int(Translate_info_Decimal, 2)
@@ -408,42 +414,88 @@ class compression:
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[8:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
 
-                                                sda10=Equal_info_between_of_the_cirlce_of_the_file[0:16]
-                                                Deep5 = int(sda10, 2)
-                                                Deep5=Deep5+2
-                                                Deep4=Deep5-1
-                                                Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[16:]
+                                                sda10=Equal_info_between_of_the_cirlce_of_the_file[0:48]
+                                                File_size = int(sda10, 2)
+                                                Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[48:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
-                                                Deep7=Deep5-2
+                                                
                                                 
                                                 Times_6=Equal_info_between_of_the_cirlce_of_the_file[0:48]
                                                 T = int(Times_6, 2)
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[48:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
-                                                print("Deep: ")
-                                                print(Deep7-25)
+                                                Check_file=Equal_info_between_of_the_cirlce_of_the_file
                                                 
                                         if   Circle_times2>0:
                                         	Translate_info_Decimal_2=0
+                                        	
                                         
                                         	
     
                                         if C==1 and T!=0:
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[Translate_info_Decimal_2:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
-                                                Number_add_plus_one=Equal_info_between_of_the_cirlce_of_the_file[lenf6-Deep4:lenf6-1]
-                                                Prime_Not=Equal_info_between_of_the_cirlce_of_the_file[lenf6-1:lenf6]
-                                                Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[0:lenf6-Deep4]
-                                        
+
                                                 
+
+
+                                                Equal_info_between_of_the_cirlce_of_the_file1=bin(count_bits2)[2:]
+                                                lenf=len(Equal_info_between_of_the_cirlce_of_the_file1)
+
+                                                add_bits9=""
+                                                count_bits=File_size-lenf%File_size
+                                                z=0
+                                                if count_bits!=0:
+                                                        if count_bits!=File_size:
+                                                                while z<count_bits:
+                                                                        add_bits9="0"+add_bits9
+                                                                        z=z+1
+
+
+
+                                                Equal_info_between_of_the_cirlce_of_the_file_17=""
+                                                Equal_info_between_of_the_cirlce_of_the_file=add_bits9+Equal_info_between_of_the_cirlce_of_the_file1
+                 
+                                                if   Circle_times2==0 and SpinS==0:
+                                                        Equal_info_between_of_the_cirlce_of_the_file="1"+Equal_info_between_of_the_cirlce_of_the_file+Equal_info_between_of_the_cirlce_of_the_file+Equal_info_between_of_the_cirlce_of_the_file
+                                                        SpinS=1
+                                                lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
+                                                if Circle_times2>=(2**48)-3:
+                                                        compress_or_not_compress=2
+                                                            
                                                 Number_of_the_file = int(Equal_info_between_of_the_cirlce_of_the_file, 2)
-                                                Number_add_plus_one_2 = int(Number_add_plus_one, 2)
-                                                Prime_Not = int(Prime_Not, 2)
-                                                Hole_Number_information=(2**Deep5)-1
-                                                add_ones_together=Hole_Number_information+Number_add_plus_one_2
-                                                Number_of_the_file=Number_of_the_file*add_ones_together
-                                                Number_of_the_file=Number_of_the_file+Prime_Not
-                                       
+
+                                                Number_of_the_file1=Number_of_the_file*Number_of_the_file
+
+                                                Number_of_the_file2=str(Number_of_the_file1)
+
+                                                Number_of_the_file3=len(Number_of_the_file2)
+                                                #print(Number_of_the_file3)
+
+                                                Number_of_the_file4=int(Number_of_the_file3//Deep7)
+                                                
+                                                #print(Number_of_the_file4)
+
+                                                Number_of_the_file5=Number_of_the_file2[Number_of_the_file4:]+Number_of_the_file2[:Number_of_the_file3-Number_of_the_file4]
+                                                Number_of_the_file7=len(Number_of_the_file5)
+                                                #print(Number_of_the_file7)
+
+                                                Number_of_the_file6=int(Number_of_the_file5)
+                                                    
+                                                    
+                                                    
+                                                    
+                                                Equal_info_between_of_the_cirlce_of_the_file_17=bin(Number_of_the_file6)[2:]
+                                                    
+                                                #print(len(Equal_info_between_of_the_cirlce_of_the_file_17))
+                                              
+                                                    
+                                                lenfS=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                                #print(lenfS)
+
+                                               
+                                               
+                                                
                                     Times_6=Number_add_plus_one
                                     Number_add_plus_one=""
                                       
@@ -452,7 +504,7 @@ class compression:
                                     Prime_Not=""
                                     
                                     
-                                    Equal_info_between_of_the_cirlce_of_the_file_17=bin(Number_of_the_file)[2:]
+                                    
                                      
                                     Equal_info_between_of_the_cirlce_of_the_file_2=Equal_info_between_of_the_cirlce_of_the_file_17
                                    
@@ -485,23 +537,27 @@ class compression:
                                             	Equal_info_between_of_the_cirlce_of_the_file_17=add_bits+Equal_info_between_of_the_cirlce_of_the_file_17
                                         
                                             if C==1 and T!=0:
- 
+                                                    
+                                                Circle_times2=0
+                                                Equal_info_between_of_the_cirlce_of_the_file_17=bin(Number_of_the_file)[2:]
+                                                File_Minus_Size=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                                Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_17[File_size+1:File_Minus_Size-File_size]
+                                                count_bits2=count_bits2+1
+
+                                            if C==1 and T!=0 and Check_file==Equal_info_between_of_the_cirlce_of_the_file_17:
                                             	Equal_info_between_of_the_cirlce_of_the_file_17=bin(Number_of_the_file)[3:]
                                             	lenf14=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                             	#print(lenf14)
                                             	lenf16=lenf14%8
-                                            	if lenf16!=0 or lenf14>=((2**40)-1)*8 or Corrupted==1:
-
-                                            		print("file corrupted")
-                                            		raise SystemExit
+                                            	
                                             		
                                             	
                                             	lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                             	add_bits=""
-                                            	count_bits=8-lenf%8
+                                            	count_bits=File_size-lenf%File_size
                                             	z=0
                                             	if count_bits!=0:
-                                            	        if count_bits!=8:
+                                            	        if count_bits!=File_size:
                                             	            while z<count_bits:
                                             	            	add_bits="0"+add_bits
                                             	            	z=z+1
