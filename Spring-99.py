@@ -41,7 +41,8 @@ class compression:
                         Deep3=8
                         print(Deep7)
                         
-                        count_bits2==0    
+                        count_bits2=1
+                        Self=0
                         i=2
                  
                     Number_add_plus_one=""
@@ -407,7 +408,7 @@ class compression:
                                     Prime_Not=0
                                  
                                     if C==1:
-                                        if   Circle_times2==0:
+                                        if   Circle_times2==0 and Self==0:
                                                 
                                                 SpinS=0
                                                 Translate_info_Decimal=Equal_info_between_of_the_cirlce_of_the_file[0:8]
@@ -427,9 +428,15 @@ class compression:
                                                 T = int(Times_6, 2)
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[48:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
-                                                Check_file=Equal_info_between_of_the_cirlce_of_the_file[Translate_info_Decimal_2:]
+                                                Check_file=Equal_info_between_of_the_cirlce_of_the_file
+                                                lert=len(Check_file)
+                                                File_size=File_size*8 
+                                                
+                                                Self=1
+                                        if   Circle_times2==0:
                                                 Equal_info_between_of_the_cirlce_of_the_file1=bin(count_bits2)[2: ]
                                                 lenf=len(Equal_info_between_of_the_cirlce_of_the_file1)
+                                                
 
                                                 add_bits9=""
                                                 count_bits=File_size-lenf%File_size
@@ -443,7 +450,11 @@ class compression:
 
 
                                                 Equal_info_between_of_the_cirlce_of_the_file_17=""
+                                                
                                                 Equal_info_between_of_the_cirlce_of_the_file=add_bits9+Equal_info_between_of_the_cirlce_of_the_file1
+                                                
+                                                print(Equal_info_between_of_the_cirlce_of_the_file)
+                                                #print(count_bits2)
                  
                                                 if   Circle_times2==0 and SpinS==0:
                                                         Equal_info_between_of_the_cirlce_of_the_file="1"+Equal_info_between_of_the_cirlce_of_the_file+Equal_info_between_of_the_cirlce_of_the_file+Equal_info_between_of_the_cirlce_of_the_file
@@ -458,6 +469,7 @@ class compression:
                                         if C==1 and T!=0:
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[Translate_info_Decimal_2:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
+                                                #print(lenf6)
 
                                                 
 
@@ -544,20 +556,31 @@ class compression:
                                                 Circle_times2=0
                                                 
                                                 File_Minus_Size=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                                Equal_info_between_of_the_cirlce_of_the_file_18=Equal_info_between_of_the_cirlce_of_the_file_17
                                                 Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_17[File_size+1:File_Minus_Size-File_size]
+   
+                                                lenfg=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                                #print(File_Minus_Size)
+                                                
+                                                    
                                                 count_bits2=count_bits2+1
 
-                                            if C==1 and T!=0 and Check_file==Equal_info_between_of_the_cirlce_of_the_file_17:
+                                            if C==1 and T!=0 and Check_file==Equal_info_between_of_the_cirlce_of_the_file_18:
                                             	
+                                      	
+
+                                            	Equal_info_between_of_the_cirlce_of_the_file_17=                                   Equal_info_between_of_the_cirlce_of_the_file
+                                            	#print(Equal_info_between_of_the_cirlce_of_the_file)                                         	
                                             	lenf14=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                            	#print(Check_file)
                                             	#print(lenf14)
-                                            	lenf16=lenf14%8
+                                           
                                             	
                                             		
                                             	
                                             	lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                             	add_bits=""
-                                            	count_bits=File_size-lenf%File_size
+                                            	count_bits=8-lenf%8
                                             	z=0
                                             	if count_bits!=0:
                                             	        if count_bits!=File_size:
@@ -565,29 +588,23 @@ class compression:
                                             	            	add_bits="0"+add_bits
                                             	            	z=z+1
                                             	Equal_info_between_of_the_cirlce_of_the_file_17=add_bits+Equal_info_between_of_the_cirlce_of_the_file_17
-
-                                            L=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                         
-                                            n = int(Equal_info_between_of_the_cirlce_of_the_file_17, 2)
-                                            width_bits=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                            width_bits=(width_bits//8)*2
-                                            width_bits=str(width_bits)
-                                            width_bits="%0"+width_bits+"x"
-                                            width_bits3=binascii.unhexlify(width_bits % n)
-                                            width_bits2=len(width_bits3)
-
-                                            add_bitszzza=""
-                                            add_bitszs=""
-                                            Equal_info_between_of_the_cirlce_of_the_file_2=Times_6
-                                             
-                                            with open(nameas, "wb") as f2:
-                                            
-                                              
-                                            	f2.write(width_bits3)
-                                            x2 = time()
-                                            x3=x2-x
-                                            xs=float(x3)
-                                            return print(x3)
+                                            	L=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                            	n = int(Equal_info_between_of_the_cirlce_of_the_file_17, 2)
+                                            	width_bits=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                            	width_bits=(width_bits//8)*2
+                                            	width_bits=str(width_bits)
+                                            	width_bits="%0"+width_bits+"x"
+                                            	width_bits3=binascii.unhexlify(width_bits % n)
+                                            	width_bits2=len(width_bits3)
+                                            	add_bitszzza=""
+                                            	add_bitszs=""
+                                            	Equal_info_between_of_the_cirlce_of_the_file_2=Times_6
+                                            	with open(nameas, "wb") as f2:
+                                            	   f2.write(width_bits3)
+                                            	x2 = time()
+                                            	x3=x2-x
+                                            	xs=float(x3)
+                                            	return print(x3)
    
 d=compression()
 
