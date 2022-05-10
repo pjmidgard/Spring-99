@@ -229,7 +229,7 @@ class compression:
                                     Equal_info_between_of_the_cirlce_of_the_file_17=""
                  
                                     if   Circle_times2==0 and SpinS==0:
-                                    	Equal_info_between_of_the_cirlce_of_the_file="1"+Equal_info_between_of_the_cirlce_of_the_file
+                                    	Equal_info_between_of_the_cirlce_of_the_file="1"+Equal_info_between_of_the_cirlce_of_the_file+Equal_info_between_of_the_cirlce_of_the_file+Equal_info_between_of_the_cirlce_of_the_file
                                     	SpinS=1
                                     lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
                                     if Circle_times2>=(2**48)-3:
