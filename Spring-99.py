@@ -248,7 +248,7 @@ class compression:
                                 
                                     #print(Number_of_the_file4)
 
-                                    Number_of_the_file5=Number_of_the_file2[Number_of_the_file4:]+Number_of_the_file2[:Number_of_the_file3-Number_of_the_file4+1]
+                                    Number_of_the_file5=Number_of_the_file2[Number_of_the_file4:]+Number_of_the_file2[:Number_of_the_file3-Number_of_the_file4]
                                     Number_of_the_file7=len(Number_of_the_file5)
                                     #print(Number_of_the_file7)
 
