@@ -453,7 +453,7 @@ class compression:
                                                 
                                                 Equal_info_between_of_the_cirlce_of_the_file=add_bits9+Equal_info_between_of_the_cirlce_of_the_file1
                                                 
-                                                print(Equal_info_between_of_the_cirlce_of_the_file)
+                                                #print(Equal_info_between_of_the_cirlce_of_the_file)
                                                 #print(count_bits2)
                  
                                                 if   Circle_times2==0 and SpinS==0:
@@ -565,7 +565,7 @@ class compression:
                                                     
                                                 count_bits2=count_bits2+1
 
-                                            if C==1 and T!=0 and Check_file==Equal_info_between_of_the_cirlce_of_the_file_18:
+                                            if C==1 and T!=0 and lert>=File_Minus_Size:
                                             	
                                       	
 
