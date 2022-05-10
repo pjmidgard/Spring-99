@@ -34,11 +34,13 @@ class compression:
                         i=1
 
                     if namez=="e":
+
                         Deep=1        
                         Deep7=float("1.3331001")
                                 
                         Deep3=8
                         print(Deep7)    
+                            
                         i=2
                  
                     Number_add_plus_one=""
