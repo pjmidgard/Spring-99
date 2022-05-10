@@ -41,7 +41,7 @@ class compression:
                         Deep3=8
                         print(Deep7)
                         
-                        count_bits2=1
+                        count_bits2=255
                         Self=0
                         i=2
                  
@@ -560,13 +560,16 @@ class compression:
                                                 Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_17[File_size+1:File_Minus_Size-File_size]
    
                                                 lenfg=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                               #print(Equal_info_between_of_the_cirlce_of_the_file_18)
+                                                print(Equal_info_between_of_the_cirlce_of_the_file_18)
+                                                print(Check_file)
+                                            
+                                               
                                                 #print(File_Minus_Size)
                                                 
                                                     
                                                 count_bits2=count_bits2+1
 
-                                            if C==1 and T!=0 and Check_file==Equal_info_between_of_the_cirlce_of_the_file_18:
+                                            if C==1 and T!=0:
                                             	
                                       	
 
