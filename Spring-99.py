@@ -290,14 +290,14 @@ class compression:
 
                                     if   lenfS<=Deep3 or compress_or_not_compress==2:
                                     	   
-                                            Equal_info_between_of_the_cirlce_of_the_file0=bin(Deep)[2:]
+                                            Equal_info_between_of_the_cirlce_of_the_file0=bin(lenf7)[2:]
                                             lenf=len(Equal_info_between_of_the_cirlce_of_the_file0)
 
                                             add_bits8=""
-                                            count_bits=16-lenf%16
+                                            count_bits=48-lenf%48
                                             z=0
                                             if count_bits!=0:
-                                                if count_bits!=16:
+                                                if count_bits!=48:
                                                         while z<count_bits:
                                                          	add_bits8="0"+add_bits8
                                                          	z=z+1
