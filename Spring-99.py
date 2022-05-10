@@ -428,7 +428,7 @@ class compression:
                                                 T = int(Times_6, 2)
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[48:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
-                                                Check_file=Equal_info_between_of_the_cirlce_of_the_file
+                                                Check_file=Equal_info_between_of_the_cirlce_of_the_file[Translate_info_Decimal_2:]
                                                 lert=len(Check_file)
                                                 File_size=File_size*8 
                                                 
@@ -560,12 +560,13 @@ class compression:
                                                 Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_17[File_size+1:File_Minus_Size-File_size]
    
                                                 lenfg=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                               #print(Equal_info_between_of_the_cirlce_of_the_file_18)
                                                 #print(File_Minus_Size)
                                                 
                                                     
                                                 count_bits2=count_bits2+1
 
-                                            if C==1 and T!=0 and lert>=File_Minus_Size:
+                                            if C==1 and T!=0 and Check_file==Equal_info_between_of_the_cirlce_of_the_file_18:
                                             	
                                       	
 
