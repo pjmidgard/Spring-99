@@ -39,8 +39,9 @@ class compression:
                         Deep7=float("1.3331001")
                                 
                         Deep3=8
-                        print(Deep7)    
-                            
+                        print(Deep7)
+                        
+                        count_bits2==0    
                         i=2
                  
                     Number_add_plus_one=""
@@ -407,7 +408,7 @@ class compression:
                                  
                                     if C==1:
                                         if   Circle_times2==0:
-                                                count_bits2==0
+                                                
 
                                                 Translate_info_Decimal=Equal_info_between_of_the_cirlce_of_the_file[0:8]
                                                 Translate_info_Decimal_2 = int(Translate_info_Decimal, 2)
