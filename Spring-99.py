@@ -409,7 +409,7 @@ class compression:
                                     if C==1:
                                         if   Circle_times2==0:
                                                 
-
+                                                SpinS=0
                                                 Translate_info_Decimal=Equal_info_between_of_the_cirlce_of_the_file[0:8]
                                                 Translate_info_Decimal_2 = int(Translate_info_Decimal, 2)
                                                 if Translate_info_Decimal_2>7:
