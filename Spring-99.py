@@ -1,4 +1,4 @@
-rom time import time
+from time import time
 import os
 import binascii
 import math
