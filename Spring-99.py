@@ -426,7 +426,7 @@ class compression:
                                                 T = int(Times_6, 2)
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[48:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
-                                                Check_file=Equal_info_between_of_the_cirlce_of_the_file
+                                                Check_file=Equal_info_between_of_the_cirlce_of_the_file[Translate_info_Decimal_2:]
                                                 
                                         if   Circle_times2>0:
                                         	Translate_info_Decimal_2=0
