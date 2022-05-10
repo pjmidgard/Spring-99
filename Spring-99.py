@@ -427,21 +427,7 @@ class compression:
                                                 Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[48:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
                                                 Check_file=Equal_info_between_of_the_cirlce_of_the_file[Translate_info_Decimal_2:]
-                                                
-                                        if   Circle_times2>0:
-                                        	Translate_info_Decimal_2=0
-                                        	
-                                        
-                                        	
-    
-                                        if C==1 and T!=0:
-                                                Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[Translate_info_Decimal_2:]
-                                                lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
-
-                                                
-
-
-                                                Equal_info_between_of_the_cirlce_of_the_file1=bin(count_bits2)[2:]
+                                                Equal_info_between_of_the_cirlce_of_the_file1=bin(count_bits2)[2: ]
                                                 lenf=len(Equal_info_between_of_the_cirlce_of_the_file1)
 
                                                 add_bits9=""
@@ -461,7 +447,21 @@ class compression:
                                                 if   Circle_times2==0 and SpinS==0:
                                                         Equal_info_between_of_the_cirlce_of_the_file="1"+Equal_info_between_of_the_cirlce_of_the_file+Equal_info_between_of_the_cirlce_of_the_file+Equal_info_between_of_the_cirlce_of_the_file
                                                         SpinS=1
+                                                
+                                        if   Circle_times2>0:
+                                        	Translate_info_Decimal_2=0
+                                        	
+                                        
+                                        	
+    
+                                        if C==1 and T!=0:
+                                                Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[Translate_info_Decimal_2:]
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
+
+                                                
+
+
+                                            
                                                 if Circle_times2>=(2**48)-3:
                                                         compress_or_not_compress=2
                                                             
