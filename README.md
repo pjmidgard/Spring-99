@@ -3,9 +3,10 @@ Spring-99.py
 
 PRNG Algorithm:
 
-"1"+F+F=F
+X="1"+E+E=E
 
 X*X=Y
 
-Z=Y[A:]+Y[:A]
+Y=1.3331001
 
+Z=Y[A:]+Y[:A]
