@@ -43,6 +43,7 @@ class compression:
                         
                         count_bits2=0
                         Self=0
+                        Cut=0
                         i=2
                  
                     Number_add_plus_one=""
@@ -430,7 +431,9 @@ class compression:
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
                                                 Check_file=Equal_info_between_of_the_cirlce_of_the_file[Translate_info_Decimal_2:]
                                                 lert=len(Check_file)
-                                                File_size=File_size*8 
+                                                File_size=File_size*8
+                                                #print(File_size)
+                                                
                                                 
                                                 Self=1
                                         if   Circle_times2==0:
@@ -545,10 +548,10 @@ class compression:
                                             	Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file
                                             	lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                             	add_bits=""
-                                            	count_bits=8-lenf%8
+                                            	count_bits=File_size-lenf%File_size
                                             	z=0
                                             	if count_bits!=0:
-                                            	        if count_bits!=8:
+                                            	        if count_bits!=File_size:
                                             	            while z<count_bits:
                                             	            	add_bits="0"+add_bits
                                             	            	z=z+1
@@ -575,19 +578,22 @@ class compression:
                                             if C==1 and T!=0 and Check_file==Equal_info_between_of_the_cirlce_of_the_file_18:
                                             	
                                       	
-
-                                            	Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file3
-                                            	#print(Equal_info_between_of_the_cirlce_of_the_file)                                         	
-                                            	lenf14=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                                Long_Cut=len(Equal_info_between_of_the_cirlce_of_the_file3)
+                                                #print(File_size)
+                                                #print(Long_Cut)
+                                                Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file3[Long_Cut-File_size:]
+                                                Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file3
+                                                lenf14=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                                Cut=1
                                             	#print(Check_file)
                                             	#print(lenf14)
                                            
                                             	
                                             		
-                                            	
+                                            if C==1 and T!=0 and Check_file==Equal_info_between_of_the_cirlce_of_the_file_18 and Cut==1:	
                                             	lenf=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                             	add_bits=""
-                                            	count_bits=8-lenf%8
+                                            	count_bits=File_size-lenf%File_size
                                             	z=0
                                             	if count_bits!=0:
                                             	        if count_bits!=File_size:
