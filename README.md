@@ -7,5 +7,5 @@ PRNG Algorithm:
 
 X*X=Y
 
-Z=Y[X:]+Y[X:]
+Z=Y[A:]+Y[:A]
 
