@@ -576,7 +576,7 @@ class compression:
                                             	
                                       	
 
-                                            	Equal_info_between_of_the_cirlce_of_the_file_17=                                   Equal_info_between_of_the_cirlce_of_the_file3
+                                            	Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file3
                                             	#print(Equal_info_between_of_the_cirlce_of_the_file)                                         	
                                             	lenf14=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                             	#print(Check_file)
