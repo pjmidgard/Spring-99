@@ -3,7 +3,7 @@ Spring-99.py
 
 PRNG Algorithm:
 
-X="1"+E+E=E
+X="1"+E+E+E
 
 X*X=Y
 
