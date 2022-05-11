@@ -560,7 +560,7 @@ class compression:
                                                 
                                                 File_Minus_Size=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                                 Equal_info_between_of_the_cirlce_of_the_file_18=Equal_info_between_of_the_cirlce_of_the_file_17
-                                                Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_17[File_size+1:File_Minus_Size-File_size]
+                                                
    
                                                 lenfg=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                                 #print(Equal_info_between_of_the_cirlce_of_the_file_18)
