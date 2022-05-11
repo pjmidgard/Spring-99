@@ -41,7 +41,7 @@ class compression:
                         Deep3=8
                         print(Deep7)
                         
-                        count_bits2=255
+                        count_bits2=0
                         Self=0
                         i=2
                  
@@ -410,7 +410,7 @@ class compression:
                                     if C==1:
                                         if   Circle_times2==0 and Self==0:
                                                 
-                                                SpinS=0
+                                                
                                                 Translate_info_Decimal=Equal_info_between_of_the_cirlce_of_the_file[0:8]
                                                 Translate_info_Decimal_2 = int(Translate_info_Decimal, 2)
                                                 if Translate_info_Decimal_2>7:
@@ -434,6 +434,7 @@ class compression:
                                                 
                                                 Self=1
                                         if   Circle_times2==0:
+                                                SpinS=0
                                                 Equal_info_between_of_the_cirlce_of_the_file1=bin(count_bits2)[2: ]
                                                 lenf=len(Equal_info_between_of_the_cirlce_of_the_file1)
                                                 
@@ -452,8 +453,9 @@ class compression:
                                                 Equal_info_between_of_the_cirlce_of_the_file_17=""
                                                 
                                                 Equal_info_between_of_the_cirlce_of_the_file=add_bits9+Equal_info_between_of_the_cirlce_of_the_file1
+                                                Equal_info_between_of_the_cirlce_of_the_file3=add_bits9+Equal_info_between_of_the_cirlce_of_the_file1
                                                 
-                                                #print(Equal_info_between_of_the_cirlce_of_the_file)
+                                                
                                                 #print(count_bits2)
                  
                                                 if   Circle_times2==0 and SpinS==0:
@@ -467,7 +469,8 @@ class compression:
                                         	
     
                                         if C==1 and T!=0:
-                                                Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file[Translate_info_Decimal_2:]
+                                                Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file
+                                                
                                                 lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
                                                 #print(lenf6)
 
@@ -560,8 +563,8 @@ class compression:
                                                 Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_17[File_size+1:File_Minus_Size-File_size]
    
                                                 lenfg=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                                print(Equal_info_between_of_the_cirlce_of_the_file_18)
-                                                print(Check_file)
+                                                #print(Equal_info_between_of_the_cirlce_of_the_file_18)
+                                                #print(Check_file)
                                             
                                                
                                                 #print(File_Minus_Size)
@@ -569,11 +572,11 @@ class compression:
                                                     
                                                 count_bits2=count_bits2+1
 
-                                            if C==1 and T!=0:
+                                            if C==1 and T!=0 and Check_file==Equal_info_between_of_the_cirlce_of_the_file_18:
                                             	
                                       	
 
-                                            	Equal_info_between_of_the_cirlce_of_the_file_17=                                   Equal_info_between_of_the_cirlce_of_the_file
+                                            	Equal_info_between_of_the_cirlce_of_the_file_17=                                   Equal_info_between_of_the_cirlce_of_the_file3
                                             	#print(Equal_info_between_of_the_cirlce_of_the_file)                                         	
                                             	lenf14=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                             	#print(Check_file)
