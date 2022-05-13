@@ -81,7 +81,7 @@ class compression:
                         	
                         	C=1
 
-                        elif nameas[nac-7:nac]==".bin":
+                        elif nameas[nac-7:nac]==".bin.b2":
                                 nameas=name[:nac-7]
                                 nac=len(nameas)
                                 C=2
