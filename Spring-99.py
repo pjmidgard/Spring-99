@@ -590,59 +590,48 @@ class compression:
                                                         
                                                                 
                                                     	
-                                                                    if   lenfS<=Deep3 or compress_or_not_compress==2 or Check_info==Equal_info_between_of_the_cirlce_of_the_file3:
-                                            
-                                                
-                                    		
-                                    		                                Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_19
-                                    		                                L=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                    		                                n = int(Equal_info_between_of_the_cirlce_of_the_file_17, 2)
-                                    		                                width_bits=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                    		                                width_bits=(width_bits//8)*2
-                                    		                                width_bits=str(width_bits)
-                                    		                                width_bits="%0"+width_bits+"x"
-                                    		                                width_bits3=binascii.unhexlify(width_bits % n)
-                                    		                                width_bits2=len(width_bits3)
-                                    		                                add_bitszzza=""
-                                    		                                add_bitszs=""
-                                    		                                Equal_info_between_of_the_cirlce_of_the_file_2=Times_6
-                                    		
-                                    		                                with open(nameas, "wb") as f2:
-                                    		                                    f2.write(width_bits3)
-                                    	
-                                    		                                x2 = time()
-                                    		                                x3=x2-x
-                                    		                                xs=float(x3)
-                                    		                                return print(x3)
+                                                                        if   lenfS<=Deep3 or compress_or_not_compress==2 or Check_info==Equal_info_between_of_the_cirlce_of_the_file3:
+                                                                            Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_19                                    		                                
+                                                                            L=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                                                            n = int(Equal_info_between_of_the_cirlce_of_the_file_17, 2)
+                                                                            width_bits=len(Equal_info_between_of_the_cirlce_of_the_file_17 )
+                                                                            width_bits=(width_bits//8)*2    
+                                                                            width_bits=str(width_bits)              
+                                                                            width_bits="%0"+width_bits+"x"
+                                                                            width_bits3=binascii.unhexlify(width_bits % n)
+                                                                            width_bits2=len(width_bits3)
+                                                                            add_bitszzza=""
+                                                                            add_bitszs=""
+                                                                            Equal_info_between_of_the_cirlce_of_the_file_2=Times_6
+                                                                            with open(nameas, "wb") as f2:
+                                                                                f2.write(width_bits3)
+                                                                            x2 = time()
+                                                                            x3=x2-x
+                                                                            xs=float(x3)
+                                                                            return print(x3)
 
-                                                                    if   lenfS<=Deep3 or compress_or_not_compress==2 or Check_info!=Equal_info_between_of_the_cirlce_of_the_file3:
+                                                                        if   lenfS<=Deep3 or compress_or_not_compress==2 or Check_info!=Equal_info_between_of_the_cirlce_of_the_file3:
                                             
                                                                                  Equal_info_between_of_the_cirlce_of_the_file_17=Check_info
-                                                                    if   lenfS<=Deep3 or compress_or_not_compress==2 or Check_info!=Equal_info_between_of_the_cirlce_of_the_file3:
-                                                         
-                                    		                                 L=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                    		
-                                    		
-                                    		                                 n = int(Equal_info_between_of_the_cirlce_of_the_file_17, 2)
-                                    		                                 width_bits=len(Equal_info_between_of_the_cirlce_of_the_file_17)
-                                    		                                 width_bits=(width_bits//8)*2
-                                    		                                 width_bits=str(width_bits)
-                                    		                                 width_bits="%0"+width_bits+"x"
-                                    		                                 width_bits3=binascii.unhexlify(width_bits % n)
-                                    		                                 width_bits2=len(width_bits3)
-                                    		                                 add_bitszzza=""
-                                    		                                 add_bitszs=""
-                                    		                                 Equal_info_between_of_the_cirlce_of_the_file_2=Times_6
-
-                                    		                                 nameas=nameas+".b2"
-                                    		
-                                    		                                 with open(nameas, "wb") as f2:
-                                    		                                     f2.write(width_bits3)
-                                    	
-                                    		                                 x2 = time()
-                                    		                                 x3=x2-x
-                                    		                                 xs=float(x3)
-                                    		                                 return print(x3)
+                                                                        if   lenfS<=Deep3 or compress_or_not_compress==2 or Check_info!=Equal_info_between_of_the_cirlce_of_the_file3:
+                                                                            L=len(Equal_info_between_of_the_cirlce_of_the_file_17) 
+                                                                            n = int(Equal_info_between_of_the_cirlce_of_the_file_17, 2)
+                                                                            width_bits=len(Equal_info_between_of_the_cirlce_of_the_file_17)
+                                                                            width_bits=(width_bits//8)*2
+                                                                            width_bits=str(width_bits)
+                                                                            width_bits="%0"+width_bits+"x"
+                                                                            width_bits3=binascii.unhexlify(width_bits % n)
+                                                                            width_bits2=len(width_bits3)
+                                                                            add_bitszzza=""
+                                                                            add_bitszs=""
+                                                                            Equal_info_between_of_the_cirlce_of_the_file_2=Times_6
+                                                                            nameas=nameas+".b2"
+                                                                            with open(nameas, "wb") as f2:
+                                                                                 f2.write(width_bits3)
+                                                                            x2 = time()
+                                                                            x3=x2-x
+                                                                            xs=float(x3)
+                                                                            return print(x3)
 
 
                                     		
