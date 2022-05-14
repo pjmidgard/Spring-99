@@ -618,7 +618,7 @@ class compression:
                                                                     if   lenfS<=Deep3 or compress_or_not_compress==2 or Check_info!=Equal_info_between_of_the_cirlce_of_the_file3:
                                             
                                                                                  Equal_info_between_of_the_cirlce_of_the_file_17=Check_info
-                                                                    if   lenfS<=Deep3 or compress_or_not_compress==2 or Check_info!=Equal_info_between_of_the_cirlce_of_the_file3 and Cut==1:
+                                                                    if   lenfS<=Deep3 or compress_or_not_compress==2 or Check_info!=Equal_info_between_of_the_cirlce_of_the_file3:
                                                          
                                     		                                 L=len(Equal_info_between_of_the_cirlce_of_the_file_17)
                                     		
