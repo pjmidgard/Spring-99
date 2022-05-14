@@ -86,6 +86,12 @@ class compression:
                                 nac=len(nameas)
                                 C=2
                                 
+                        else:
+                                 print("Wrong format of file!")
+                                 raise SystemExit
+                                
+                                
+                                
                    
                     if i==1:
                         
