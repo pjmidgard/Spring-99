@@ -574,8 +574,7 @@ class compression:
                                                                                 #print(File_Minus_Size)
                                                                                 
                                                                                     
-                                                                                count_bits2=count_bits2+1
-
+                                                                                
                                                    
                                                         
                                                                         if Check_file==Equal_info_between_of_the_cirlce_of_the_file_18:
@@ -590,7 +589,9 @@ class compression:
                                                                                     #print(lenf14)
                                                    
                                                         
-                                                                
+                                                                        if Check_file!=Equal_info_between_of_the_cirlce_of_the_file_18:
+                                                                            count_bits2=count_bits2+1
+
                                                     	
                                                                         if   lenfS<=Deep3 or compress_or_not_compress==2 or Check_info==Equal_info_between_of_the_cirlce_of_the_file3:
                                                                             Equal_info_between_of_the_cirlce_of_the_file_17=Equal_info_between_of_the_cirlce_of_the_file_19                                    		                                
