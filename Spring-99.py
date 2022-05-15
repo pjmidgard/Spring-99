@@ -388,7 +388,7 @@ class compression:
                                                                     
                                                                     C=1
                                                               
-                                                                    Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file_21
+                                                                    Equal_info_between_of_the_cirlce_of_the_file=Equal_info_between_of_the_cirlce_of_the_file_20
                                                                     
                                                                     lenf6=len(Equal_info_between_of_the_cirlce_of_the_file)
 
@@ -598,7 +598,7 @@ class compression:
                                                                                         
                                                                                         
                                                                                         
-                                                                                        Equal_info_between_of_the_cirlce_of_the_file_21=Equal_info_between_of_the_cirlce_of_the_file_21
+                                                                                        Equal_info_between_of_the_cirlce_of_the_file_21=Equal_info_between_of_the_cirlce_of_the_file_20
                                                                                         L=len(Equal_info_between_of_the_cirlce_of_the_file_21)
                  
                                                                                         n = int(Equal_info_between_of_the_cirlce_of_the_file_21, 2)
