@@ -595,10 +595,10 @@ class compression:
                                                                             if   Check_info==Equal_info_between_of_the_cirlce_of_the_file3 and Cut==1:
                                                                                     
                                                                                  
-                                                                                        Equal_info_between_of_the_cirlce_of_the_file_21=Equal_info_between_of_the_cirlce_of_the_file_19
-                                                                                        print(Equal_info_between_of_the_cirlce_of_the_file_19)
                                                                                         
-                                                                                        Equal_info_between_of_the_cirlce_of_the_file_21=Equal_info_between_of_the_cirlce_of_the_file_20
+                                                                                        
+                                                                                        
+                                                                                        Equal_info_between_of_the_cirlce_of_the_file_21=Equal_info_between_of_the_cirlce_of_the_file_21
                                                                                         L=len(Equal_info_between_of_the_cirlce_of_the_file_21)
                  
                                                                                         n = int(Equal_info_between_of_the_cirlce_of_the_file_21, 2)
