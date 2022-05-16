@@ -29,7 +29,7 @@ class compression:
                         Deep=1        
                         Deep7=float("1.3331001")
                                 
-                        Deep3=8
+                        Deep3=8000
                         print(Deep7)
                         
                         count_bits2=0
@@ -47,7 +47,7 @@ class compression:
                         Deep=1        
                         Deep7=float("1.3331001")
                                 
-                        Deep3=8
+                        Deep3=8000
                         print(Deep7)
                         
                         count_bits2=0
