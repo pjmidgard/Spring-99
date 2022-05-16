@@ -208,7 +208,7 @@ class compression:
                                 
                                 if i==1:
 
-                                    if All_Save=0:
+                                    if All_Save==0:
 
                                            lenf5=len(Equal_info_between_of_the_cirlce_of_the_file_2)
 
