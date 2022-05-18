@@ -37,7 +37,7 @@ class compression:
                         Cut=0
                         count_bits3=0
                         Circle_times4=0
-                        All_Save=0
+                        
                         Stop_this=0
                         
                         i=1
@@ -210,7 +210,7 @@ class compression:
                                 
                                 if i==1:
 
-                                    if All_Save==0:
+                                    if Stop_this==0:
 
                                            lenf5=len(Equal_info_between_of_the_cirlce_of_the_file_2)
 
